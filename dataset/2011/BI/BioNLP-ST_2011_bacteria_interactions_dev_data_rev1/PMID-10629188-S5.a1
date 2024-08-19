@@ -1,0 +1,21 @@
+T1	Expression 4 14	expression
+T2	Gene 18 22	rsfA
+T3	Protein 52 60	sigma(F)
+T4	Protein 65 73	sigma(G)
+W1	Word 0 3	The
+W2	Word 4 14	expression
+W3	Word 15 17	of
+W4	Word 18 22	rsfA
+W5	Word 23 25	is
+W6	Word 26 31	under
+W7	Word 32 35	the
+W8	Word 36 43	control
+W9	Word 44 46	of
+W10	Word 47 51	both
+W11	Word 52 60	sigma(F)
+W12	Word 61 64	and
+W13	Word 65 73	sigma(G)
+R1	comp:N-N(of) W2 W4
+R2	mod_pred:N-N W2 W8
+R3	comp:N-N(of) W8 W11
+R4	comp:N-N(of) W8 W13

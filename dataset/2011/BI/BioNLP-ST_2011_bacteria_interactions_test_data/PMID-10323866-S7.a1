@@ -1,0 +1,50 @@
+T1	Protein 60 66	SpoIIE
+T2	Protein 105 109	FtsZ
+T3	Protein 138 142	FtsZ
+T4	Action 153 161	assembly
+T5	Protein 165 171	SpoIIE
+W1	Word 0 3	The
+W2	Word 4 9	first
+W3	Word 10 15	stage
+W4	Word 17 22	which
+W5	Word 23 31	involves
+W6	Word 32 35	the
+W7	Word 36 47	phosphatase
+W8	Word 48 56	function
+W9	Word 57 59	of
+W10	Word 60 66	SpoIIE
+W11	Word 68 75	depends
+W12	Word 76 78	on
+W13	Word 79 82	the
+W14	Word 83 87	cell
+W15	Word 88 96	division
+W16	Word 97 104	protein
+W17	Word 105 109	FtsZ
+W18	Word 110 113	and
+W19	Word 114 119	could
+W20	Word 120 130	correspond
+W21	Word 131 133	to
+W22	Word 134 137	the
+W23	Word 138 142	FtsZ
+W24	Word 143 152	dependent
+W25	Word 153 161	assembly
+W26	Word 162 164	of
+W27	Word 165 171	SpoIIE
+W28	Word 172 176	into
+W29	Word 177 184	E-rings
+R1	subj:V-N W5 W3
+R2	mod_att:N-ADJ W3 W2
+R3	mod:ADJ-N W24 W23
+R4	subj:V-N W11 W3
+R5	mod_att:N-N W17 W16
+R6	mod_att:N-ADJ W25 W24
+R7	comp:N-N(into) W25 W29
+R8	obj:V-N W5 W8
+R9	comp:N-N(of) W8 W10
+R10	comp:N-N(of) W25 W27
+R11	comp:V-N(on) W11 W17
+R12	comp:V-N(to) W20 W25
+R13	mod_att:N-N W16 W15
+R14	subj:V-N W20 W3
+R15	mod_att:N-N W15 W14
+R16	mod_att:N-ADJ W8 W7

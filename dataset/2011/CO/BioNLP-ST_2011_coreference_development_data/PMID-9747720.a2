@@ -1,0 +1,6 @@
+T19	Exp 450 461	two domains	454 461	domains
+T20	Exp 462 466	that
+T21	Exp 1236 1240	LMP1
+T22	Exp 1274 1276	it
+R1	Coref Anaphora:T20 Antecedent:T19
+R2	Coref Anaphora:T22 Antecedent:T21	[T17]

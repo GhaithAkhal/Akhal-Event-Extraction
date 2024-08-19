@@ -1,0 +1,16 @@
+*	Equiv T2 T3
+T26	Entity 728 746	TRAF binding sites
+T27	Entity 793 809	cytoplasmic tail
+T28	Entity 817 837	TRAF binding domains
+T29	Entity 914 923	NF-kappaB
+T30	Entity 928 946	c-Jun NH2-terminal
+T31	Entity 1016 1034	TRAF binding sites
+T32	Entity 1244 1262	interaction domain
+T33	Entity 1290 1299	NF-kappaB
+T34	Entity 1341 1359	c-Jun NH2-terminal
+T35	Entity 1471 1480	NF-kappaB
+R1	Protein-Component Arg1:T12 Arg2:T26
+R2	Protein-Component Arg1:T12 Arg2:T27
+R3	Protein-Component Arg1:T14 Arg2:T30
+R4	Protein-Component Arg1:T20 Arg2:T32
+R5	Protein-Component Arg1:T22 Arg2:T34

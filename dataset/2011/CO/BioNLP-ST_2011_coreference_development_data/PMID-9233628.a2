@@ -1,0 +1,9 @@
+T21	Exp 290 316	high level IL-2 production	306 316	production
+T22	Exp 318 323	which
+T23	Exp 1229 1252	four specific complexes	1243 1252	complexes
+T24	Exp 1307 1322	these complexes	1313 1322	complexes
+T25	Exp 1499 1507	the fact
+T26	Exp 1508 1512	that
+R1	Coref Anaphora:T22 Antecedent:T21	[T7]
+R2	Coref Anaphora:T24 Antecedent:T23
+R3	Coref Anaphora:T26 Antecedent:T25

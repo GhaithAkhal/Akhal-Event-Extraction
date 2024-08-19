@@ -1,0 +1,3 @@
+T17	Exp 184 222	Receptor activator of NF-kappaB (RANK)
+T18	Exp 364 367	Its
+R1	Coref Anaphora:T18 Antecedent:T17	[T2, T3]

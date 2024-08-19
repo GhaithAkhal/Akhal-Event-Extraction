@@ -1,0 +1,5 @@
+T18	Exp 1026 1031	IL-11
+T19	Exp 1114 1117	its
+T20	Exp 1170 1173	its
+R1	Coref Anaphora:T19 Antecedent:T18	[T15]
+R2	Coref Anaphora:T20 Antecedent:T18	[T15]

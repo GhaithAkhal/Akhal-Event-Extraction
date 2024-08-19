@@ -1,0 +1,10 @@
+T22	Exp 1495 1528	the HTLV-1 transactivator protein	1521 1528	protein
+T23	Exp 1530 1533	tax
+T24	Exp 1614 1616	it
+T25	Exp 1827 1884	other transcription factors or coactivators of NF-kappa B
+T26	Exp 1921 1926	these
+T27	Exp 2113 2121	the fact
+T28	Exp 2122 2126	that
+R1	Coref Anaphora:T24 Antecedent:T22
+R2	Coref Anaphora:T26 Antecedent:T25
+R3	Coref Anaphora:T28 Antecedent:T27

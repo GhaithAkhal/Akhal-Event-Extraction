@@ -1,0 +1,21 @@
+T12	Entity 39 58	zinc finger domains
+T13	Entity 187 201	host cell gene
+T14	Entity 294 297	DNA
+T15	Entity 463 473	amino acid
+T16	Entity 497 515	DNA-binding domain
+T17	Entity 562 571	serine 61
+T18	Entity 689 701	threonine 78
+T19	Entity 788 800	threonine 78
+T20	Entity 972 983	position 61
+T21	Entity 985 997	Threonine 78
+T22	Entity 1014 1019	D-box
+T23	Entity 1145 1166	serine at position 61
+R1	Protein-Component Arg1:T1 Arg2:T12
+R2	Protein-Component Arg1:T5 Arg2:T16
+R3	Protein-Component Arg1:T6 Arg2:T16
+R4	Protein-Component Arg1:T6 Arg2:T15
+R5	Protein-Component Arg1:T6 Arg2:T17
+R6	Protein-Component Arg1:T5 Arg2:T15
+R7	Protein-Component Arg1:T8 Arg2:T19
+R8	Protein-Component Arg1:T10 Arg2:T21
+R9	Protein-Component Arg1:T10 Arg2:T22

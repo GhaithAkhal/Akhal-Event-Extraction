@@ -1,0 +1,42 @@
+T1	Bacterium 0 26	Wigglesworthia glossinidia
+T2	Bacterium 27 53	Wigglesworthia glossinidia
+T3	HostPart 67 70	gut
+T4	Host 78 88	tsetse fly
+T5	Bacterium 157 183	Wigglesworthia glossinidia
+T6	Host 201 221	Glossina brevipalpis
+T7	Bacterium 388 414	Wigglesworthia glossinidia
+T8	HostPart 432 435	gut
+T9	Host 457 467	tsetse fly
+T10	Host 602 605	fly
+T11	Host 663 669	insect
+T12	Bacterium 1061 1075	Wigglesworthia
+T13	Host 1088 1106	adult tsetse flies
+T14	Host 1110 1116	larvae
+T15	Host 1122 1139	female tsetse fly
+T16	Host 1226 1232	mother
+T17	HostPart 1235 1239	milk
+T18	Host 1331 1337	larval
+T19	HostPart 1338 1343	cells
+T20	Host 1809 1821	tsetse flies
+*	Equiv T14 T18
+*	Equiv T3 T8
+*	Equiv T1 T2
+*	Equiv T1 T5
+*	Equiv T1 T7
+*	Equiv T1 T12
+*	Equiv T15 T16
+*	Equiv T4 T6
+*	Equiv T4 T9
+*	Equiv T4 T10
+*	Equiv T4 T20
+E1	Localization Bacterium:T1 Localization:T4
+E2	Localization Bacterium:T1 Localization:T3
+E3	Localization Bacterium:T1 Localization:T14
+E4	Localization Bacterium:T1 Localization:T11
+E5	Localization Bacterium:T1 Localization:T17
+E6	Localization Bacterium:T1 Localization:T19
+E7	Localization Bacterium:T1 Localization:T13
+E8	PartOf Host:T4 Part:T3
+E9	PartOf Host:T14 Part:T19
+E10	Localization Bacterium:T1 Localization:T15
+E11	PartOf Host:T15 Part:T17

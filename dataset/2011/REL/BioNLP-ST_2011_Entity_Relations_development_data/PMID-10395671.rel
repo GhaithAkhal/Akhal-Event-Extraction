@@ -1,0 +1,8 @@
+T22	Entity 612 621	NF-kappaB
+T23	Entity 638 642	AP-1
+T24	Entity 740 759	NF-kappaB complexes
+T25	Entity 828 845	NF-kappaB complex
+T26	Entity 986 994	tyrosine
+T27	Entity 1200 1203	DNA
+R1	Subunit-Complex Arg1:T12 Arg2:T25
+R2	Subunit-Complex Arg1:T10 Arg2:T25

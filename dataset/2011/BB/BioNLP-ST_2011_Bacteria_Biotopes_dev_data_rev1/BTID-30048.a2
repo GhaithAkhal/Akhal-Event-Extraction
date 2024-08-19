@@ -1,0 +1,23 @@
+T1	Host 32 37	human
+T2	HostPart 38 49	oral cavity
+T3	Bacterium 50 74	Streptococcus salivarius
+T4	HostPart 119 130	oral cavity
+T5	Host 134 148	healthy humans
+T6	HostPart 196 209	dental plaque
+T7	HostPart 327 340	dental plaque
+T8	Medical 651 670	surgical procedures
+T9	HostPart 887 900	dental plaque
+T10	Host 1196 1204	subjects
+T11	Host 1212 1229	medical personnel
+*	Equiv T6 T7
+*	Equiv T6 T9
+*	Equiv T2 T4
+E1	Localization Bacterium:T3 Localization:T1
+E2	Localization Bacterium:T3 Localization:T2
+E3	PartOf Host:T5 Part:T6
+E4	Localization Bacterium:T3 Localization:T6
+E5	Localization Bacterium:T3 Localization:T10
+E6	PartOf Host:T1 Part:T2
+E7	Localization Bacterium:T3 Localization:T8
+E8	Localization Bacterium:T3 Localization:T5
+E9	Localization Bacterium:T3 Localization:T11

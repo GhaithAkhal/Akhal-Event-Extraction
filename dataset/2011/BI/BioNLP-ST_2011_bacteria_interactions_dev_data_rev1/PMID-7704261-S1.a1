@@ -1,0 +1,42 @@
+T1	Gene 155 162	spoIVCB
+T2	Gene 167 174	spoIIIC
+W1	Word 0 2	As
+W2	Word 3 7	part
+W3	Word 8 10	of
+W4	Word 11 14	the
+W5	Word 15 32	Bacillus subtilis
+W6	Word 33 39	genome
+W7	Word 40 50	sequencing
+W8	Word 51 58	project
+W9	Word 60 62	we
+W10	Word 63 67	have
+W11	Word 68 78	determined
+W12	Word 79 82	the
+W13	Word 83 91	complete
+W14	Word 92 102	nucleotide
+W15	Word 103 111	sequence
+W16	Word 112 114	of
+W17	Word 115 116	a
+W18	Word 117 121	skin
+W19	Word 122 129	element
+W20	Word 130 135	which
+W21	Word 136 138	is
+W22	Word 139 146	located
+W23	Word 147 154	between
+W24	Word 155 162	spoIVCB
+W25	Word 163 166	and
+W26	Word 167 174	spoIIIC
+R1	subj:V_PASS-N W22 W19
+R2	mod_att:N-N W19 W18
+R3	mod_att:N-N W7 W6
+R4	subj:V-N W11 W9
+R5	comp:N-N(of) W15 W19
+R6	mod_att:N-N W15 W14
+R7	obj:V-N W11 W15
+R8	comp:V_PASS-N(between) W22 W24
+R9	comp:N-N(of) W2 W8
+R10	comp:V-N(as) W11 W2
+R11	comp:V_PASS-N(between) W22 W26
+R12	mod_att:N-ADJ W15 W13
+R13	mod_att:N-N W6 W5
+R14	mod_att:N-N W8 W7

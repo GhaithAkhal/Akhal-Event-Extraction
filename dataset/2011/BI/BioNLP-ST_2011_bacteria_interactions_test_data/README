@@ -1,0 +1,27 @@
+Sample Data for BioNLP'11 Shared Task on Event Extraction -- Bacteria Gene Renaming
+
+
+- Contains 42 sentences and their named entities, interaction events, tokenization and syntactic dependencies.
+
+- For format details, please refer to the shared task homepage.
+  http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/SharedTask/
+
+
+File Descriptions:
+
+*.txt	files contain the target text in a single line.
+
+*.a1	files contain standoff annotations for named entities, tokenization and syntactic dependencies.
+	The participants will be provided with these files.
+
+History:
+
+ 7 September 2010, Initial version
+ 8 December  2010, Training release
+
+
+Authors:
+
+BioNLP'09 Shared Task organizers,
+bionlpsharedtask@gmail.com
+http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/SharedTask/

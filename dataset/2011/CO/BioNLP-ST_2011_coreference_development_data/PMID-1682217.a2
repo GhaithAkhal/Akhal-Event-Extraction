@@ -1,0 +1,11 @@
+T24	Exp 223 279	the thyroid hormone (T3/T4) receptor c-erbA (type alpha)	251 259	receptor
+T25	Exp 281 283	It
+T26	Exp 545 598	the erythrocyte-specific carbonic anhydrase II (CAII)
+T27	Exp 600 606	a gene
+T28	Exp 607 612	whose
+T29	Exp 1505 1511	v-erbA
+T30	Exp 1528 1531	its
+R1	Coref Anaphora:T25 Antecedent:T24	[T5]
+R2	Coref Anaphora:T27 Antecedent:T26	[T8, T9]
+R3	Coref Anaphora:T28 Antecedent:T27
+R4	Coref Anaphora:T30 Antecedent:T29	[T23]

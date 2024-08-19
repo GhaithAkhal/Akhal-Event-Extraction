@@ -1,0 +1,50 @@
+T1	Gene 4 27	sigma B structural gene
+T2	Gene 29 33	sigB
+T3	GeneComplex 46 52	operon
+T4	Gene 70 75	genes
+T5	GeneProduct 82 90	products
+T6	Protein 118 125	sigma B
+T7	Action 126 134	activity
+W1	Word 0 3	The
+W2	Word 4 11	sigma B
+W3	Word 12 22	structural
+W4	Word 23 27	gene
+W5	Word 29 33	sigB
+W6	Word 35 39	lies
+W7	Word 40 42	in
+W8	Word 43 45	an
+W9	Word 46 52	operon
+W10	Word 53 57	with
+W11	Word 58 63	three
+W12	Word 64 69	other
+W13	Word 70 75	genes
+W14	Word 76 81	whose
+W15	Word 82 90	products
+W16	Word 91 95	have
+W17	Word 96 100	been
+W18	Word 101 106	shown
+W19	Word 107 109	to
+W20	Word 110 117	control
+W21	Word 118 125	sigma B
+W22	Word 126 134	activity
+W23	Word 135 137	in
+W24	Word 138 146	response
+W25	Word 147 149	to
+W26	Word 150 163	environmental
+W27	Word 164 170	stress
+R1	subj:V-N W6 W4
+R2	mod_att:N-ADJ W27 W26
+R3	subj:V-N W20 W15
+R4	mod_att:N-N W22 W21
+R5	comp:N-N(to) W24 W27
+R6	mod_att:N-N W4 W2
+R7	mod_att:N-ADJ W4 W3
+R8	comp:V-N(with) W6 W13
+R9	comp:V-N(in) W20 W24
+R10	mod_att:N-ADJ W13 W11
+R11	comp:V-N(in) W6 W9
+R12	mod_att:N-ADJ W13 W12
+R13	obj:V-N W20 W22
+R14	comp:V_PASS-V(to) W18 W20
+R15	comp:N-N(of) W15 W13
+R16	appos W4 W5

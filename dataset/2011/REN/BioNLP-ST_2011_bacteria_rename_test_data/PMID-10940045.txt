@@ -1,0 +1,2 @@
+Bacillus subtilis comZ (yjzA) negatively affects expression of comG but not comK.
+The yjzA open reading frame, along with med, constitutes an operon. Disruption of yjzA caused a five-fold enhancement of comG expression, thereby leading to a three-fold-higher transformation efficiency. The expression of comK and the other three late competence operons was not affected significantly in the yjzA-deficient mutant.

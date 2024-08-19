@@ -1,0 +1,15 @@
+T16	Exp 181 199	Adhesion molecules
+T17	Exp 200 204	that
+T18	Exp 612 626	the leukocytes
+T19	Exp 632 636	they
+T20	Exp 749 771	an anti-P-selectin mAb
+T21	Exp 772 776	that
+T22	Exp 786 796	P-selectin
+T23	Exp 813 816	its
+T24	Exp 1127 1137	P-selectin
+T25	Exp 1147 1150	its
+R1	Coref Anaphora:T17 Antecedent:T16
+R2	Coref Anaphora:T19 Antecedent:T18
+R3	Coref Anaphora:T21 Antecedent:T20	[T9]
+R4	Coref Anaphora:T23 Antecedent:T22	[T10]
+R5	Coref Anaphora:T25 Antecedent:T24	[T15]

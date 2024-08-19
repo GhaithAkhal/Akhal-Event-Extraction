@@ -1,0 +1,21 @@
+*	Equiv T17 T18
+T25	Entity 327 340	IL-4 receptor
+T26	Entity 342 347	IL-4R
+T27	Entity 447 453	IL-13R
+T28	Entity 529 535	IL-15R
+T29	Entity 780 786	IL-13R
+T30	Entity 873 886	Cepsilon gene
+T31	Entity 1078 1085	domains
+T32	Entity 1128 1148	intracellular domain
+T33	Entity 1306 1339	-binding proline-rich Box1 region
+T34	Entity 1524 1533	homodimer
+R1	Subunit-Complex Arg1:T6 Arg2:T25
+R2	Subunit-Complex Arg1:T7 Arg2:T28
+R3	Subunit-Complex Arg1:T6 Arg2:T27
+R4	Subunit-Complex Arg1:T7 Arg2:T25
+R5	Subunit-Complex Arg1:T6 Arg2:T26
+R6	Subunit-Complex Arg1:T7 Arg2:T26
+R7	Protein-Component Arg1:T16 Arg2:T32
+R8	Protein-Component Arg1:T15 Arg2:T31
+R9	Protein-Component Arg1:T21 Arg2:T33
+R10	Subunit-Complex Arg1:T22 Arg2:T34

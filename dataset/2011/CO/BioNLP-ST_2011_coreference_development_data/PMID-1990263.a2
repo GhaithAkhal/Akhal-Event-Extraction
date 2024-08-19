@@ -1,0 +1,9 @@
+T10	Exp 122 164	high levels of the neuropeptide enkephalin	127 133	levels
+T11	Exp 165 170	which
+T12	Exp 367 369	B2
+T13	Exp 371 376	which
+T14	Exp 776 786	NF-kappa B
+T15	Exp 902 912	the factor
+R1	Coref Anaphora:T11 Antecedent:T10
+R2	Coref Anaphora:T13 Antecedent:T12
+R3	Coref Anaphora:T15 Antecedent:T14

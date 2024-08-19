@@ -1,0 +1,37 @@
+T1	Protein 0 7	SpoIIID
+T2	Protein 13 51	sequence-specific, DNA-binding protein
+T3	Transcription 80 93	transcription
+T4	Gene 107 112	genes
+T5	PolymeraseComplex 116 138	sigma K RNA polymerase
+W1	Word 0 7	SpoIIID
+W2	Word 8 10	is
+W3	Word 11 12	a
+W4	Word 13 30	sequence-specific
+W5	Word 32 43	DNA-binding
+W6	Word 44 51	protein
+W7	Word 52 56	that
+W8	Word 57 66	activates
+W9	Word 67 69	or
+W10	Word 70 79	represses
+W11	Word 80 93	transcription
+W12	Word 94 96	of
+W13	Word 97 106	different
+W14	Word 107 112	genes
+W15	Word 113 115	by
+W16	Word 116 123	sigma K
+W17	Word 124 127	RNA
+W18	Word 128 138	polymerase
+W19	Word 139 141	in
+W20	Word 142 147	vitro
+R1	comp:N-N(by) W11 W18
+R2	obj:V-N W10 W11
+R3	obj:V-N W8 W11
+R4	comp:N-N(of) W11 W14
+R5	comp:N-N(in) W11 W20
+R6	mod_att:N-N W18 W17
+R7	mod_att:N-N W6 W5
+R8	subj:V-N W8 W1
+R9	mod_pred:N-N W1 W6
+R10	mod_att:N-ADJ W6 W4
+R11	subj:V-N W10 W1
+R12	mod_att:N-N W17 W16

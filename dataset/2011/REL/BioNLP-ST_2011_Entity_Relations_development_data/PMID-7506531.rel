@@ -1,0 +1,12 @@
+*	Equiv T9 T10
+T12	Entity 13 21	tyrosine
+T13	Entity 106 114	tyrosine
+T14	Entity 136 144	tyrosine
+T15	Entity 296 304	tyrosine
+T16	Entity 545 553	tyrosine
+T17	Entity 630 638	tyrosine
+T18	Entity 995 1003	tyrosine
+T19	Entity 1052 1077	phosphorylated substrates
+T20	Entity 1518 1528	NF-kappa B
+T21	Entity 1771 1779	tyrosine
+R1	Protein-Component Arg1:T3 Arg2:T17

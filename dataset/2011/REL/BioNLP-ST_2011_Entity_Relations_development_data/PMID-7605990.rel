@@ -1,0 +1,21 @@
+*	Equiv T2 T3
+T25	Entity 85 93	promoter
+T26	Entity 216 224	promoter
+T27	Entity 406 413	alpha A
+T28	Entity 418 425	alpha B
+T29	Entity 455 462	alpha B
+T30	Entity 470 485	mouse homologue
+T31	Entity 600 612	alpha A-gene
+T32	Entity 653 660	alpha B
+T33	Entity 710 718	promoter
+T34	Entity 778 788	PEBP2 site
+T35	Entity 813 821	promoter
+T36	Entity 889 897	promoter
+T37	Entity 1544 1552	promoter
+R1	Protein-Component Arg1:T1 Arg2:T25
+R2	Protein-Component Arg1:T2 Arg2:T26
+R3	Protein-Component Arg1:T8 Arg2:T33
+R4	Protein-Component Arg1:T12 Arg2:T34
+R5	Protein-Component Arg1:T12 Arg2:T35
+R6	Protein-Component Arg1:T15 Arg2:T36
+R7	Protein-Component Arg1:T24 Arg2:T37

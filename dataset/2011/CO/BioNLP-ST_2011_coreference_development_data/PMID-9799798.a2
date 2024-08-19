@@ -1,0 +1,3 @@
+T14	Exp 1221 1233	Sp1 and AP-2
+T15	Exp 1275 1302	these transcription factors	1281 1302	transcription factors
+R1	Coref Anaphora:T15 Antecedent:T14	[T9]

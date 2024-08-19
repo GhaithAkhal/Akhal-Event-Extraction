@@ -1,0 +1,9 @@
+T20	Exp 234 331	a consensus sequence for the polyomavirus enhancer binding-protein 2 (PEBP2) transcription factor	246 254	sequence
+T21	Exp 333 338	which
+T22	Exp 587 621	alpha A1 (an alpha A-gene product)
+T23	Exp 682 687	their
+T24	Exp 1248 1277	PEBP2 site-binding protein(s)	1267 1277	protein(s)
+T25	Exp 1278 1282	that
+R1	Coref Anaphora:T21 Antecedent:T20
+R2	Coref Anaphora:T23 Antecedent:T22	[T5]
+R3	Coref Anaphora:T25 Antecedent:T24

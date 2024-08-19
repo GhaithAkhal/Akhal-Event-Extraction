@@ -1,0 +1,128 @@
+T1	Protein 19 45	AsiA form bacteriophage T4
+T2	Protein 79 87	sigma 70
+T3	Protein 89 93	FlgM
+T4	Protein 172 202	flagella sigma factor sigma 28
+T5	Protein 204 211	SpoIIAB
+T6	Protein 232 265	sporulation-specific sigma factor
+T7	Protein 267 274	sigma F
+T8	Protein 279 286	sigma G
+T9	Protein 310 314	RbsW
+T10	Protein 346 382	stress response sigma factor sigma B
+T11	Protein 388 392	DnaK
+T12	Protein 396 440	general regulator of the heat shock response
+T13	Protein 473 505	heat shock sigma factor sigma 32
+W1	Word 0 3	The
+W2	Word 4 9	class
+W3	Word 10 18	includes
+W4	Word 19 23	AsiA
+W5	Word 24 28	form
+W6	Word 29 42	bacteriophage
+W7	Word 43 45	T4
+W8	Word 47 52	which
+W9	Word 53 61	inhibits
+W10	Word 62 78	Escherichia coli
+W11	Word 79 87	sigma 70
+W12	Word 89 93	FlgM
+W13	Word 95 102	present
+W14	Word 103 105	in
+W15	Word 106 110	both
+W16	Word 111 124	gram-positive
+W17	Word 125 128	and
+W18	Word 129 142	gram-negative
+W19	Word 143 151	bacteria
+W20	Word 153 158	which
+W21	Word 159 167	inhibits
+W22	Word 168 171	the
+W23	Word 172 180	flagella
+W24	Word 181 186	sigma
+W25	Word 187 193	factor
+W26	Word 194 202	sigma 28
+W27	Word 204 211	SpoIIAB
+W28	Word 213 218	which
+W29	Word 219 227	inhibits
+W30	Word 228 231	the
+W31	Word 232 252	sporulation-specific
+W32	Word 253 258	sigma
+W33	Word 259 265	factor
+W34	Word 267 274	sigma F
+W35	Word 275 278	and
+W36	Word 279 286	sigma G
+W37	Word 288 290	of
+W38	Word 291 308	Bacillus subtilis
+W39	Word 310 314	RbsW
+W40	Word 315 317	of
+W41	Word 318 329	B. subtilis
+W42	Word 331 336	which
+W43	Word 337 345	inhibits
+W44	Word 346 352	stress
+W45	Word 353 361	response
+W46	Word 362 367	sigma
+W47	Word 368 374	factor
+W48	Word 375 382	sigma B
+W49	Word 384 387	and
+W50	Word 388 392	DnaK
+W51	Word 394 395	a
+W52	Word 396 403	general
+W53	Word 404 413	regulator
+W54	Word 414 416	of
+W55	Word 417 420	the
+W56	Word 421 425	heat
+W57	Word 426 431	shock
+W58	Word 432 440	response
+W59	Word 442 447	which
+W60	Word 448 450	in
+W61	Word 451 459	bacteria
+W62	Word 460 468	inhibits
+W63	Word 469 472	the
+W64	Word 473 477	heat
+W65	Word 478 483	shock
+W66	Word 484 489	sigma
+W67	Word 490 496	factor
+W68	Word 497 505	sigma 32
+R1	mod_att:N-N W7 W6
+R2	obj:V-N W21 W26
+R3	subj:V-N W3 W2
+R4	subj:V-N W62 W50
+R5	mod_att:N-N W45 W44
+R6	comp:ADJ-N(in) W13 W19
+R7	mod_att:N-ADJ W19 W18
+R8	mod_att:N-ADJ W19 W16
+R9	subj:V-N W29 W27
+R10	obj:V-N W3 W50
+R11	mod_att:N-N W65 W64
+R12	appos W50 W53
+R13	mod_att:N-N W25 W24
+R14	mod_att:N-N W58 W57
+R15	mod_att:N-N W57 W56
+R16	obj:V-N W29 W33
+R17	mod_att:N-ADJ W53 W52
+R18	obj:V-N W9 W11
+R19	mod_att:N-N W11 W10
+R20	subj:V-N W9 W7
+R21	mod_att:N-N W67 W66
+R22	mod_att:N-N W67 W65
+R23	mod_att:N-N W47 W45
+R24	appos W33 W34
+R25	comp:N-N(of) W53 W58
+R26	subj:V-N W21 W12
+R27	mod_att:N-N W7 W5
+R28	subj:V-N W43 W39
+R29	mod_att:N-ADJ W25 W23
+R30	obj:V-N W3 W7
+R31	obj:V-N W43 W48
+R32	mod_att:N-N W33 W32
+R33	mod_att:N-N W26 W25
+R34	mod_att:N-N W47 W46
+R35	mod_post:N-ADJ W12 W13
+R36	mod_att:N-ADJ W33 W31
+R37	obj:V-N W3 W39
+R38	obj:V-N W62 W68
+R39	mod_att:N-N W68 W67
+R40	obj:V-N W3 W12
+R41	comp:N-N(of) W39 W41
+R42	comp:V-N(in) W62 W61
+R43	mod_att:N-N W5 W4
+R44	comp:N-N(of) W33 W38
+R45	obj:V-N W3 W27
+R46	appos W33 W36
+R47	mod_att:N-N W48 W47

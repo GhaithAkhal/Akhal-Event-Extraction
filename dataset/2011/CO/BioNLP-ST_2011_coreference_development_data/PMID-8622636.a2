@@ -1,0 +1,6 @@
+T15	Exp 676 743	a secreted-type placental alkaline phosphatase (PLAP) reporter gene	739 743	gene
+T16	Exp 744 749	whose
+T17	Exp 1958 1973	I kappa B-alpha
+T18	Exp 1975 1980	which
+R1	Coref Anaphora:T16 Antecedent:T15	[T3, T2]
+R2	Coref Anaphora:T18 Antecedent:T17	[T14]

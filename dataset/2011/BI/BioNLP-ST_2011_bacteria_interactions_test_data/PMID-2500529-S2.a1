@@ -1,0 +1,46 @@
+T1	GeneProduct 4 36	product of regulatory gene spo0H
+T2	Gene 31 36	spo0H
+T3	Protein 43 70	RNA polymerase sigma factor
+T4	Protein 78 85	sigma H
+T5	Transcription 101 114	transcription
+T6	Gene 120 136	sporulation gene
+T7	Gene 146 151	spoVG
+W1	Word 0 3	The
+W2	Word 4 11	product
+W3	Word 12 14	of
+W4	Word 15 25	regulatory
+W5	Word 26 30	gene
+W6	Word 31 36	spo0H
+W7	Word 37 39	is
+W8	Word 40 42	an
+W9	Word 43 46	RNA
+W10	Word 47 57	polymerase
+W11	Word 58 63	sigma
+W12	Word 64 70	factor
+W13	Word 71 77	called
+W14	Word 78 85	sigma H
+W15	Word 87 92	which
+W16	Word 93 100	directs
+W17	Word 101 114	transcription
+W18	Word 115 117	of
+W19	Word 118 119	a
+W20	Word 120 131	sporulation
+W21	Word 132 136	gene
+W22	Word 137 142	known
+W23	Word 143 145	as
+W24	Word 146 151	spoVG
+R1	subj:V-N W16 W12
+R2	subj:V_PASS-N W13 W12
+R3	comp:N-N(of) W2 W6
+R4	mod_att:N-N W21 W20
+R5	subj:V_PASS-N W22 W21
+R6	mod_att:N-ADJ W5 W4
+R7	comp:V_PASS-N(as) W22 W24
+R8	mod_att:N-N W12 W11
+R9	obj:V_PASS-N W13 W14
+R10	obj:V-N W16 W17
+R11	mod_att:N-N W6 W5
+R12	comp:N-N(of) W17 W21
+R13	mod_pred:N-N W2 W12
+R14	mod_att:N-N W10 W9
+R15	mod_att:N-N W12 W10

@@ -1,0 +1,58 @@
+T1	Action 4 12	addition
+T2	Protein 16 20	ClpX
+T3	Transcription 33 46	transcription
+T4	PolymeraseComplex 88 103	RNAP holoenzyme
+T5	Action 104 112	activity
+T6	PolymeraseComplex 118 129	sigmaH-RNAP
+T7	Protein 167 171	ClpX
+T8	PolymeraseComplex 199 210	sigmaA-RNAP
+W1	Word 0 3	The
+W2	Word 4 12	addition
+W3	Word 13 15	of
+W4	Word 16 20	ClpX
+W5	Word 21 23	to
+W6	Word 24 26	in
+W7	Word 27 32	vitro
+W8	Word 33 46	transcription
+W9	Word 47 56	reactions
+W10	Word 57 65	resulted
+W11	Word 66 68	in
+W12	Word 69 72	the
+W13	Word 73 84	stimulation
+W14	Word 85 87	of
+W15	Word 88 92	RNAP
+W16	Word 93 103	holoenzyme
+W17	Word 104 112	activity
+W18	Word 114 117	but
+W19	Word 118 124	sigmaH
+W20	Word 125 129	RNAP
+W21	Word 130 133	was
+W22	Word 134 142	observed
+W23	Word 143 145	to
+W24	Word 146 148	be
+W25	Word 149 153	more
+W26	Word 154 163	sensitive
+W27	Word 164 166	to
+W28	Word 167 171	ClpX
+W29	Word 172 181	dependent
+W30	Word 182 193	stimulation
+W31	Word 194 198	than
+W32	Word 199 205	sigmaA
+W33	Word 206 210	RNAP
+R1	mod_att:N-ADJ W30 W29
+R2	mod_att:N-N W9 W8
+R3	comp:N-N(of) W2 W4
+R4	mod:ADJ-ADV W26 W25
+R5	mod_att:N-N W33 W32
+R6	mod_att:N-N W17 W16
+R7	mod_att:N-N W16 W15
+R8	comp:V-N(in) W10 W13
+R9	subj:V-N W10 W2
+R10	comp:N-N(in) W9 W7
+R11	mod:ADJ-N W29 W28
+R12	comp:N-N(to) W2 W9
+R13	comp:ADJ-N(than) W26 W33
+R14	mod_pred:N-ADJ W20 W26
+R15	comp:N-N(of) W13 W17
+R16	comp:ADJ-N(to) W26 W30
+R17	mod_att:N-N W20 W19

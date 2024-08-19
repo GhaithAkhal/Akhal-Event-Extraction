@@ -1,0 +1,3 @@
+T11	Exp 115 148	A transcription factor NF kappa B
+T12	Exp 150 155	which
+R1	Coref Anaphora:T12 Antecedent:T11

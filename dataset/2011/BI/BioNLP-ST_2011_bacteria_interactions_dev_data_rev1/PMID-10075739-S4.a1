@@ -1,0 +1,32 @@
+T1	Protein 34 38	GerE
+T2	Transcription 56 69	transcription
+T3	Gene 86 90	sigK
+T4	Protein 105 111	sigmaK
+W1	Word 0 10	Previously
+W2	Word 12 14	it
+W3	Word 15 18	was
+W4	Word 19 24	shown
+W5	Word 25 29	that
+W6	Word 30 33	the
+W7	Word 34 38	GerE
+W8	Word 39 46	protein
+W9	Word 47 55	inhibits
+W10	Word 56 69	transcription
+W11	Word 70 72	in
+W12	Word 73 78	vitro
+W13	Word 79 81	of
+W14	Word 82 85	the
+W15	Word 86 90	sigK
+W16	Word 91 95	gene
+W17	Word 96 104	encoding
+W18	Word 105 111	sigmaK
+R1	subj:V-N W9 W8
+R2	subj:V_PASS-N W4 W2
+R3	mod:V_PASS-ADV W4 W1
+R4	mod_att:N-N W8 W7
+R5	subj:V-N W17 W16
+R6	comp:N-N(of) W10 W16
+R7	mod_att:N-N W16 W15
+R8	comp:N-N(in) W10 W12
+R9	obj:V-N W9 W10
+R10	obj:V-N W17 W18

@@ -1,0 +1,15 @@
+*	Equiv T2 T3
+T18	Entity 872 880	promoter
+T19	Entity 899 945	nuclear factor-kappaB (NF-kappaB) binding site
+T20	Entity 899 920	nuclear factor-kappaB
+T21	Entity 922 931	NF-kappaB
+T22	Entity 959 986	functional RBP binding site
+T23	Entity 1133 1153	recognition sequence
+T24	Entity 1279 1288	NF-kappaB
+T25	Entity 1338 1347	NF-kappaB
+T26	Entity 1446 1455	NF-kappaB
+T27	Entity 1535 1544	NF-kappaB
+T28	Entity 1586 1594	promoter
+T29	Entity 1688 1697	NF-kappaB
+R1	Protein-Component Arg1:T12 Arg2:T18
+R2	Protein-Component Arg1:T16 Arg2:T28

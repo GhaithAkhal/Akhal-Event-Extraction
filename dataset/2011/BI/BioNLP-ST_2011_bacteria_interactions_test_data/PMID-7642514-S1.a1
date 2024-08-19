@@ -1,0 +1,41 @@
+T1	Protein 14 25	pro-sigma K
+T2	Action 26 36	processing
+T3	Action 120 128	presence
+T4	Protein 132 146	active sigma G
+W1	Word 0 10	Activation
+W2	Word 11 13	of
+W3	Word 14 25	pro-sigma K
+W4	Word 26 36	processing
+W5	Word 37 39	in
+W6	Word 40 43	the
+W7	Word 44 50	mother
+W8	Word 51 55	cell
+W9	Word 56 58	at
+W10	Word 59 63	late
+W11	Word 64 70	stages
+W12	Word 71 73	of
+W13	Word 74 85	sporulation
+W14	Word 86 88	in
+W15	Word 89 106	Bacillus subtilis
+W16	Word 107 115	requires
+W17	Word 116 119	the
+W18	Word 120 128	presence
+W19	Word 129 131	of
+W20	Word 132 138	active
+W21	Word 139 146	sigma G
+W22	Word 147 149	in
+W23	Word 150 153	the
+W24	Word 154 163	forespore
+R1	comp:N-N(at) W4 W11
+R2	comp:N-N(of) W11 W13
+R3	comp:N-N(in) W18 W24
+R4	obj:V-N W16 W18
+R5	subj:V-N W16 W1
+R6	mod_att:N-N W8 W7
+R7	comp:N-N(in) W4 W8
+R8	mod_att:N-N W4 W3
+R9	comp:N-N(of) W1 W4
+R10	mod_att:N-ADJ W21 W20
+R11	comp:N-N(of) W18 W21
+R12	comp:N-N(in) W13 W15
+R13	mod_att:N-ADJ W11 W10

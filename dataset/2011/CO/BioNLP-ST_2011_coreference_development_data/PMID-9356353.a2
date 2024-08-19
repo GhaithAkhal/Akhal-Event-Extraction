@@ -1,0 +1,6 @@
+T13	Exp 473 480	the DSE
+T14	Exp 528 532	they
+T15	Exp 1802 1813	a mechanism
+T16	Exp 1817 1822	which
+R1	Coref Anaphora:T14 Antecedent:T13
+R2	Coref Anaphora:T16 Antecedent:T15

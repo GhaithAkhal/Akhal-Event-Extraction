@@ -1,0 +1,6 @@
+T5	Exp 850 865	I kappa B-alpha
+T6	Exp 922 944	this inhibitor protein
+T7	Exp 1227 1246	additional evidence	1238 1246	evidence
+T8	Exp 1247 1251	that
+R1	Coref Anaphora:T6 Antecedent:T5	[T1]
+R2	Coref Anaphora:T8 Antecedent:T7

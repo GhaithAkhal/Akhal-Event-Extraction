@@ -1,0 +1,23 @@
+T18	Entity 8 24	response element
+T19	Entity 64 72	promoter
+T20	Entity 78 95	composite element
+T21	Entity 336 352	response element
+T22	Entity 400 410	GAS motifs
+T23	Entity 425 442	Ets binding sites
+T24	Entity 444 447	EBS
+T25	Entity 476 495	consensus GAS motif
+T26	Entity 503 513	GATA motif
+T27	Entity 534 557	non-consensus GAS motif
+T28	Entity 740 761	heterologous promoter
+T29	Entity 855 871	response element
+T30	Entity 1008 1011	EBS
+T31	Entity 1028 1047	consensus GAS motif
+T32	Entity 1105 1113	promoter
+T33	Entity 1146 1154	promoter
+T34	Entity 1175 1199	complex upstream element
+T35	Entity 1226 1239	binding sites
+R1	Protein-Component Arg1:T2 Arg2:T18
+R2	Protein-Component Arg1:T2 Arg2:T20
+R3	Protein-Component Arg1:T2 Arg2:T19
+R4	Protein-Component Arg1:T15 Arg2:T32
+R5	Protein-Component Arg1:T17 Arg2:T33

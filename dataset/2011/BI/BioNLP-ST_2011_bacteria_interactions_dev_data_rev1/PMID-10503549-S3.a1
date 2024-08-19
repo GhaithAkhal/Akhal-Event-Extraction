@@ -1,0 +1,48 @@
+T1	Gene 21 25	katX
+T2	Protein 36 42	sigmaB
+T3	GeneFamily 53 72	general stress gene
+T4	Gene 80 82	it
+W1	Word 0 2	We
+W2	Word 3 15	demonstrated
+W3	Word 16 20	that
+W4	Word 21 25	katX
+W5	Word 26 28	is
+W6	Word 29 33	also
+W7	Word 34 35	a
+W8	Word 36 42	sigmaB
+W9	Word 43 52	dependent
+W10	Word 53 60	general
+W11	Word 61 67	stress
+W12	Word 68 72	gene
+W13	Word 74 79	since
+W14	Word 80 82	it
+W15	Word 83 85	is
+W16	Word 86 94	strongly
+W17	Word 95 102	induced
+W18	Word 103 105	by
+W19	Word 106 110	heat
+W20	Word 112 116	salt
+W21	Word 117 120	and
+W22	Word 121 128	ethanol
+W23	Word 129 135	stress
+W24	Word 137 139	as
+W25	Word 140 144	well
+W26	Word 145 147	as
+W27	Word 148 150	by
+W28	Word 151 157	energy
+W29	Word 158 167	depletion
+R1	mod:V_PASS-ADV W17 W16
+R2	mod_att:N-N W23 W19
+R3	comp:V_PASS-N(by) W17 W23
+R4	subj:V_PASS-N W17 W14
+R5	subj:V-N W2 W1
+R6	mod_att:N-N W23 W22
+R7	mod_att:N-ADJ W12 W9
+R8	comp:V_PASS-N(by) W17 W29
+R9	mod:ADJ-N W9 W8
+R10	mod_att:N-ADJ W11 W10
+R11	mod:V-ADV W5 W6
+R12	mod_att:N-N W23 W20
+R13	mod_att:N-N W12 W11
+R14	mod_att:N-N W29 W28
+R15	mod_pred:N-N W4 W12

@@ -1,0 +1,63 @@
+T1	Gene 18 24	spoIVB
+T2	Transcription 25 38	transcription
+T3	Action 69 75	action
+T4	Gene 83 118	mother cell regulatory gene spoIIID
+T5	Transcription 153 166	transcription
+T6	GeneFamily 178 203	forespore-expressed genes
+W1	Word 0 2	We
+W2	Word 3 7	also
+W3	Word 8 12	show
+W4	Word 13 17	that
+W5	Word 18 24	spoIVB
+W6	Word 25 38	transcription
+W7	Word 39 41	is
+W8	Word 42 51	partially
+W9	Word 52 61	dependent
+W10	Word 62 64	on
+W11	Word 65 68	the
+W12	Word 69 75	action
+W13	Word 76 78	of
+W14	Word 79 82	the
+W15	Word 83 89	mother
+W16	Word 90 94	cell
+W17	Word 95 105	regulatory
+W18	Word 106 110	gene
+W19	Word 111 118	spoIIID
+W20	Word 120 121	a
+W21	Word 122 129	finding
+W22	Word 130 134	that
+W23	Word 135 143	suggests
+W24	Word 144 148	that
+W25	Word 149 152	the
+W26	Word 153 166	transcription
+W27	Word 167 169	of
+W28	Word 170 177	certain
+W29	Word 178 197	forespore-expressed
+W30	Word 198 203	genes
+W31	Word 204 206	is
+W32	Word 207 217	influenced
+W33	Word 218 220	by
+W34	Word 221 227	events
+W35	Word 228 230	in
+W36	Word 231 234	the
+W37	Word 235 241	mother
+W38	Word 242 246	cell
+R1	mod_att:N-ADJ W30 W28
+R2	subj:V_PASS-N W32 W26
+R3	mod_att:N-ADJ W18 W17
+R4	mod_att:N-N W16 W15
+R5	mod_att:N-N W6 W5
+R6	comp:ADJ-N(on) W9 W12
+R7	comp:V_PASS-N(by) W32 W34
+R8	mod:V-ADV W3 W2
+R9	mod_att:N-N W38 W37
+R10	mod_att:N-N W18 W16
+R11	mod_pred:N-ADJ W6 W9
+R12	subj:V-N W23 W21
+R13	mod:ADJ-ADV W9 W8
+R14	comp:N-N(of) W12 W19
+R15	subj:V-N W3 W1
+R16	comp:N-N(in) W34 W38
+R17	mod_att:N-N W19 W18
+R18	comp:N-N(of) W26 W30
+R19	mod_att:N-ADJ W30 W29

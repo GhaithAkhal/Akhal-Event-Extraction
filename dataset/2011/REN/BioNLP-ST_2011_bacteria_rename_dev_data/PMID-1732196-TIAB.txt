@@ -1,0 +1,2 @@
+Characterization of the Bacillus subtilis sporulation gene spoVK.
+The sporulation gene spoVK of Bacillus subtilis was cloned by use of the insertional mutation spoVK::Tn917 omega HU8. The spoVK gene was shown to be the site of an incorrectly mapped mutation called spoVJ517. Thus, a separate spoVJ gene as defined by the 517 mutation does not exist and is instead identical with spoVK.

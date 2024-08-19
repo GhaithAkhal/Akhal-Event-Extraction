@@ -1,0 +1,9 @@
+T20	Exp 73 122	the adult beta-globin gene activator protein EKLF
+T21	Exp 409 429	the zinc finger gene
+T22	Exp 1186 1218	a competitive model of switching	1200 1205	model
+T23	Exp 1222 1227	which
+T24	Exp 1320 1344	the locus control region	1338 1344	region
+T25	Exp 1345 1349	that
+R1	Coref Anaphora:T21 Antecedent:T20	[T2]
+R2	Coref Anaphora:T23 Antecedent:T22
+R3	Coref Anaphora:T25 Antecedent:T24

@@ -1,0 +1,22 @@
+*	Equiv T4 T5
+*	Equiv T8 T9
+T22	Entity 98 105	Antigen
+T23	Entity 674 699	sequences in the promoter
+T24	Entity 691 699	promoter
+T25	Entity 722 730	enhancer
+T26	Entity 812 819	regions
+T27	Entity 1238 1246	promoter
+T28	Entity 1274 1278	CK-1
+T29	Entity 1282 1288	CD28RE
+T30	Entity 1712 1720	promoter
+T31	Entity 1733 1751	CK-1/CD28RE region
+T32	Entity 1771 1793	nuclear factor-kappa B
+T33	Entity 1956 1960	CK-1
+T34	Entity 1960 1967	/CD28RE
+T35	Entity 2024 2030	CD28RE
+R1	Protein-Component Arg1:T8 Arg2:T27
+R2	Protein-Component Arg1:T15 Arg2:T31
+R3	Protein-Component Arg1:T15 Arg2:T30
+R4	Protein-Component Arg1:T17 Arg2:T34
+R5	Protein-Component Arg1:T17 Arg2:T33
+R6	Protein-Component Arg1:T18 Arg2:T35

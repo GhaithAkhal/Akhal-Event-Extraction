@@ -1,0 +1,9 @@
+T18	Exp 385 410	proinflammatory cytokines
+T19	Exp 412 417	which
+T20	Exp 743 757	HIV expression	747 757	expression
+T21	Exp 759 764	which
+T22	Exp 979 1044	a weak induction of HIV long terminal repeat-driven transcription	986 995	induction
+T23	Exp 1046 1051	which
+R1	Coref Anaphora:T19 Antecedent:T18
+R2	Coref Anaphora:T21 Antecedent:T20
+R3	Coref Anaphora:T23 Antecedent:T22

@@ -1,0 +1,9 @@
+T8	Exp 183 214	a cyclophilin B-binding protein
+T9	Exp 215 220	whose
+T10	Exp 638 642	CAML
+T11	Exp 649 652	its
+T12	Exp 765 786	a novel protein motif	781 786	motif
+T13	Exp 787 791	that
+R1	Coref Anaphora:T9 Antecedent:T8	[T4]
+R2	Coref Anaphora:T11 Antecedent:T10	[T7]
+R3	Coref Anaphora:T13 Antecedent:T12

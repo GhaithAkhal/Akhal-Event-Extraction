@@ -1,0 +1,31 @@
+T1	Protein 13 17	GerE
+T2	Site 31 36	sites
+T3	Site 51 61	-35 region
+T4	Gene 69 73	cotD
+T5	Promoter 74 82	promoter
+W1	Word 0 2	We
+W2	Word 3 7	show
+W3	Word 8 12	that
+W4	Word 13 17	GerE
+W5	Word 18 23	binds
+W6	Word 24 26	to
+W7	Word 27 30	two
+W8	Word 31 36	sites
+W9	Word 37 41	that
+W10	Word 42 46	span
+W11	Word 47 50	the
+W12	Word 51 54	-35
+W13	Word 55 61	region
+W14	Word 62 64	of
+W15	Word 65 68	the
+W16	Word 69 73	cotD
+W17	Word 74 82	promoter
+R1	subj:V-N W2 W1
+R2	subj:V-N W10 W8
+R3	mod_att:N-ADJ W13 W12
+R4	mod_att:N-N W17 W16
+R5	subj:V-N W5 W4
+R6	comp:N-N(of) W13 W17
+R7	obj:V-N W10 W13
+R8	comp:V-N(to) W5 W8
+R9	mod_att:N-ADJ W8 W7

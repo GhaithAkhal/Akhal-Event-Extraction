@@ -1,0 +1,3 @@
+T7	Exp 1085 1123	proteins ranging between 70 and 110 kD	1085 1093	proteins
+T8	Exp 1125 1139	These proteins
+R1	Coref Anaphora:T8 Antecedent:T7

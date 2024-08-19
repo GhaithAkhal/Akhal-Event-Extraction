@@ -1,0 +1,29 @@
+T1	Protein 10 16	SpoIIE
+T2	Action 38 48	activation
+T3	Protein 104 112	sigma(F)
+W1	Word 0 8	Secondly
+W2	Word 10 16	SpoIIE
+W3	Word 17 19	is
+W4	Word 20 29	essential
+W5	Word 30 33	for
+W6	Word 34 37	the
+W7	Word 38 48	activation
+W8	Word 49 51	of
+W9	Word 52 55	the
+W10	Word 56 61	first
+W11	Word 62 82	compartment-specific
+W12	Word 83 96	transcription
+W13	Word 97 103	factor
+W14	Word 104 112	sigma(F)
+W15	Word 113 115	in
+W16	Word 116 119	the
+W17	Word 120 128	prespore
+R1	comp:N-N(of) W7 W13
+R2	comp:N-N(in) W7 W17
+R3	comp:ADJ-N(for) W4 W7
+R4	mod_att:N-N W13 W14
+R5	mod_att:N-N W13 W12
+R6	mod:V-ADV W3 W1
+R7	mod_pred:N-ADJ W2 W4
+R8	mod_att:N-ADJ W13 W11
+R9	mod_att:N-ADJ W13 W10

@@ -1,0 +1,27 @@
+T1	Protein 19 32	sigma factors
+T2	Protein 34 40	sigmaE
+T3	Protein 45 51	sigmaK
+T4	Protein 59 78	DNA-binding protein
+T5	Protein 80 87	SpoIIID
+W1	Word 0 5	Among
+W2	Word 6 10	them
+W3	Word 11 14	are
+W4	Word 15 18	two
+W5	Word 19 24	sigma
+W6	Word 25 32	factors
+W7	Word 34 40	sigmaE
+W8	Word 41 44	and
+W9	Word 45 51	sigmaK
+W10	Word 53 56	and
+W11	Word 57 58	a
+W12	Word 59 70	DNA-binding
+W13	Word 71 78	protein
+W14	Word 80 87	SpoIIID
+R1	appos W6 W7
+R2	comp:V-N(among) W3 W2
+R3	appos W6 W9
+R4	appos W13 W14
+R5	subj:V-N W3 W13
+R6	mod_att:N-N W13 W12
+R7	subj:V-N W3 W6
+R8	mod_att:N-N W6 W5

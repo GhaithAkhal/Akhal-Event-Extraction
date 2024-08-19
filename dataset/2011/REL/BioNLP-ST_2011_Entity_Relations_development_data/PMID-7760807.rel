@@ -1,0 +1,15 @@
+*	Equiv T2 T3
+*	Equiv T7 T8
+*	Equiv T9 T10
+T13	Entity 867 875	promoter
+T14	Entity 1113 1131	ICK-1 binding site
+T15	Entity 1221 1233	binding site
+T16	Entity 1239 1277	MIP-1 alpha nuclear protein (MNP) site
+T17	Entity 1298 1308	ICK-1 site
+T18	Entity 1386 1394	MNP site
+T19	Entity 1421 1457	fast-migrating protein-DNA complexes
+T20	Entity 1444 1447	DNA
+T21	Entity 1530 1538	MNP site
+T22	Entity 1593 1609	GOS19.1 promoter
+T23	Entity 1728 1736	MNP site
+R1	Protein-Component Arg1:T11 Arg2:T13

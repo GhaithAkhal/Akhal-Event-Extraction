@@ -1,0 +1,18 @@
+*	Equiv T9 T10
+*	Equiv T12 T13
+*	Equiv T18 T19
+*	Equiv T20 T21
+*	Equiv T22 T23
+T25	Entity 141 164	T cell antigen receptor
+T26	Entity 166 169	TCR
+T27	Entity 454 466	Ras oncogene
+T28	Entity 661 667	serine
+T29	Entity 667 677	/threonine
+T30	Entity 1126 1140	AP-1 complexes
+T31	Entity 1227 1231	AP-1
+T32	Entity 1278 1281	TCR
+T33	Entity 1303 1307	AP-1
+T34	Entity 1391 1414	T cell antigen receptor
+T35	Entity 1482 1485	TCR
+T36	Entity 1643 1646	TCR
+T37	Entity 1825 1848	T cell antigen receptor

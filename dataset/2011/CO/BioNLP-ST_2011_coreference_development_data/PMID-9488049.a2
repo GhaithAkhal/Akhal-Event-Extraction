@@ -1,0 +1,8 @@
+T11	Exp 454 479	the level of IkappaBalpha	458 463	level
+T12	Exp 480 484	that
+T13	Exp 811 823	the cytokine
+T14	Exp 824 828	that
+T15	Exp 938 957	the rescue cytokine	949 957	cytokine
+R1	Coref Anaphora:T12 Antecedent:T11	[T4]
+R2	Coref Anaphora:T14 Antecedent:T13
+R3	Coref Anaphora:T15 Antecedent:T13

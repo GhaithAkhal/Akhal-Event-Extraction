@@ -1,0 +1,23 @@
+T16	Entity 36 44	promoter
+T17	Entity 66 94	downstream intronic sequence
+T18	Entity 168 176	promoter
+T19	Entity 192 218	transcriptional start site
+T20	Entity 317 326	sequences
+T21	Entity 330 345	TATA-like motif
+T22	Entity 389 415	transcriptional start site
+T23	Entity 440 481	DNA fragments containing the TATA element
+T24	Entity 510 547	DNase I-hypersensitive chromatin site
+T25	Entity 549 553	HS 1
+T26	Entity 581 589	TATA box
+T27	Entity 618 628	TATA motif
+T28	Entity 709 726	from the TATA box
+T29	Entity 761 769	promoter
+T30	Entity 1124 1128	HS 2
+T31	Entity 1211 1236	intronic sequence at +265
+T32	Entity 1241 1245	+448
+R1	Protein-Component Arg1:T1 Arg2:T16
+R2	Protein-Component Arg1:T3 Arg2:T19
+R3	Protein-Component Arg1:T4 Arg2:T20
+R4	Protein-Component Arg1:T3 Arg2:T18
+R5	Protein-Component Arg1:T6 Arg2:T28
+R6	Protein-Component Arg1:T6 Arg2:T29

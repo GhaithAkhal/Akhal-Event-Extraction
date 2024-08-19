@@ -1,0 +1,35 @@
+T1	Action 4 12	activity
+T2	Protein 16 23	sigma F
+T3	Protein 39 46	SpoIIAA
+T4	Protein 48 55	SpoIIAB
+T5	Protein 61 67	SpoIIE
+T6	Protein 71 87	membrane protein
+W1	Word 0 3	The
+W2	Word 4 12	activity
+W3	Word 13 15	of
+W4	Word 16 23	sigma F
+W5	Word 24 26	is
+W6	Word 27 35	governed
+W7	Word 36 38	by
+W8	Word 39 46	SpoIIAA
+W9	Word 48 55	SpoIIAB
+W10	Word 57 60	and
+W11	Word 61 67	SpoIIE
+W12	Word 69 70	a
+W13	Word 71 79	membrane
+W14	Word 80 87	protein
+W15	Word 88 97	localized
+W16	Word 98 100	at
+W17	Word 101 104	the
+W18	Word 105 110	polar
+W19	Word 111 117	septum
+R1	appos W11 W14
+R2	mod_att:N-N W14 W13
+R3	comp:N-N(of) W2 W4
+R4	comp:V_PASS-N(by) W6 W9
+R5	comp:V_PASS-N(by) W6 W8
+R6	subj:V_PASS-N W6 W2
+R7	subj:V_PASS-N W15 W14
+R8	comp:V_PASS-N(at) W15 W19
+R9	comp:V_PASS-N(by) W6 W11
+R10	mod_att:N-ADJ W19 W18

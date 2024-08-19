@@ -1,0 +1,6 @@
+T12	Exp 315 341	the transcriptional events	335 341	events
+T13	Exp 342 346	that
+T14	Exp 440 451	These cells	446 451	cells
+T15	Exp 537 542	their
+R1	Coref Anaphora:T13 Antecedent:T12
+R2	Coref Anaphora:T15 Antecedent:T14

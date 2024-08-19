@@ -1,0 +1,21 @@
+*	Equiv T2 T3
+*	Equiv T10 T11
+T25	Entity 0 37	Cytomegalovirus immediate early genes
+T26	Entity 97 118	immediate early genes
+T27	Entity 120 122	IE
+T28	Entity 236 241	genes
+T29	Entity 721 733	CMV IE genes
+T30	Entity 857 869	CMV IE genes
+T31	Entity 974 982	promoter
+T32	Entity 1103 1115	CMV IE genes
+T33	Entity 1262 1270	promoter
+T34	Entity 1362 1377	NF-kappa B site
+T35	Entity 1362 1372	NF-kappa B
+T36	Entity 1397 1421	multiple response region
+T37	Entity 1720 1744	multiple response region
+T38	Entity 1767 1775	promoter
+T39	Entity 1807 1817	cyclic amp
+R1	Protein-Component Arg1:T13 Arg2:T31
+R2	Protein-Component Arg1:T15 Arg2:T33
+R3	Protein-Component Arg1:T22 Arg2:T37
+R4	Protein-Component Arg1:T22 Arg2:T38

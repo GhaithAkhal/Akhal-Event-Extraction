@@ -1,0 +1,9 @@
+T10	Exp 184 266	A reporter construct containing the 5'-flanking region of the mouse TNF-alpha gene	195 204	construct
+T11	Exp 394 408	this construct
+T12	Exp 630 652	Mutations of this site	630 639	Mutations
+T13	Exp 653 657	that
+T14	Exp 755 785	The major transcription factor	765 785	transcription factor
+T15	Exp 786 790	that
+R1	Coref Anaphora:T11 Antecedent:T10	[T4]
+R2	Coref Anaphora:T13 Antecedent:T12
+R3	Coref Anaphora:T15 Antecedent:T14

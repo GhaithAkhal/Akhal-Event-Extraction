@@ -1,0 +1,20 @@
+*	Equiv T4 T5
+T26	Entity 218 227	NF-kappaB
+T27	Entity 436 445	NF-kappaB
+T28	Entity 655 666	amino acids
+T29	Entity 679 688	NF-kappaB
+T30	Entity 716 725	NF-kappaB
+T31	Entity 776 784	residues
+T32	Entity 823 842	residues 294 to 312
+T33	Entity 847 856	NF-kappaB
+T34	Entity 896 915	residues 296 to 302
+T35	Entity 947 956	NF-kappaB
+T36	Entity 1000 1019	residues 122 to 293
+T37	Entity 1000 1008	residues
+T38	Entity 1223 1232	NF-kappaB
+R1	Protein-Component Arg1:T12 Arg2:T31
+R2	Protein-Component Arg1:T10 Arg2:T28
+R3	Protein-Component Arg1:T14 Arg2:T32
+R4	Protein-Component Arg1:T16 Arg2:T34
+R5	Protein-Component Arg1:T18 Arg2:T36
+R6	Protein-Component Arg1:T18 Arg2:T37

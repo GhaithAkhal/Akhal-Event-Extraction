@@ -1,0 +1,33 @@
+T1	Protein 0 3	Sin
+T2	Protein 13 32	DNA-binding protein
+T3	Gene 53 58	genes
+T4	Gene 60 66	spoIIA
+T5	Gene 68 74	spoIIE
+T6	Gene 79 85	spoIIG
+T7	Protein 109 114	Spo0A
+W1	Word 0 3	Sin
+W2	Word 5 12	another
+W3	Word 13 24	DNA-binding
+W4	Word 25 32	protein
+W5	Word 34 43	represses
+W6	Word 44 47	the
+W7	Word 48 52	same
+W8	Word 53 58	genes
+W9	Word 60 66	spoIIA
+W10	Word 68 74	spoIIE
+W11	Word 75 78	and
+W12	Word 79 85	spoIIG
+W13	Word 87 91	that
+W14	Word 92 95	are
+W15	Word 96 105	activated
+W16	Word 106 108	by
+W17	Word 109 114	Spo0A
+R1	comp:V_PASS-N(by) W15 W17
+R2	appos W8 W12
+R3	mod_att:N-N W4 W3
+R4	appos W1 W4
+R5	subj:V-N W5 W1
+R6	appos W8 W9
+R7	obj:V-N W5 W8
+R8	subj:V_PASS-N W15 W8
+R9	appos W8 W10

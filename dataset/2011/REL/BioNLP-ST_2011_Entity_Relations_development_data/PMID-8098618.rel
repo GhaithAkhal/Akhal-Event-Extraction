@@ -1,0 +1,26 @@
+*	Equiv T5 T6
+*	Equiv T8 T9
+*	Equiv T16 T17
+T29	Entity 685 695	NF-kappa B
+T30	Entity 703 721	consensus sequence
+T31	Entity 729 749	5'-regulatory region
+T32	Entity 894 904	NF-kappa B
+T33	Entity 943 981	kappa B-specific oligonucleotide probe
+T34	Entity 1082 1091	homodimer
+T35	Entity 1120 1146	kappa B-specific complexes
+T36	Entity 1185 1196	heterodimer
+T37	Entity 1216 1225	homodimer
+T38	Entity 1239 1250	heterodimer
+T39	Entity 1705 1715	NF-kappa B
+T40	Entity 1865 1875	NF-kappa B
+R1	Protein-Component Arg1:T11 Arg2:T30
+R2	Protein-Component Arg1:T11 Arg2:T31
+R3	Subunit-Complex Arg1:T16 Arg2:T34
+R4	Subunit-Complex Arg1:T20 Arg2:T35
+R5	Subunit-Complex Arg1:T18 Arg2:T35
+R6	Subunit-Complex Arg1:T19 Arg2:T35
+R7	Subunit-Complex Arg1:T18 Arg2:T36
+R8	Subunit-Complex Arg1:T19 Arg2:T36
+R9	Subunit-Complex Arg1:T20 Arg2:T37
+R10	Subunit-Complex Arg1:T21 Arg2:T38
+R11	Subunit-Complex Arg1:T22 Arg2:T38

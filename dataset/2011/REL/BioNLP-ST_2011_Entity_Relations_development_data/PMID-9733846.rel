@@ -1,0 +1,14 @@
+T19	Entity 215 231	cytoplasmic tail
+T20	Entity 486 495	wild-type
+T21	Entity 500 512	mutant forms
+T22	Entity 524 540	cytoplasmic tail
+T23	Entity 650 661	residue 402
+T24	Entity 807 818	residue 418
+T25	Entity 864 880	cytoplasmic tail
+T26	Entity 1050 1060	NF- kappaB
+T27	Entity 1812 1849	critical region for CD4 dimerization.
+R1	Protein-Component Arg1:T2 Arg2:T19
+R2	Protein-Component Arg1:T4 Arg2:T22
+R3	Protein-Component Arg1:T5 Arg2:T23
+R4	Protein-Component Arg1:T6 Arg2:T24
+R5	Protein-Component Arg1:T18 Arg2:T27

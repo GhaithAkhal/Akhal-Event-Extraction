@@ -1,0 +1,7 @@
+T25	Entity 103 124	tumor suppressor gene
+T26	Entity 437 460	S phase regulated genes
+T27	Entity 592 613	tumor suppressor gene
+T28	Entity 1526 1535	its motif
+T29	Entity 1560 1568	promoter
+R1	Protein-Component Arg1:T22 Arg2:T28
+R2	Protein-Component Arg1:T22 Arg2:T29

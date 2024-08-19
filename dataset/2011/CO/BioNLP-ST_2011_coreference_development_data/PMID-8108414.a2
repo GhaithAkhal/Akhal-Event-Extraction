@@ -1,0 +1,15 @@
+T36	Exp 122 132	RelA (p65)
+T37	Exp 279 282	its
+T38	Exp 538 570	I kappa B alpha in human T cells
+T39	Exp 586 589	its
+T40	Exp 1358 1362	RelA
+T41	Exp 1364 1369	which
+T42	Exp 1457 1492	the C-terminal ankyrin motif domain	1486 1492	domain
+T43	Exp 1494 1499	which
+T44	Exp 1684 1735	a second inducible autoregulated inhibitory pathway	1728 1735	pathway
+T45	Exp 1736 1740	that
+R1	Coref Anaphora:T37 Antecedent:T36	[T3, T4]
+R2	Coref Anaphora:T39 Antecedent:T38	[T10]
+R3	Coref Anaphora:T41 Antecedent:T40	[T28]
+R4	Coref Anaphora:T43 Antecedent:T42
+R5	Coref Anaphora:T45 Antecedent:T44

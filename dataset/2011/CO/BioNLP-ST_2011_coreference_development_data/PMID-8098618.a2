@@ -1,0 +1,14 @@
+T29	Exp 451 509	the inducible IL-2 receptor alpha chain (IL-2R alpha) gene
+T30	Exp 510 514	that
+T31	Exp 660 695	the transcription factor NF-kappa B	664 684	transcription factor
+T32	Exp 699 702	its
+T33	Exp 1112 1146	two new kappa B-specific complexes	1137 1146	complexes
+T34	Exp 1252 1276	Both inducible complexes	1267 1276	complexes
+T35	Exp 1309 1314	Their
+T36	Exp 1626 1653	an oxygen radical scavenger	1644 1653	scavenger
+T37	Exp 1654 1658	that
+R1	Coref Anaphora:T30 Antecedent:T29	[T9, T8]
+R2	Coref Anaphora:T32 Antecedent:T31
+R3	Coref Anaphora:T34 Antecedent:T33
+R4	Coref Anaphora:T35 Antecedent:T34
+R5	Coref Anaphora:T37 Antecedent:T36

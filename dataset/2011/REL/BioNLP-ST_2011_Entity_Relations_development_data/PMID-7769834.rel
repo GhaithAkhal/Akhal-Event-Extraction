@@ -1,0 +1,10 @@
+*	Equiv T6 T7
+*	Equiv T10 T11
+T13	Entity 545 555	CArG motif
+T14	Entity 557 567	C C[AT]6GG
+T15	Entity 582 590	promoter
+T16	Entity 731 739	peptides
+R1	Protein-Component Arg1:T9 Arg2:T14
+R2	Protein-Component Arg1:T9 Arg2:T13
+R3	Protein-Component Arg1:T9 Arg2:T15
+R4	Protein-Component Arg1:T10 Arg2:T16

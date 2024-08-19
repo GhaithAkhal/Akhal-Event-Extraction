@@ -1,0 +1,17 @@
+T20	Exp 207 253	bone marrow-derived erythroid progenitor cells	248 253	cells
+T21	Exp 264 269	their
+T22	Exp 594 614	potential mechanisms	604 614	mechanisms
+T23	Exp 618 623	which
+T24	Exp 676 681	their
+T25	Exp 701 734	an erythroid transcription factor	714 734	transcription factor
+T26	Exp 735 739	that
+T27	Exp 1235 1253	an intact promoter	1245 1253	promoter
+T28	Exp 1254 1259	which
+T29	Exp 1544 1556	two contacts	1548 1556	contacts
+T30	Exp 1558 1563	which
+R1	Coref Anaphora:T21 Antecedent:T20
+R2	Coref Anaphora:T23 Antecedent:T22
+R3	Coref Anaphora:T24 Antecedent:T22
+R4	Coref Anaphora:T26 Antecedent:T25
+R5	Coref Anaphora:T28 Antecedent:T27
+R6	Coref Anaphora:T30 Antecedent:T29

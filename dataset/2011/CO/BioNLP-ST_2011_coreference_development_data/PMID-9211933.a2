@@ -1,0 +1,9 @@
+T21	Exp 579 608	enhancer elements in a region	588 596	elements
+T22	Exp 639 643	that
+T23	Exp 1175 1202	the Egr-1 and kappaB3 sites	1197 1202	sites
+T24	Exp 1204 1209	which
+T25	Exp 1262 1300	The CRE and kappaB3 sites in region II	1282 1287	sites
+T26	Exp 1395 1399	they
+R1	Coref Anaphora:T22 Antecedent:T21
+R2	Coref Anaphora:T24 Antecedent:T23	[T13]
+R3	Coref Anaphora:T26 Antecedent:T25

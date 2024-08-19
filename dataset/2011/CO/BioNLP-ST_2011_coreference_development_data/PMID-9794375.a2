@@ -1,0 +1,17 @@
+T34	Exp 221 239	CD3, CD2, and CD28
+T35	Exp 315 330	these receptors	321 330	receptors
+T36	Exp 377 518	a shared group of intracellular signaling proteins, including Vav, Cbl, p85 phosphoinositide 3-kinase, and the Src family kinases Lck and Fyn	386 391	group
+T37	Exp 704 723	HS1 phosphorylation	708 723	phosphorylation
+T38	Exp 758 776	CD3, CD2, and CD28
+T39	Exp 790 793	its
+T40	Exp 871 886	these receptors	877 886	receptors
+T41	Exp 1609 1627	CD3, CD28, and CD2
+T42	Exp 1645 1673	the same signaling molecules	1664 1673	molecules
+T43	Exp 1675 1679	they
+T44	Exp 1692 1697	their
+R1	Coref Anaphora:T35 Antecedent:T34	[T5, T4]
+R2	Coref Anaphora:T39 Antecedent:T37	[T12]
+R3	Coref Anaphora:T40 Antecedent:T38	[T13, T14]
+R4	Coref Anaphora:T42 Antecedent:T36	[T7, T6, T8, T9, T10]
+R5	Coref Anaphora:T43 Antecedent:T41	[T30, T31]
+R6	Coref Anaphora:T44 Antecedent:T41	[T30, T31]

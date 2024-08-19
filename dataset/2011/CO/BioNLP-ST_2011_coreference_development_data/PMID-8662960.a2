@@ -1,0 +1,3 @@
+T8	Exp 1201 1237	the bulk of protein-DNA interactions	1205 1209	bulk
+T9	Exp 1238 1242	that
+R1	Coref Anaphora:T9 Antecedent:T8

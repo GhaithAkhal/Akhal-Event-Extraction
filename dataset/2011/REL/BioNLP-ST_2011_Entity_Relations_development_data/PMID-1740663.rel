@@ -1,0 +1,14 @@
+*	Equiv T3 T4
+T7	Entity 43 53	NF-kappa B
+T8	Entity 238 248	NF-kappa B
+T9	Entity 249 252	DNA
+T10	Entity 868 878	NF-kappa B
+T11	Entity 1040 1058	NF-kappa B complex
+T12	Entity 1173 1198	symmetric NF-kappa B site
+T13	Entity 1183 1193	NF-kappa B
+T14	Entity 1235 1243	promoter
+T15	Entity 1269 1288	5' guanine residues
+T16	Entity 1296 1308	kappa B site
+T17	Entity 1342 1352	NF-kappa B
+T18	Entity 1685 1695	NF-kappa B
+R1	Protein-Component Arg1:T3 Arg2:T14

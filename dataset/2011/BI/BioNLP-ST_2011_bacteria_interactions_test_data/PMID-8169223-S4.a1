@@ -1,0 +1,51 @@
+T1	GeneProduct 14 18	CheV
+T2	Protein 59 63	CheW
+T3	ProteinFamily 127 131	CheY
+W1	Word 0 3	The
+W2	Word 4 13	predicted
+W3	Word 14 18	CheV
+W4	Word 19 23	gene
+W5	Word 24 31	product
+W6	Word 32 40	contains
+W7	Word 41 43	an
+W8	Word 44 58	amino-terminal
+W9	Word 59 63	CheW
+W10	Word 64 74	homologous
+W11	Word 75 81	domain
+W12	Word 82 88	linked
+W13	Word 89 91	to
+W14	Word 92 93	a
+W15	Word 94 102	response
+W16	Word 103 112	regulator
+W17	Word 113 119	domain
+W18	Word 120 122	of
+W19	Word 123 126	the
+W20	Word 127 131	CheY
+W21	Word 132 138	family
+W22	Word 140 150	suggesting
+W23	Word 151 155	that
+W24	Word 156 162	either
+W25	Word 163 165	or
+W26	Word 166 170	both
+W27	Word 171 173	of
+W28	Word 174 179	these
+W29	Word 180 189	functions
+W30	Word 190 193	are
+W31	Word 194 204	duplicated
+R1	mod_att:N-N W16 W15
+R2	subj:V_PASS-N W12 W11
+R3	subj:V-N W6 W5
+R4	mod_att:N-ADJ W11 W8
+R5	obj:V-N W6 W11
+R6	mod_att:N-N W4 W3
+R7	mod_att:N-N W5 W4
+R8	mod:ADJ-N W10 W9
+R9	mod_att:N-N W17 W16
+R10	subj:V_PASS-N W31 W26
+R11	comp:N-N(of) W17 W21
+R12	subj:V_PASS-N W31 W24
+R13	mod_att:N-ADJ W5 W2
+R14	mod_att:N-ADJ W11 W10
+R15	mod_att:N-N W21 W20
+R16	comp:N-N(of) W26 W29
+R17	comp:V_PASS-N(to) W12 W17

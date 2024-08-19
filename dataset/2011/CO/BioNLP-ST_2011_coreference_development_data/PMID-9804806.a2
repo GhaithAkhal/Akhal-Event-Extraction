@@ -1,0 +1,9 @@
+T13	Exp 408 419	two kinases	412 419	kinases
+T14	Exp 421 434	IKK1 and IKK2
+T15	Exp 455 489	the IkappaB cytoplasmic inhibitors	479 489	inhibitors
+T16	Exp 491 536	IkappaBalpha, IkappaBbeta, and IkappaBepsilon
+T17	Exp 541 554	these kinases	547 554	kinases
+T18	Exp 907 942	maximal activity observed at 60 min	915 923	activity
+T19	Exp 944 949	which
+R1	Coref Anaphora:T17 Antecedent:T13
+R2	Coref Anaphora:T19 Antecedent:T18

@@ -1,0 +1,22 @@
+T1	Bacterium 0 19	Caulobacter sp. K31
+T2	Bacterium 20 42	Caulobacter strain K31
+T3	Water 80 134	low temperature, chlorophenol-contaminated groundwater
+T4	Bacterium 233 255	Caulobacter strain K31
+T5	Water 332 343	groundwater
+T6	Geographical 349 356	Karkola
+T7	Geographical 358 365	Finland
+T8	Bacterium 870 881	Caulobacter
+T9	Water 907 936	low nutrient aquatic habitats
+T10	Water 1204 1214	freshwater
+T11	Bacterium 1222 1244	Caulobacter crescentus
+T12	Water 1254 1260	marine
+T13	Bacterium 1268 1284	Maricaulis maris
+*	Equiv T1 T2
+*	Equiv T1 T4
+E1	Localization Bacterium:T1 Localization:T7
+E2	Localization Bacterium:T1 Localization:T6
+E3	Localization Bacterium:T11 Localization:T10
+E4	Localization Bacterium:T1 Localization:T5
+E5	Localization Bacterium:T1 Localization:T3
+E6	Localization Bacterium:T13 Localization:T12
+E7	Localization Bacterium:T8 Localization:T9

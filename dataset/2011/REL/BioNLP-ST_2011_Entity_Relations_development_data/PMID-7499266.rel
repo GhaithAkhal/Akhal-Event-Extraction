@@ -1,0 +1,28 @@
+T13	Entity 119 140	phosphorylation sites
+T14	Entity 162 184	Nuclear factor kappa B
+T15	Entity 186 196	NF-kappa B
+T16	Entity 536 546	NF-kappa B
+T17	Entity 966 984	synthetic peptides
+T18	Entity 1002 1023	phosphorylation sites
+T19	Entity 1047 1050	Ser
+T20	Entity 1055 1067	Thr residues
+T21	Entity 1075 1099	C-terminal acidic domain
+T22	Entity 1147 1220	peptide, corresponding to the C-terminal acidic domain of I kappa B alpha
+T23	Entity 1147 1154	peptide
+T24	Entity 1177 1201	C-terminal acidic domain
+T25	Entity 1246 1256	NF-kappa B
+T26	Entity 1505 1522	C-terminal region
+T27	Entity 1577 1611	NF-kappa B.I kappa B alpha complex
+T28	Entity 1577 1587	NF-kappa B
+T29	Entity 1604 1611	complex
+R1	Protein-Component Arg1:T2 Arg2:T13
+R2	Protein-Component Arg1:T8 Arg2:T21
+R3	Protein-Component Arg1:T7 Arg2:T18
+R4	Protein-Component Arg1:T8 Arg2:T20
+R5	Protein-Component Arg1:T8 Arg2:T19
+R6	Protein-Component Arg1:T8 Arg2:T18
+R7	Protein-Component Arg1:T9 Arg2:T24
+R8	Protein-Component Arg1:T9 Arg2:T22
+R9	Protein-Component Arg1:T11 Arg2:T26
+R10	Subunit-Complex Arg1:T12 Arg2:T27
+R11	Subunit-Complex Arg1:T12 Arg2:T29

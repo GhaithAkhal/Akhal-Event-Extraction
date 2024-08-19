@@ -1,0 +1,8 @@
+*	Equiv T3 T4
+T24	Entity 1399 1407	promoter
+T25	Entity 1442 1460	expression vectors
+T26	Entity 1586 1594	promoter
+T27	Entity 1639 1649	cyclic-AMP
+T28	Entity 1774 1796	nuclear factor-kappa B
+R1	Protein-Component Arg1:T14 Arg2:T24
+R2	Protein-Component Arg1:T17 Arg2:T26

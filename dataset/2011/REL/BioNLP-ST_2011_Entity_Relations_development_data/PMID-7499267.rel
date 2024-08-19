@@ -1,0 +1,23 @@
+*	Equiv T6 T7
+*	Equiv T8 T9
+*	Equiv T10 T11
+T29	Entity 524 532	promoter
+T30	Entity 557 564	regions
+T31	Entity 636 656	one of these regions
+T32	Entity 738 764	region between -73 and -36
+T33	Entity 779 794	minimal element
+T34	Entity 832 868	element located between -181 and -73
+T35	Entity 958 989	distal element upstream of -224
+T36	Entity 1066 1076	NF kappa B
+T37	Entity 1103 1115	heterodimers
+T38	Entity 1262 1272	homodimers
+T39	Entity 1328 1358	retinoblastoma control element
+T40	Entity 1379 1387	promoter
+R1	Protein-Component Arg1:T12 Arg2:T30
+R2	Protein-Component Arg1:T12 Arg2:T31
+R3	Protein-Component Arg1:T12 Arg2:T29
+R4	Subunit-Complex Arg1:T19 Arg2:T37
+R5	Subunit-Complex Arg1:T20 Arg2:T37
+R6	Protein-Component Arg1:T26 Arg2:T39
+R7	Subunit-Complex Arg1:T25 Arg2:T38
+R8	Protein-Component Arg1:T26 Arg2:T40

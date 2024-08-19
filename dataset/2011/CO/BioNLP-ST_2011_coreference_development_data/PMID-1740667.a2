@@ -1,0 +1,9 @@
+T15	Exp 235 257	protein kinase C (PKC)
+T16	Exp 259 263	that
+T17	Exp 817 827	Ar-5 cells	822 827	cells
+T18	Exp 894 912	this reporter gene	908 912	gene
+T19	Exp 941 1018	binding sites for nuclear factors including NFAT-1, Oct, NF-kappa B, and AP-1	941 954	binding sites
+T20	Exp 1020 1025	which
+R1	Coref Anaphora:T16 Antecedent:T15
+R2	Coref Anaphora:T18 Antecedent:T17
+R3	Coref Anaphora:T20 Antecedent:T19	[T8]

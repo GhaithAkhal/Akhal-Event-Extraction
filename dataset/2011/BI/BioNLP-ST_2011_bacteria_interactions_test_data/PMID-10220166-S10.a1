@@ -1,0 +1,51 @@
+T1	Gene 4 8	ydaP
+T2	Protein 55 61	sigmaB
+T3	GeneFamily 72 77	genes
+T4	GeneFamily 84 95	orthologues
+T5	Protein 121 127	sigmas
+T6	Regulon 170 178	regulons
+W1	Word 0 3	The
+W2	Word 4 8	ydaP
+W3	Word 9 13	gene
+W4	Word 14 19	might
+W5	Word 20 26	belong
+W6	Word 27 29	to
+W7	Word 30 33	the
+W8	Word 34 44	increasing
+W9	Word 45 51	number
+W10	Word 52 54	of
+W11	Word 55 61	sigmaB
+W12	Word 62 71	dependent
+W13	Word 72 77	genes
+W14	Word 78 83	whose
+W15	Word 84 95	orthologues
+W16	Word 96 99	are
+W17	Word 100 105	under
+W18	Word 106 109	the
+W19	Word 110 117	control
+W20	Word 118 120	of
+W21	Word 121 127	sigmas
+W22	Word 128 130	in
+W23	Word 131 147	Escherichia coli
+W24	Word 149 159	indicating
+W25	Word 160 164	that
+W26	Word 165 169	both
+W27	Word 170 178	regulons
+W28	Word 179 182	may
+W29	Word 183 189	fulfil
+W30	Word 190 197	similar
+W31	Word 198 207	functions
+R1	mod_att:N-N W3 W2
+R2	comp:N-N(of) W9 W13
+R3	mod_pred:N-N W15 W19
+R4	obj:V-N W29 W31
+R5	mod_att:N-ADJ W9 W8
+R6	comp:V-N(in) W16 W23
+R7	mod_att:N-ADJ W31 W30
+R8	mod_att:N-ADJ W13 W12
+R9	subj:V-N W5 W3
+R10	comp:V-N(to) W5 W9
+R11	mod:ADJ-N W12 W11
+R12	comp:N-N(of) W15 W13
+R13	subj:V-N W29 W27
+R14	comp:N-N(of) W19 W21

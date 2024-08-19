@@ -1,0 +1,12 @@
+T19	Exp 830 847	IKK-beta activity	839 847	activity
+T20	Exp 849 854	which
+T21	Exp 951 966	LPS stimulation	955 966	stimulation
+T22	Exp 968 973	which
+T23	Exp 1453 1456	NIK
+T24	Exp 1506 1508	it
+T25	Exp 1744 1775	stimulus-mediated transcription	1762 1775	transcription
+T26	Exp 1824 1826	it
+R1	Coref Anaphora:T20 Antecedent:T19	[T9]
+R2	Coref Anaphora:T22 Antecedent:T21
+R3	Coref Anaphora:T24 Antecedent:T23	[T16]
+R4	Coref Anaphora:T26 Antecedent:T25

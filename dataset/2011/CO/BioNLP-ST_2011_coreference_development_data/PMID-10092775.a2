@@ -1,0 +1,3 @@
+T17	Exp 140 161	Intracellular signals	154 161	signals
+T18	Exp 162 166	that
+R1	Coref Anaphora:T18 Antecedent:T17

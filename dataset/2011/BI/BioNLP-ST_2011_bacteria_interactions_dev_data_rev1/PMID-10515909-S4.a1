@@ -1,0 +1,20 @@
+T1	Expression 0 10	Expression
+T2	Protein 18 26	sigma(K)
+T3	Gene 37 41	cwlH
+T4	Gene 59 63	gerE
+W1	Word 0 10	Expression
+W2	Word 11 13	of
+W3	Word 14 17	the
+W4	Word 18 26	sigma(K)
+W5	Word 27 36	dependent
+W6	Word 37 41	cwlH
+W7	Word 42 46	gene
+W8	Word 47 55	depended
+W9	Word 56 58	on
+W10	Word 59 63	gerE
+R1	mod_att:N-N W7 W6
+R2	comp:V-N(on) W8 W10
+R3	mod_att:N-ADJ W7 W5
+R4	mod:ADJ-N W5 W4
+R5	comp:N-N(of) W1 W7
+R6	subj:V-N W8 W1

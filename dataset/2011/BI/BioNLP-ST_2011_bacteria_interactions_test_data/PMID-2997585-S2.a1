@@ -1,0 +1,32 @@
+T1	Gene 4 8	rpoD
+T2	Gene 27 31	aroD
+T3	Gene 36 39	lys
+T4	Gene 59 63	dnaE
+T5	Gene 85 89	crsA
+W1	Word 0 3	The
+W2	Word 4 8	rpoD
+W3	Word 9 14	locus
+W4	Word 15 18	lay
+W5	Word 19 26	between
+W6	Word 27 31	aroD
+W7	Word 32 35	and
+W8	Word 36 39	lys
+W9	Word 41 48	tightly
+W10	Word 49 55	linked
+W11	Word 56 58	to
+W12	Word 59 63	dnaE
+W13	Word 64 67	and
+W14	Word 68 79	inseparable
+W15	Word 80 84	from
+W16	Word 85 89	crsA
+R1	mod_att:N-N W3 W2
+R2	mod_post:N-ADJ W6 W14
+R3	comp:V_PASS-N(to) W10 W12
+R4	subj:V-N W4 W3
+R5	comp:ADJ-N(from) W14 W16
+R6	mod:V_PASS-ADV W10 W9
+R7	comp:V-N(between) W4 W6
+R8	subj:V_PASS-N W10 W6
+R9	subj:V_PASS-N W10 W8
+R10	comp:V-N(between) W4 W8
+R11	mod_post:N-ADJ W8 W14

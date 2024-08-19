@@ -1,0 +1,49 @@
+T1	Protein 2 15	14-kD protein
+T2	Action 53 64	specificity
+T3	PolymeraseComplex 68 101	sigma K-containing RNA polymerase
+T4	Protein 68 75	sigma K
+T5	Gene 123 130	spoIVCB
+T6	Transcription 131 144	transcription
+T7	Gene 169 173	cotD
+T8	Transcription 174 187	transcription
+W1	Word 0 1	A
+W2	Word 2 7	14-kD
+W3	Word 8 15	protein
+W4	Word 16 19	was
+W5	Word 20 24	also
+W6	Word 25 35	discovered
+W7	Word 36 40	that
+W8	Word 41 48	changes
+W9	Word 49 52	the
+W10	Word 53 64	specificity
+W11	Word 65 67	of
+W12	Word 68 75	sigma K
+W13	Word 76 86	containing
+W14	Word 87 90	RNA
+W15	Word 91 101	polymerase
+W16	Word 103 110	greatly
+W17	Word 111 122	stimulating
+W18	Word 123 130	spoIVCB
+W19	Word 131 144	transcription
+W20	Word 145 148	and
+W21	Word 149 157	markedly
+W22	Word 158 168	repressing
+W23	Word 169 173	cotD
+W24	Word 174 187	transcription
+R1	obj:V-N W13 W15
+R2	comp:N-N(of) W10 W12
+R3	obj:V-N W22 W24
+R4	mod_att:N-N W3 W2
+R5	mod:V-ADV W17 W16
+R6	subj:V-N W13 W12
+R7	mod_att:N-N W24 W23
+R8	subj:V-N W8 W3
+R9	obj:V-N W17 W19
+R10	mod:V-ADV W4 W5
+R11	obj:V-N W8 W10
+R12	subj:V_PASS-N W6 W3
+R13	mod_att:N-N W15 W14
+R14	subj:V-N W22 W3
+R15	subj:V-N W17 W3
+R16	mod:V-ADV W22 W21
+R17	mod_att:N-N W19 W18

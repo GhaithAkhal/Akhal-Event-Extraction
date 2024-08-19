@@ -1,0 +1,39 @@
+T1	Bacterium 687 703	Cfl. aurantiacus
+T2	Environment 806 810	mats
+T3	Water 814 845	neutral to alkaline hot springs
+T4	Environment 1047 1077	lower layer of a microbial mat
+T5	Environment 1064 1077	microbial mat
+T6	Bacterium 1083 1096	cyanobacteria
+T7	Water 1128 1151	springs high in sulfide
+T8	Bacterium 2131 2147	Cfl. aurantiacus
+T9	Bacterium 2634 2648	Cfl. aggregans
+T10	Water 2673 2683	hot spring
+T11	Environment 2684 2688	mats
+T12	Water 2739 2749	freshwater
+T13	Bacterium 2761 2786	Oscillochloris trichoides
+T14	Bacterium 2788 2801	O. trichoides
+T15	Environment 2882 2931	sulfide-containing sediments in springs and lakes
+T16	Water 3042 3048	Marine
+T17	Bacterium 3049 3076	Chloroflexus-like organisms
+T18	Environment 3107 3144	marine and hypersaline microbial mats
+T19	Bacterium 3161 3171	Chloronema
+T20	Water 3188 3220	anoxic zones of freshwater lakes
+T21	Bacterium 3404 3426	Heliothrix oregonensis
+T22	Bacterium 3432 3456	Roseiflexus castenholzii
+T23	Water 3477 3488	hot springs
+*	Equiv T13 T14
+E1	Localization Bacterium:T17 Localization:T16
+E2	Localization Bacterium:T1 Localization:T7
+E3	Localization Bacterium:T9 Localization:T10
+E4	Localization Bacterium:T1 Localization:T3
+E5	Localization Bacterium:T17 Localization:T18
+E6	Localization Bacterium:T19 Localization:T20
+E7	Localization Bacterium:T13 Localization:T12
+E8	Localization Bacterium:T13 Localization:T15
+E9	Localization Bacterium:T8 Localization:T23
+E10	Localization Bacterium:T9 Localization:T11
+E11	Localization Bacterium:T1 Localization:T4
+E12	Localization Bacterium:T22 Localization:T23
+E13	Localization Bacterium:T1 Localization:T2
+E14	Localization Bacterium:T21 Localization:T23
+E15	Localization Bacterium:T6 Localization:T5

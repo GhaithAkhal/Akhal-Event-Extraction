@@ -1,0 +1,12 @@
+T7	Entity 372 377	exons
+T8	Entity 407 414	introns
+T9	Entity 489 507	5' upstream region
+T10	Entity 545 573	regulatory promoter elements
+T11	Entity 691 710	consensus sequences
+T12	Entity 763 767	AP-1
+T13	Entity 771 805	NF-kappa-B like consensus sequence
+T14	Entity 854 871	response elements
+R1	Protein-Component Arg1:T3 Arg2:T9
+R2	Protein-Component Arg1:T3 Arg2:T7
+R3	Protein-Component Arg1:T3 Arg2:T8
+R4	Protein-Component Arg1:T4 Arg2:T11

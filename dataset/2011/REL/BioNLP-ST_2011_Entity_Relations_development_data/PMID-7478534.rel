@@ -1,0 +1,21 @@
+*	Equiv T3 T4
+T18	Entity 37 45	promoter
+T19	Entity 429 448	Cis-acting elements
+T20	Entity 484 490	motifs
+T21	Entity 819 822	GM5
+T22	Entity 844 856	CLE0 element
+T23	Entity 858 877	-47 to -40 upstream
+T24	Entity 892 921	transcription initiation site
+T25	Entity 991 994	GM5
+T26	Entity 1126 1129	GM5
+T27	Entity 1152 1168	ETS binding site
+T28	Entity 1174 1190	-GGAA- to -GGAT-
+T29	Entity 1271 1279	promoter
+R1	Protein-Component Arg1:T2 Arg2:T18
+R2	Protein-Component Arg1:T5 Arg2:T19
+R3	Protein-Component Arg1:T5 Arg2:T20
+R4	Protein-Component Arg1:T8 Arg2:T21
+R5	Protein-Component Arg1:T8 Arg2:T23
+R6	Protein-Component Arg1:T8 Arg2:T22
+R7	Protein-Component Arg1:T8 Arg2:T24
+R8	Protein-Component Arg1:T13 Arg2:T29

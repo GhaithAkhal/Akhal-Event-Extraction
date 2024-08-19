@@ -1,0 +1,43 @@
+T1	Transcription 0 13	Transcription
+T2	Gene 21 25	cotB
+T3	Gene 27 31	cotC
+T4	Gene 37 41	cotX
+T5	PolymeraseComplex 51 80	final sigma(K) RNA polymerase
+T6	Protein 99 125	small, DNA-binding protein
+T7	Protein 133 137	GerE
+W1	Word 0 13	Transcription
+W2	Word 14 16	of
+W3	Word 17 20	the
+W4	Word 21 25	cotB
+W5	Word 27 31	cotC
+W6	Word 33 36	and
+W7	Word 37 41	cotX
+W8	Word 42 47	genes
+W9	Word 48 50	by
+W10	Word 51 56	final
+W11	Word 57 65	sigma(K)
+W12	Word 66 69	RNA
+W13	Word 70 80	polymerase
+W14	Word 81 83	is
+W15	Word 84 93	activated
+W16	Word 94 96	by
+W17	Word 97 98	a
+W18	Word 99 104	small
+W19	Word 106 117	DNA-binding
+W20	Word 118 125	protein
+W21	Word 126 132	called
+W22	Word 133 137	GerE
+R1	mod_att:N-N W8 W4
+R2	mod_att:N-ADJ W13 W10
+R3	mod_att:N-N W13 W11
+R4	mod_att:N-ADJ W20 W19
+R5	subj:V_PASS-N W15 W1
+R6	comp:N-N(by) W1 W13
+R7	mod_att:N-N W8 W7
+R8	comp:N-N(of) W1 W8
+R9	obj:V_PASS-N W21 W22
+R10	mod_att:N-N W13 W12
+R11	mod_att:N-N W8 W5
+R12	mod_att:N-ADJ W20 W18
+R13	subj:V_PASS-N W21 W20
+R14	comp:V_PASS-N(by) W15 W20

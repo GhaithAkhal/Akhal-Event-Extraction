@@ -1,0 +1,27 @@
+T13	Exp 34 95	a novel transcription factor expressed in hematopoietic cells	42 62	transcription factor
+T14	Exp 96 100	that
+T15	Exp 162 222	Murine macrophage inflammatory protein 1 alpha (MIP-1 alpha)	193 200	protein
+T16	Exp 227 230	its
+T17	Exp 388 425	bone marrow-derived MIP-1 alpha/GOS19	408 425	MIP-1 alpha/GOS19
+T18	Exp 552 554	It
+T19	Exp 669 683	the mechanisms
+T20	Exp 684 689	which
+T21	Exp 971 979	evidence
+T22	Exp 980 984	that
+T23	Exp 985 1009	the pathway of induction	989 996	pathway
+T24	Exp 1061 1065	that
+T25	Exp 1235 1277	the MIP-1 alpha nuclear protein (MNP) site	1273 1277	site
+T26	Exp 1279 1284	which
+T27	Exp 1512 1538	A mutation of the MNP site	1514 1522	mutation
+T28	Exp 1539 1544	which
+T29	Exp 1589 1623	the GOS19.1 promoter in U937 cells	1601 1609	promoter
+T30	Exp 1636 1639	its
+R1	Coref Anaphora:T14 Antecedent:T13
+R2	Coref Anaphora:T16 Antecedent:T15	[T2, T3]
+R3	Coref Anaphora:T18 Antecedent:T17	[T7, T8]
+R4	Coref Anaphora:T20 Antecedent:T19
+R5	Coref Anaphora:T22 Antecedent:T21
+R6	Coref Anaphora:T24 Antecedent:T23
+R7	Coref Anaphora:T26 Antecedent:T25
+R8	Coref Anaphora:T28 Antecedent:T27
+R9	Coref Anaphora:T30 Antecedent:T29

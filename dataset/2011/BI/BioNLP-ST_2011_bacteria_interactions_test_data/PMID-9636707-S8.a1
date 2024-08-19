@@ -1,0 +1,44 @@
+T1	Protein 0 7	sigma X
+T2	Expression 32 42	expression
+T3	Protein 46 50	CsbB
+T4	ProteinFamily 63 98	membrane-bound glucosyl transferase
+T5	Protein 135 142	sigma B
+W1	Word 0 7	sigma X
+W2	Word 8 12	also
+W3	Word 13 24	contributes
+W4	Word 25 27	to
+W5	Word 28 31	the
+W6	Word 32 42	expression
+W7	Word 43 45	of
+W8	Word 46 50	CsbB
+W9	Word 52 53	a
+W10	Word 54 62	putative
+W11	Word 63 77	membrane-bound
+W12	Word 78 86	glucosyl
+W13	Word 87 98	transferase
+W14	Word 99 103	that
+W15	Word 104 106	is
+W16	Word 107 116	partially
+W17	Word 117 127	controlled
+W18	Word 128 130	by
+W19	Word 131 134	the
+W20	Word 135 142	sigma B
+W21	Word 143 149	stress
+W22	Word 150 158	response
+W23	Word 159 164	sigma
+W24	Word 165 171	factor
+R1	mod_att:N-N W24 W20
+R2	mod_att:N-N W24 W22
+R3	subj:V_PASS-N W17 W13
+R4	comp:V_PASS-N(by) W17 W24
+R5	mod_att:N-ADJ W13 W11
+R6	mod_att:N-N W22 W21
+R7	mod:V-ADV W3 W2
+R8	appos W8 W13
+R9	subj:V-N W3 W1
+R10	mod:V_PASS-ADV W17 W16
+R11	comp:N-N(of) W6 W8
+R12	mod_att:N-ADJ W13 W10
+R13	mod_att:N-N W24 W23
+R14	mod_att:N-ADJ W13 W12
+R15	comp:V-N(to) W3 W6

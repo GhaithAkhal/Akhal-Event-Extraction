@@ -1,0 +1,22 @@
+T1	Gene 5 9	dnaE
+T2	Gene 14 18	rpoD
+T3	Transcription 24 35	transcribed
+W1	Word 0 4	Both
+W2	Word 5 9	dnaE
+W3	Word 10 13	and
+W4	Word 14 18	rpoD
+W5	Word 19 23	were
+W6	Word 24 35	transcribed
+W7	Word 36 38	in
+W8	Word 39 42	the
+W9	Word 43 47	same
+W10	Word 48 57	direction
+W11	Word 59 75	counterclockwise
+W12	Word 76 78	on
+W13	Word 79 82	the
+W14	Word 83 93	chromosome
+R1	subj:V_PASS-N W6 W2
+R2	comp:ADJ-N(on) W11 W14
+R3	comp:V_PASS-N(in) W6 W10
+R4	subj:V_PASS-N W6 W4
+R5	mod_post:N-ADJ W10 W11

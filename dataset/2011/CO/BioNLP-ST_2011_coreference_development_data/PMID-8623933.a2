@@ -1,0 +1,15 @@
+T24	Exp 134 148	Animal lectins	141 148	lectins
+T25	Exp 211 216	their
+T26	Exp 249 259	Galectin-3
+T27	Exp 390 393	its
+T28	Exp 1273 1302	the S1T and ATL-1K cell lines	1292 1302	cell lines
+T29	Exp 1304 1309	which
+T30	Exp 2067 2082	the possibility
+T31	Exp 2083 2087	that
+T32	Exp 2178 2188	galectin-3
+T33	Exp 2190 2195	which
+R1	Coref Anaphora:T25 Antecedent:T24
+R2	Coref Anaphora:T27 Antecedent:T26	[T2]
+R3	Coref Anaphora:T29 Antecedent:T28
+R4	Coref Anaphora:T31 Antecedent:T30
+R5	Coref Anaphora:T33 Antecedent:T32	[T23]

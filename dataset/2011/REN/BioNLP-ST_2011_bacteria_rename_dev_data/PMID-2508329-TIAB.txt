@@ -1,0 +1,2 @@
+[A new method prepared gene probe] Plasmid pNZ8802 containing K88ac gene was digested by EcoRI, and the small fragment was cloned to vector plasmid pUB110.
+One of the hybrid plasmids was named as pNZ8803 which was used to gene probe for detecting varity of strains. Strains containing K88ac or K88ab gene were all positive hybridization, and strains which did not containing K88ac gene were all negative hybridization. The result indicated that the gene probe was highly specificity and sensitivity.

@@ -1,0 +1,55 @@
+T1	Gene 73 77	rpoD
+T2	Gene 118 123	genes
+T3	Gene 134 138	rpoD
+T4	Gene 152 155	P23
+T5	Gene 156 160	dnaE
+T6	Gene 161 165	rpoD
+W1	Word 0 3	The
+W2	Word 4 12	complete
+W3	Word 13 23	nucleotide
+W4	Word 24 32	sequence
+W5	Word 33 35	of
+W6	Word 36 37	a
+W7	Word 38 39	5
+W8	Word 40 42	kb
+W9	Word 43 51	fragment
+W10	Word 52 61	including
+W11	Word 62 65	the
+W12	Word 66 72	entire
+W13	Word 73 77	rpoD
+W14	Word 78 82	gene
+W15	Word 83 91	revealed
+W16	Word 92 95	the
+W17	Word 96 104	presence
+W18	Word 105 107	of
+W19	Word 108 111	two
+W20	Word 112 117	other
+W21	Word 118 123	genes
+W22	Word 124 133	preceding
+W23	Word 134 138	rpoD
+W24	Word 139 141	in
+W25	Word 142 145	the
+W26	Word 146 151	order
+W27	Word 152 155	P23
+W28	Word 156 160	dnaE
+W29	Word 161 165	rpoD
+R1	mod_att:N-N W4 W3
+R2	mod_att:N-ADJ W21 W19
+R3	obj:V-N W15 W17
+R4	obj:V-N W10 W14
+R5	subj:V-N W22 W21
+R6	mod_post:N-N W26 W28
+R7	subj:V-N W10 W9
+R8	mod_post:N-N W26 W27
+R9	mod_att:N-N W14 W13
+R10	mod_att:N-N W9 W8
+R11	mod_att:N-ADJ W14 W12
+R12	subj:V-N W15 W4
+R13	comp:N-N(of) W4 W9
+R14	obj:V-N W22 W23
+R15	mod_att:N-ADJ W20 W19
+R16	mod_post:N-N W26 W29
+R17	comp:V-N(in) W22 W26
+R18	comp:N-N(of) W17 W21
+R19	mod_att:N-ADJ W4 W2
+R20	mod_att:N-ADJ W8 W7

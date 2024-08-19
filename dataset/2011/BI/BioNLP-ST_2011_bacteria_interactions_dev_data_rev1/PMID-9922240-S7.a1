@@ -1,0 +1,52 @@
+T1	Action 22 41	proper localization
+T2	Protein 45 51	SpoIVA
+T3	Expression 65 75	expression
+T4	Gene 91 96	genes
+T5	Gene 109 115	spoIVA
+T6	Protein 146 185	mother cell transcription factor sigmaE
+W1	Word 0 7	Finally
+W2	Word 9 11	we
+W3	Word 12 16	show
+W4	Word 17 21	that
+W5	Word 22 28	proper
+W6	Word 29 41	localization
+W7	Word 42 44	of
+W8	Word 45 51	SpoIVA
+W9	Word 52 60	required
+W10	Word 61 64	the
+W11	Word 65 75	expression
+W12	Word 76 78	of
+W13	Word 79 82	one
+W14	Word 83 85	or
+W15	Word 86 90	more
+W16	Word 91 96	genes
+W17	Word 97 102	which
+W18	Word 104 108	like
+W19	Word 109 115	spoIVA
+W20	Word 117 120	are
+W21	Word 121 126	under
+W22	Word 127 130	the
+W23	Word 131 138	control
+W24	Word 139 141	of
+W25	Word 142 145	the
+W26	Word 146 152	mother
+W27	Word 153 157	cell
+W28	Word 158 171	transcription
+W29	Word 172 178	factor
+W30	Word 179 185	sigmaE
+R1	mod:V-ADV W3 W1
+R2	comp:N-N(of) W6 W8
+R3	mod_att:N-N W27 W26
+R4	mod_att:N-ADJ W16 W15
+R5	comp:N-N(like) W23 W19
+R6	mod_pred:N-N W16 W23
+R7	mod_att:N-ADJ W6 W5
+R8	mod_att:N-ADJ W16 W13
+R9	comp:N-N(of) W11 W16
+R10	subj:V-N W3 W2
+R11	mod_att:N-N W29 W28
+R12	subj:V-N W9 W6
+R13	comp:N-N(of) W23 W30
+R14	mod_att:N-N W30 W29
+R15	obj:V-N W9 W11
+R16	mod_att:N-N W29 W27

@@ -1,0 +1,27 @@
+Test Data for BioNLP Shared Task 2011 Supporting Task -- Bacteria Gene Renaming
+
+
+- Contains 252 test.txt PubMed abstracts and their gene/protein names and renaming/synonymy relations
+  annotations.
+
+- For format details, please refer to the shared task homepage.
+  http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/SharedTask/
+
+
+File Descriptions:
+
+*.txt	files contain the target text.
+	Each of these files consists of two lines, one for the title and one for the abstract.
+*.a1	files contain standoff annotations for genes and proteins.
+	The participants will be provided with these files.
+
+History:
+
+15 November 2010, Initial version
+
+
+Authors:
+
+BioNLP Shared Task 2011 organizers,
+bionlp-st@googlegroups.com
+http://sites.google.com/site/bionlpst/

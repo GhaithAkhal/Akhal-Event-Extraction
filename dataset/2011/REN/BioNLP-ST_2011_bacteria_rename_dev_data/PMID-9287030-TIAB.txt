@@ -1,0 +1,2 @@
+Isolation and characterization of the lacA gene encoding beta-galactosidase in Bacillus subtilis and a regulator gene, lacR.
+We have isolated transposon insertions in the lacA gene encoding an endogenous beta-galactosidase of Bacillus subtilis. Upstream of the putative operon containing lacA is a negative regulator, lacR, which encodes a product related to a family of regulators that includes the lactose repressor, lacI, of Escherichia coli. New strains with insertions in the lacA gene should be of use in studies using lacZ fusions in B. subtilis.

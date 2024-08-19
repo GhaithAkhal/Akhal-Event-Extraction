@@ -1,0 +1,44 @@
+T1	Gene 58 76	dnaE coding region
+T2	Gene 93 97	rpoD
+T3	Transcription 105 116	transcribed
+W1	Word 0 2	We
+W2	Word 3 7	have
+W3	Word 8 11	now
+W4	Word 12 22	determined
+W5	Word 23 26	the
+W6	Word 27 36	1809-base
+W7	Word 37 41	pair
+W8	Word 42 50	sequence
+W9	Word 51 53	of
+W10	Word 54 57	the
+W11	Word 58 62	dnaE
+W12	Word 63 69	coding
+W13	Word 70 76	region
+W14	Word 78 83	which
+W15	Word 84 92	precedes
+W16	Word 93 97	rpoD
+W17	Word 98 101	and
+W18	Word 102 104	is
+W19	Word 105 116	transcribed
+W20	Word 117 119	in
+W21	Word 120 123	the
+W22	Word 124 128	same
+W23	Word 129 145	counterclockwise
+W24	Word 146 155	direction
+W25	Word 156 158	on
+W26	Word 159 162	the
+W27	Word 163 173	chromosome
+R1	mod_att:N-N W8 W7
+R2	subj:V-N W15 W13
+R3	mod_att:N-ADJ W24 W23
+R4	comp:N-N(of) W8 W13
+R5	comp:V_PASS-N(in) W19 W24
+R6	subj:V-N W4 W1
+R7	comp:N-N(on) W24 W27
+R8	mod:ADJ-N W12 W11
+R9	obj:V-N W4 W8
+R10	subj:V_PASS-N W19 W13
+R11	mod_att:N-ADJ W13 W12
+R12	obj:V-N W15 W16
+R13	mod_att:N-N W7 W6
+R14	mod:V-ADV W4 W3

@@ -1,0 +1,11 @@
+T31	Exp 23 60	immunogenic human malignant melanomas	51 60	melanomas
+T32	Exp 70 75	their
+T33	Exp 769 771	MM
+T34	Exp 858 863	their
+T35	Exp 955 960	their
+T36	Exp 1164 1218	CD40 ligation of a HLA-A2+, MelanA/MART1+ MM cell line	1169 1177	ligation
+T37	Exp 1228 1231	its
+R1	Coref Anaphora:T32 Antecedent:T31
+R2	Coref Anaphora:T34 Antecedent:T33
+R3	Coref Anaphora:T35 Antecedent:T33
+R4	Coref Anaphora:T37 Antecedent:T36	[T23, T20, T21, T22]

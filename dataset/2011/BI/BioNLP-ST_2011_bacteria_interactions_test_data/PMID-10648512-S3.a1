@@ -1,0 +1,39 @@
+T1	Gene 7 11	shaA
+T2	Protein 20 28	sigma(H)
+T3	Expression 39 49	expression
+T4	Gene 53 58	spo0A
+T5	Gene 63 68	spoVG
+W1	Word 0 2	In
+W2	Word 3 6	the
+W3	Word 7 11	shaA
+W4	Word 12 18	mutant
+W5	Word 20 28	sigma(H)
+W6	Word 29 38	dependent
+W7	Word 39 49	expression
+W8	Word 50 52	of
+W9	Word 53 58	spo0A
+W10	Word 59 62	and
+W11	Word 63 68	spoVG
+W12	Word 69 71	at
+W13	Word 72 74	an
+W14	Word 75 80	early
+W15	Word 81 86	stage
+W16	Word 87 89	of
+W17	Word 90 101	sporulation
+W18	Word 102 105	was
+W19	Word 106 115	sensitive
+W20	Word 116 118	to
+W21	Word 119 127	external
+W22	Word 128 132	NaCl
+R1	comp:N-N(of) W7 W9
+R2	comp:N-N(in) W18 W4
+R3	mod:ADJ-N W6 W5
+R4	comp:N-N(of) W7 W11
+R5	comp:N-N(of) W15 W17
+R6	mod_att:N-ADJ W7 W6
+R7	mod_att:N-N W4 W3
+R8	comp:N-N(at) W7 W15
+R9	mod_att:N-ADJ W22 W21
+R10	mod_att:N-ADJ W15 W14
+R11	comp:ADJ-N(to) W19 W22
+R12	mod_pred:N-ADJ W7 W19

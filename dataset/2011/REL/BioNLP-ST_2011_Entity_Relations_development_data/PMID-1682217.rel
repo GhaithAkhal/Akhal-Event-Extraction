@@ -1,0 +1,11 @@
+*	Equiv T8 T9
+T24	Entity 120 141	erbA target gene CAII
+T25	Entity 430 456	erythrocyte-specific genes
+T26	Entity 533 541	promoter
+T27	Entity 549 591	erythrocyte-specific carbonic anhydrase II
+T28	Entity 669 686	erbA-binding site
+T29	Entity 731 752	heterologous promoter
+T30	Entity 1308 1339	CAII-specific erbA-binding site
+T31	Entity 1322 1339	erbA-binding site
+R1	Protein-Component Arg1:T8 Arg2:T26
+R2	Protein-Component Arg1:T19 Arg2:T30

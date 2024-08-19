@@ -1,0 +1,47 @@
+T1	Action 2 11	low level
+T2	Protein 15 19	GerE
+T3	Transcription 30 43	transcription
+T4	Gene 47 51	cotD
+T5	PolymeraseComplex 55 76	sigmaK RNA polymerase
+T6	Action 93 105	higher level
+T7	Protein 109 113	GerE
+T8	Gene 124 128	cotD
+T9	Transcription 129 142	transcription
+W1	Word 0 1	A
+W2	Word 2 5	low
+W3	Word 6 11	level
+W4	Word 12 14	of
+W5	Word 15 19	GerE
+W6	Word 20 29	activated
+W7	Word 30 43	transcription
+W8	Word 44 46	of
+W9	Word 47 51	cotD
+W10	Word 52 54	by
+W11	Word 55 61	sigmaK
+W12	Word 62 65	RNA
+W13	Word 66 76	polymerase
+W14	Word 77 79	in
+W15	Word 80 85	vitro
+W16	Word 87 90	but
+W17	Word 91 92	a
+W18	Word 93 99	higher
+W19	Word 100 105	level
+W20	Word 106 108	of
+W21	Word 109 113	GerE
+W22	Word 114 123	repressed
+W23	Word 124 128	cotD
+W24	Word 129 142	transcription
+R1	obj:V-N W22 W24
+R2	comp:V-N(in) W6 W15
+R3	comp:V-N(by) W6 W13
+R4	mod_att:N-N W13 W11
+R5	comp:N-N(of) W3 W5
+R6	subj:V-N W22 W19
+R7	obj:V-N W6 W7
+R8	comp:N-N(of) W7 W9
+R9	mod_att:N-N W24 W23
+R10	mod_att:N-N W13 W12
+R11	comp:N-N(of) W19 W21
+R12	mod_att:N-ADJ W3 W2
+R13	subj:V-N W6 W3
+R14	mod_att:N-ADJ W19 W18

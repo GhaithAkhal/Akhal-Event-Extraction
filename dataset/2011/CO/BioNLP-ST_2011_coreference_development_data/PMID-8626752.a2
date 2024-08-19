@@ -1,0 +1,6 @@
+T21	Exp 367 376	the STATs
+T22	Exp 386 391	their
+T23	Exp 1335 1342	a model
+T24	Exp 1346 1351	which
+R1	Coref Anaphora:T22 Antecedent:T21
+R2	Coref Anaphora:T24 Antecedent:T23

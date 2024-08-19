@@ -1,0 +1,35 @@
+T1	Gene 16 20	sigB
+T2	Gene 65 69	gsiB
+T3	Protein 100 106	sigmaB
+T4	Regulon 107 114	regulon
+W1	Word 0 2	In
+W2	Word 3 7	that
+W3	Word 8 15	respect
+W4	Word 16 20	sigB
+W5	Word 21 23	is
+W6	Word 24 31	similar
+W7	Word 32 34	to
+W8	Word 35 38	the
+W9	Word 39 49	previously
+W10	Word 50 59	described
+W11	Word 60 64	gene
+W12	Word 65 69	gsiB
+W13	Word 70 75	which
+W14	Word 76 78	is
+W15	Word 79 83	also
+W16	Word 84 85	a
+W17	Word 86 92	member
+W18	Word 93 95	of
+W19	Word 96 99	the
+W20	Word 100 106	sigmaB
+W21	Word 107 114	regulon
+R1	comp:V-N(in) W5 W3
+R2	mod:ADJ-ADV W10 W9
+R3	mod_att:N-N W12 W11
+R4	comp:N-N(of) W17 W21
+R5	mod_pred:N-ADJ W4 W6
+R6	mod_att:N-ADJ W11 W10
+R7	comp:ADJ-N(to) W6 W12
+R8	mod_att:N-N W21 W20
+R9	mod:V-ADV W14 W15
+R10	mod_pred:N-N W12 W17

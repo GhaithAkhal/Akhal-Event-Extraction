@@ -1,0 +1,9 @@
+T10	Exp 753 767	the AIR-1 gene
+T11	Exp 769 774	whose
+T12	Exp 962 970	the fact
+T13	Exp 971 975	that
+T14	Exp 1947 1979	the human HLA-DQ class II subset	1973 1979	subset
+T15	Exp 1981 1986	which
+R1	Coref Anaphora:T11 Antecedent:T10
+R2	Coref Anaphora:T13 Antecedent:T12
+R3	Coref Anaphora:T15 Antecedent:T14

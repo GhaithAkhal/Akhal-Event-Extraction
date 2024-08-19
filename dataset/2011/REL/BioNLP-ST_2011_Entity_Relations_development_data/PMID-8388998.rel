@@ -1,0 +1,24 @@
+*	Equiv T1 T2
+T28	Entity 35 62	Jun oncogene family members
+T29	Entity 364 417	mouse mammary tumor virus (MMTV) long terminal repeat
+T30	Entity 419 422	LTR
+T31	Entity 554 562	MMTV LTR
+T32	Entity 688 707	-responsive element
+T33	Entity 709 712	GRE
+T34	Entity 746 762	deletion mutants
+T35	Entity 766 796	synthetic GRE oligonucleotides
+T36	Entity 776 779	GRE
+T37	Entity 881 902	GR DNA-binding domain
+T38	Entity 912 918	amino-
+T39	Entity 922 947	carboxyl-terminal domains
+T40	Entity 1160 1188	AP-1/TPA responsive elements
+T41	Entity 1160 1164	AP-1
+T42	Entity 1529 1537	MMTV LTR
+T43	Entity 1541 1544	GRE
+T44	Entity 1843 1847	AP-1
+T45	Entity 1848 1851	DNA
+T46	Entity 2044 2047	GRE
+T47	Entity 2152 2155	GRE
+R1	Protein-Component Arg1:T7 Arg2:T39
+R2	Protein-Component Arg1:T7 Arg2:T38
+R3	Protein-Component Arg1:T7 Arg2:T37

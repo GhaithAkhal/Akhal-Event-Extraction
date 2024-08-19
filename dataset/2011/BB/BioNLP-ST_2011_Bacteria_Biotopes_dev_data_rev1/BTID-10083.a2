@@ -1,0 +1,15 @@
+T1	Bacterium 0 30	Bordetella bronchiseptica RB50
+T2	Bacterium 43 53	Bordetella
+T3	HostPart 106 123	respiratory tract
+T4	Host 127 134	animals
+T5	Bacterium 408 445	Bordetella bronchiseptica strain RB50
+T6	Host 566 572	humans
+T7	Host 602 609	animals
+T8	Host 643 649	rabbit
+*	Equiv T1 T5
+E1	Localization Bacterium:T2 Localization:T4
+E2	Localization Bacterium:T2 Localization:T3
+E3	Localization Bacterium:T1 Localization:T7
+E4	PartOf Host:T4 Part:T3
+E5	Localization Bacterium:T1 Localization:T6
+E6	Localization Bacterium:T1 Localization:T8

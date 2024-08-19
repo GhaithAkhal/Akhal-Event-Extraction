@@ -1,0 +1,50 @@
+T1	Gene 4 8	yfhP
+T2	Gene 10 14	yfhQ
+T3	Gene 16 30	mutY homologue
+T4	Gene 16 20	mutY
+T5	Gene 33 37	yfhS
+T6	Gene 42 46	yfhR
+T7	Gene 48 72	oxidoreductase homologue
+T8	GeneFamily 48 62	oxidoreductase
+T9	Gene 115 125	sspE locus
+W1	Word 0 3	The
+W2	Word 4 8	yfhP
+W3	Word 10 14	yfhQ
+W4	Word 16 20	mutY
+W5	Word 21 30	homologue
+W6	Word 33 37	yfhS
+W7	Word 38 41	and
+W8	Word 42 46	yfhR
+W9	Word 48 62	oxidoreductase
+W10	Word 63 72	homologue
+W11	Word 74 79	genes
+W12	Word 81 86	which
+W13	Word 87 90	are
+W14	Word 91 98	located
+W15	Word 99 107	upstream
+W16	Word 108 110	of
+W17	Word 111 114	the
+W18	Word 115 119	sspE
+W19	Word 120 125	locus
+W20	Word 127 131	have
+W21	Word 132 136	been
+W22	Word 137 147	identified
+W23	Word 148 150	in
+W24	Word 151 154	the
+W25	Word 155 172	Bacillus subtilis
+W26	Word 173 179	genome
+R1	mod_att:N-N W11 W3
+R2	mod_att:N-N W5 W4
+R3	mod_att:N-N W11 W2
+R4	comp:ADV-N(of) W15 W19
+R5	appos W3 W5
+R6	mod_att:N-N W26 W25
+R7	subj:V_PASS-N W14 W11
+R8	mod_att:N-N W19 W18
+R9	mod:V_PASS-ADV W14 W15
+R10	mod_att:N-N W11 W8
+R11	appos W8 W10
+R12	mod_att:N-N W11 W6
+R13	subj:V_PASS-N W22 W11
+R14	mod_att:N-N W10 W9
+R15	comp:V_PASS-N(in) W22 W26

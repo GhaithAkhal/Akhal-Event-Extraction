@@ -1,0 +1,3 @@
+T18	Exp 117 137	a signaling receptor	129 137	receptor
+T19	Exp 138 142	that
+R1	Coref Anaphora:T19 Antecedent:T18

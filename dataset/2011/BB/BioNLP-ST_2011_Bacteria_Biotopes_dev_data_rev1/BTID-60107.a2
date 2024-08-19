@@ -1,0 +1,60 @@
+T1	Bacterium 0 19	Campylobacter fetus
+T2	Bacterium 49 68	Campylobacter fetus
+T3	Host 369 374	human
+T4	HostPart 375 379	body
+T5	Bacterium 1011 1032	C. fetus subsp. fetus
+T6	HostPart 1040 1056	intestinal tract
+T7	Host 1060 1066	cattle
+T8	Bacterium 2766 2785	Campylobacter fetus
+T9	HostPart 2832 2864	intestinal epithelial cell lines
+T10	Host 2884 2890	humans
+T11	Bacterium 2993 3012	Campylobacter fetus
+T12	HostPart 3048 3063	many cell lines
+T13	HostPart 3185 3200	many host cells
+T14	Host 3211 3217	humans
+T15	Host 3224 3231	animals
+T16	Host 3239 3245	cattle
+T17	Bacterium 3563 3600	Campylobacter fetus subsp. Venerealis
+T18	Host 3613 3617	bull
+T19	HostPart 3618 3675	mucus layer over the crypt cell layer of the male prepuce
+T20	Host 3722 3735	female cattle
+T21	Bacterium 3830 3862	Campylobacter fetus subsp. Fetus
+T22	Host 3917 3923	animal
+T23	Host 3932 3936	bird
+T24	Host 3938 3945	reptile
+T25	HostPart 3982 3992	mucus cell
+T26	Host 4079 4085	Humans
+T27	Bacterium 4142 4174	Campylobacter fetus subsp. Fetus
+*	Equiv T1 T2
+*	Equiv T1 T8
+*	Equiv T1 T11
+*	Equiv T21 T27
+E1	PartOf Host:T22 Part:T25
+E2	Localization Bacterium:T5 Localization:T6
+E3	Localization Bacterium:T1 Localization:T10
+E4	PartOf Host:T10 Part:T9
+E5	Localization Bacterium:T17 Localization:T19
+E6	PartOf Host:T24 Part:T25
+E7	PartOf Host:T14 Part:T13
+E8	Localization Bacterium:T17 Localization:T20
+E9	PartOf Host:T23 Part:T25
+E10	Localization Bacterium:T17 Localization:T18
+E11	Localization Bacterium:T1 Localization:T3
+E12	Localization Bacterium:T1 Localization:T9
+E13	PartOf Host:T16 Part:T13
+E14	Localization Bacterium:T21 Localization:T22
+E15	PartOf Host:T7 Part:T6
+E16	PartOf Host:T3 Part:T4
+E17	Localization Bacterium:T21 Localization:T24
+E18	Localization Bacterium:T1 Localization:T15
+E19	PartOf Host:T18 Part:T19
+E20	Localization Bacterium:T21 Localization:T25
+E21	Localization Bacterium:T21 Localization:T26
+E22	Localization Bacterium:T21 Localization:T23
+E23	Localization Bacterium:T1 Localization:T12
+E24	PartOf Host:T15 Part:T13
+E25	Localization Bacterium:T1 Localization:T16
+E26	Localization Bacterium:T1 Localization:T13
+E27	Localization Bacterium:T1 Localization:T4
+E28	Localization Bacterium:T5 Localization:T7
+E29	Localization Bacterium:T1 Localization:T14

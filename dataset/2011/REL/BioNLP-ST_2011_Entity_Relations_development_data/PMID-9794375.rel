@@ -1,0 +1,23 @@
+T34	Entity 170 173	CD3
+T35	Entity 221 224	CD3
+T36	Entity 349 357	tyrosine
+T37	Entity 532 535	CD3
+T38	Entity 553 561	tyrosine
+T39	Entity 758 761	CD3
+T40	Entity 907 910	CD3
+T41	Entity 1013 1021	tyrosine
+T42	Entity 1081 1089	tyrosine
+T43	Entity 1311 1314	CD3
+T44	Entity 1380 1383	CD3
+T45	Entity 1609 1612	CD3
+T46	Entity 1721 1729	tyrosine
+T47	Entity 1788 1796	tyrosine
+R1	Protein-Component Arg1:T6 Arg2:T36
+R2	Protein-Component Arg1:T7 Arg2:T36
+R3	Protein-Component Arg1:T9 Arg2:T36
+R4	Protein-Component Arg1:T10 Arg2:T36
+R5	Protein-Component Arg1:T11 Arg2:T38
+R6	Protein-Component Arg1:T19 Arg2:T41
+R7	Protein-Component Arg1:T20 Arg2:T42
+R8	Protein-Component Arg1:T32 Arg2:T46
+R9	Protein-Component Arg1:T33 Arg2:T47

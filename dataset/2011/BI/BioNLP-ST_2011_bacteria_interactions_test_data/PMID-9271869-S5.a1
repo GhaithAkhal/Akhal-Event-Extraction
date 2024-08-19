@@ -1,0 +1,54 @@
+T1	Promoter 4 13	promoters
+T2	Action 30 56	transcriptional initiation
+T3	Protein 62 69	sigma A
+T4	Promoter 80 97	upstream promoter
+T5	Protein 156 163	sigma B
+T6	Promoter 174 193	downstream promoter
+W1	Word 0 3	Two
+W2	Word 4 13	promoters
+W3	Word 14 17	are
+W4	Word 18 26	involved
+W5	Word 27 29	in
+W6	Word 30 45	transcriptional
+W7	Word 46 56	initiation
+W8	Word 58 61	the
+W9	Word 62 69	sigma A
+W10	Word 70 79	dependent
+W11	Word 80 88	upstream
+W12	Word 89 97	promoter
+W13	Word 98 109	contributes
+W14	Word 110 112	to
+W15	Word 113 116	the
+W16	Word 117 122	basal
+W17	Word 123 128	level
+W18	Word 129 135	during
+W19	Word 136 142	growth
+W20	Word 144 151	whereas
+W21	Word 152 155	the
+W22	Word 156 163	sigma B
+W23	Word 164 173	dependent
+W24	Word 174 184	downstream
+W25	Word 185 193	promoter
+W26	Word 194 196	is
+W27	Word 197 204	induced
+W28	Word 205 210	after
+W29	Word 211 220	different
+W30	Word 221 227	stress
+W31	Word 228 238	conditions
+R1	comp:V_PASS-N(in) W4 W7
+R2	mod_att:N-ADJ W17 W16
+R3	mod:ADJ-N W23 W22
+R4	subj:V-N W13 W12
+R5	mod_att:N-ADJ W31 W29
+R6	mod_att:N-N W31 W30
+R7	comp:V_PASS-N(after) W27 W31
+R8	mod_att:N-ADJ W25 W24
+R9	mod_att:N-ADJ W12 W11
+R10	mod_att:N-ADJ W12 W10
+R11	comp:V-N(to) W13 W17
+R12	comp:V-N(during) W13 W19
+R13	mod_att:N-ADJ W7 W6
+R14	mod:ADJ-N W10 W9
+R15	subj:V_PASS-N W27 W25
+R16	subj:V_PASS-N W4 W2
+R17	mod_att:N-ADJ W25 W23

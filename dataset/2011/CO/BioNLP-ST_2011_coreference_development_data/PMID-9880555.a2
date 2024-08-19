@@ -1,0 +1,9 @@
+T16	Exp 232 267	elk-1-specific genomic phage clones	261 267	clones
+T17	Exp 268 272	that
+T18	Exp 858 877	pre-monocytic cells	872 877	cells
+T19	Exp 879 884	which
+T20	Exp 955 971	other cell types	966 971	types
+T21	Exp 973 978	which
+R1	Coref Anaphora:T17 Antecedent:T16	[T4]
+R2	Coref Anaphora:T19 Antecedent:T18
+R3	Coref Anaphora:T21 Antecedent:T20

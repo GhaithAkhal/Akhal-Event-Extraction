@@ -1,0 +1,3 @@
+T26	Exp 354 370	a viral oncogene
+T27	Exp 371 375	that
+R1	Coref Anaphora:T27 Antecedent:T26

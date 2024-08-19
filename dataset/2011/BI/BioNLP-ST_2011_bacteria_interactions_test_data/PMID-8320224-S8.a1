@@ -1,0 +1,29 @@
+T1	Gene 28 33	spoVE
+T2	Expression 34 44	expression
+T3	PolymeraseComplex 95 128	sigma E-associated RNA polymerase
+W1	Word 0 5	These
+W2	Word 6 13	results
+W3	Word 14 22	indicate
+W4	Word 23 27	that
+W5	Word 28 33	spoVE
+W6	Word 34 44	expression
+W7	Word 45 47	in
+W8	Word 48 59	sporulating
+W9	Word 60 65	cells
+W10	Word 66 68	is
+W11	Word 69 79	controlled
+W12	Word 80 91	essentially
+W13	Word 92 94	by
+W14	Word 95 102	sigma E
+W15	Word 103 113	associated
+W16	Word 114 117	RNA
+W17	Word 118 128	polymerase
+R1	mod_att:N-N W9 W8
+R2	comp:V_PASS-N(by) W11 W17
+R3	subj:V-N W3 W2
+R4	comp:N-N(in) W6 W9
+R5	mod_att:N-ADJ W17 W15
+R6	mod_att:N-N W17 W16
+R7	mod:ADJ-N W15 W14
+R8	subj:V_PASS-N W11 W6
+R9	mod_att:N-N W6 W5

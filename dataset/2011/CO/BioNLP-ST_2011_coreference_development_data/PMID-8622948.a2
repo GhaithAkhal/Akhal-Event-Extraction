@@ -1,0 +1,9 @@
+T38	Exp 376 391	gene expression
+T39	Exp 392 396	that
+T40	Exp 1150 1198	anti-CD3 and anti-CD28 stimulated Rel-/- T cells	1193 1198	cells
+T41	Exp 1200 1205	which
+T42	Exp 1267 1281	Exogenous IL-2
+T43	Exp 1283 1288	which
+R1	Coref Anaphora:T39 Antecedent:T38
+R2	Coref Anaphora:T41 Antecedent:T40	[T23, T24]
+R3	Coref Anaphora:T43 Antecedent:T42	[T25]

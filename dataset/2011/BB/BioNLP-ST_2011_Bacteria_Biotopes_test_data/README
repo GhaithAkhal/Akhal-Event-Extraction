@@ -1,0 +1,29 @@
+Test Data for BioNLP'11 Shared Task on Event Extraction -- Bacteria Biotopes
+
+
+
+- Contains 27 defining texts on bacteria with bacteria and localization
+  annotations.
+
+- For format details, please refer to the shared task homepage.
+  http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/SharedTask/
+
+
+File Descriptions:
+
+*.txt	files contain the target text.
+	Documents may contain severeal sections, each section title and each section is contained in a single line.
+*.a2	files contain standoff annotations for bacteria, localizations, localization events and organ/organism part-of relations.
+	For training, the participants will be provided with these files.
+	For test, the participants have to create this annotation.
+
+History:
+
+ 28 February 2010, Initial version
+
+
+Authors:
+
+BioNLP'09 Shared Task organizers,
+bionlpsharedtask@gmail.com
+http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/SharedTask/

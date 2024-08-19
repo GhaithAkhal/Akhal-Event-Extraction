@@ -1,0 +1,21 @@
+T1	Bacterium 32 53	green sulfur bacteria
+T2	Bacterium 55 58	GSB
+T3	Bacterium 67 75	Chlorobi
+T4	Water 100 156	illuminated, stratified, and anoxic aquatic environments
+T5	Environment 158 167	sediments
+T6	Water 215 226	hot springs
+T7	Water 417 437	aquatic environments
+T8	Bacterium 2296 2333	Chlorobium limicola strain DSMZ 245 T
+T9	Bacterium 2590 2607	Strain DSMZ 245 T
+T10	Water 2645 2662	Gilroy Hot Spring
+T11	Bacterium 3030 3043	Chl. limicola
+T12	Water 3076 3093	freshwater medium
+*	Equiv T1 T2
+*	Equiv T1 T3
+*	Equiv T8 T9
+E1	Localization Bacterium:T1 Localization:T7
+E2	Localization Bacterium:T11 Localization:T12
+E3	Localization Bacterium:T1 Localization:T6
+E4	Localization Bacterium:T8 Localization:T10
+E5	Localization Bacterium:T1 Localization:T5
+E6	Localization Bacterium:T1 Localization:T4

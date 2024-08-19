@@ -1,0 +1,3 @@
+T10	Exp 173 183	NF-kappa B
+T11	Exp 189 192	its
+R1	Coref Anaphora:T11 Antecedent:T10

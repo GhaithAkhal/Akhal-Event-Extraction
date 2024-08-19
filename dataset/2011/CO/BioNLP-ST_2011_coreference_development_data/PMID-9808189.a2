@@ -1,0 +1,3 @@
+T9	Exp 112 117	IL-12
+T10	Exp 207 237	This pro-inflammatory cytokine	229 237	cytokine
+R1	Coref Anaphora:T10 Antecedent:T9

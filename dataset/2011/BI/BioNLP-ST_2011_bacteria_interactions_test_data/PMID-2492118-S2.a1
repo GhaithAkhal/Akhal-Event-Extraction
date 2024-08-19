@@ -1,0 +1,46 @@
+T1	Protein 2 43	27-kilodalton RNA polymerase sigma factor
+T2	Protein 51 58	sigma K
+T3	Protein 63 71	sigma 27
+T4	Transcription 100 118	weak transcription
+T5	Gene 122 129	spoIVCB
+T6	Transcription 134 154	strong transcription
+T7	Gene 158 162	cotD
+W1	Word 0 1	A
+W2	Word 2 15	27-kilodalton
+W3	Word 16 19	RNA
+W4	Word 20 30	polymerase
+W5	Word 31 36	sigma
+W6	Word 37 43	factor
+W7	Word 44 50	called
+W8	Word 51 58	sigma K
+W9	Word 60 62	or
+W10	Word 63 71	sigma 27
+W11	Word 73 76	has
+W12	Word 77 81	been
+W13	Word 82 87	found
+W14	Word 88 92	that
+W15	Word 93 99	causes
+W16	Word 100 104	weak
+W17	Word 105 118	transcription
+W18	Word 119 121	of
+W19	Word 122 129	spoIVCB
+W20	Word 130 133	and
+W21	Word 134 140	strong
+W22	Word 141 154	transcription
+W23	Word 155 157	of
+W24	Word 158 162	cotD
+R1	obj:V-N W15 W17
+R2	mod_att:N-N W4 W3
+R3	subj:V-N W15 W6
+R4	mod_att:N-N W4 W2
+R5	comp:N-N(of) W22 W24
+R6	subj:V-N W13 W6
+R7	mod_att:N-N W6 W5
+R8	mod_att:N-ADJ W22 W21
+R9	obj:V_PASS-N W7 W8
+R10	obj:V-N W15 W22
+R11	mod_att:N-ADJ W17 W16
+R12	comp:N-N(of) W17 W19
+R13	subj:V_PASS-N W7 W6
+R14	mod_att:N-N W6 W4
+R15	appos W8 W10

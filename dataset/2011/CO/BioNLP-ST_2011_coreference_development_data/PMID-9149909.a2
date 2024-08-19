@@ -1,0 +1,18 @@
+T14	Exp 136 221	Triggering of HLA class II antigens by the anti-HLA-DR monoclonal antibody (mAb) L243	136 146	Triggering
+T15	Exp 333 386	the non-Hodgkin's lymphoma cells Ri-I, Ci-I, and Sc-I
+T16	Exp 388 393	which
+T17	Exp 509 511	it
+T18	Exp 591 608	TNF-alpha release	601 608	release
+T19	Exp 654 656	it
+T20	Exp 1064 1082	released TNF-alpha	1073 1082	TNF-alpha
+T21	Exp 1194 1196	it
+T22	Exp 1313 1320	B cells	1315 1320	cells
+T23	Exp 1389 1394	their
+T24	Exp 1690 1711	intracellular signals	1704 1711	signals
+T25	Exp 1769 1774	those
+R1	Coref Anaphora:T16 Antecedent:T15
+R2	Coref Anaphora:T17 Antecedent:T14
+R3	Coref Anaphora:T19 Antecedent:T18	[T5]
+R4	Coref Anaphora:T21 Antecedent:T20	[T9]
+R5	Coref Anaphora:T23 Antecedent:T22
+R6	Coref Anaphora:T25 Antecedent:T24

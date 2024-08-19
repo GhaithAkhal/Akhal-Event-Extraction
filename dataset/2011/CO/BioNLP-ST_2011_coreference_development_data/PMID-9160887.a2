@@ -1,0 +1,3 @@
+T10	Exp 868 904	the clonal expansion of CD4+ T-cells	879 888	expansion
+T11	Exp 906 911	which
+R1	Coref Anaphora:T11 Antecedent:T10	[T8]

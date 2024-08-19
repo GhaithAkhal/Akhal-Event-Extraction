@@ -1,0 +1,9 @@
+T11	Exp 202 215	various genes	210 215	genes
+T12	Exp 216 220	that
+T13	Exp 305 372	suppression of NF-kappa B activity with cell-permeable SN50 peptide	305 316	suppression
+T14	Exp 374 379	which
+T15	Exp 423 441	NF-kappa B1 dimers	435 441	dimers
+T16	Exp 455 460	their
+R1	Coref Anaphora:T12 Antecedent:T11
+R2	Coref Anaphora:T14 Antecedent:T13
+R3	Coref Anaphora:T16 Antecedent:T15

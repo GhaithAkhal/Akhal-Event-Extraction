@@ -1,0 +1,30 @@
+T22	Exp 0 28	Initiation binding repressor
+T23	Exp 30 38	a factor
+T24	Exp 39 43	that
+T25	Exp 301 329	a chicken erythrocyte factor	323 329	factor
+T26	Exp 370 374	that
+T27	Exp 444 463	the histone h5 gene	459 463	gene
+T28	Exp 476 479	its
+T29	Exp 585 593	a factor
+T30	Exp 609 612	IBF
+T31	Exp 628 632	that
+T32	Exp 744 780	a 503-amino-acid-long acidic protein	773 780	protein
+T33	Exp 781 786	which
+T34	Exp 974 982	evidence
+T35	Exp 983 987	that
+T36	Exp 988 999	IBR and IBF
+T37	Exp 1049 1054	their
+T38	Exp 1126 1131	IBR/F
+T39	Exp 1147 1157	the factor
+T40	Exp 1426 1477	a bipartite nuclear localization signal (89 to 106)	1459 1465	signal
+T41	Exp 1478 1483	which
+R1	Coref Anaphora:T23 Antecedent:T22	[T1]
+R2	Coref Anaphora:T24 Antecedent:T23
+R3	Coref Anaphora:T26 Antecedent:T25
+R4	Coref Anaphora:T28 Antecedent:T27	[T5]
+R5	Coref Anaphora:T31 Antecedent:T29
+R6	Coref Anaphora:T33 Antecedent:T32
+R7	Coref Anaphora:T35 Antecedent:T34
+R8	Coref Anaphora:T37 Antecedent:T36	[T19, T18]
+R9	Coref Anaphora:T39 Antecedent:T38	[T20, T21]
+R10	Coref Anaphora:T41 Antecedent:T40

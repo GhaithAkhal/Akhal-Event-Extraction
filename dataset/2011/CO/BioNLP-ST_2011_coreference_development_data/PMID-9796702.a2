@@ -1,0 +1,12 @@
+T25	Exp 114 120	p21ras
+T26	Exp 273 312	this guanine nucleotide binding protein	305 312	protein
+T27	Exp 470 517	Phosphatidylinositol 3-kinase (PtdIns 3-kinase)
+T28	Exp 533 550	this lipid kinase	544 550	kinase
+T29	Exp 929 944	the possibility
+T30	Exp 945 949	that
+T31	Exp 1054 1078	a Rac-1 mediated pathway	1071 1078	pathway
+T32	Exp 1079 1083	that
+R1	Coref Anaphora:T26 Antecedent:T25	[T4]
+R2	Coref Anaphora:T28 Antecedent:T27
+R3	Coref Anaphora:T30 Antecedent:T29
+R4	Coref Anaphora:T32 Antecedent:T31	[T14]

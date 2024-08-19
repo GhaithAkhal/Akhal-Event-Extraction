@@ -1,0 +1,14 @@
+*	Equiv T5 T6
+T13	Entity 51 67	response element
+T14	Entity 93 101	enhancer
+T15	Entity 390 398	enhancer
+T16	Entity 438 454	response element
+T17	Entity 456 462	CD28RE
+T18	Entity 540 546	CD28RE
+T19	Entity 582 612	consensus kappaB binding motif
+T20	Entity 639 645	CD28RE
+T21	Entity 825 835	NF- kappaB
+R1	Protein-Component Arg1:T2 Arg2:T13
+R2	Protein-Component Arg1:T2 Arg2:T14
+R3	Protein-Component Arg1:T7 Arg2:T16
+R4	Protein-Component Arg1:T7 Arg2:T15

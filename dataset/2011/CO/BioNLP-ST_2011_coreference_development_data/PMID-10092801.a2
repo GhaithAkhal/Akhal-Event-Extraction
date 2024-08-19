@@ -1,0 +1,3 @@
+T7	Exp 1145 1155	thymocytes
+T8	Exp 1179 1184	their
+R1	Coref Anaphora:T8 Antecedent:T7

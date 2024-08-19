@@ -1,0 +1,45 @@
+T1	Protein 26 32	PhoP~P
+T2	Transcription 62 75	transcription
+T3	Gene 83 87	tagA
+T4	Gene 92 96	tagD
+T5	Promoter 97 106	promoters
+T6	Transcription 132 145	transcription
+T7	Gene 153 157	tuaA
+T8	Promoter 158 166	promoter
+W1	Word 0 3	The
+W2	Word 4 11	results
+W3	Word 12 20	indicate
+W4	Word 21 25	that
+W5	Word 26 32	PhoP~P
+W6	Word 33 35	is
+W7	Word 36 46	sufficient
+W8	Word 47 49	to
+W9	Word 50 57	repress
+W10	Word 58 61	the
+W11	Word 62 75	transcription
+W12	Word 76 78	of
+W13	Word 79 82	the
+W14	Word 83 87	tagA
+W15	Word 88 91	and
+W16	Word 92 96	tagD
+W17	Word 97 106	promoters
+W18	Word 107 110	and
+W19	Word 111 115	also
+W20	Word 116 118	to
+W21	Word 119 127	activate
+W22	Word 128 131	the
+W23	Word 132 145	transcription
+W24	Word 146 148	of
+W25	Word 149 152	the
+W26	Word 153 157	tuaA
+W27	Word 158 166	promoter
+R1	obj:V-N W9 W11
+R2	subj:V-N W3 W2
+R3	obj:V-N W21 W23
+R4	subj:V-N W21 W5
+R5	mod_att:N-N W17 W14
+R6	mod_att:N-N W27 W26
+R7	subj:V-N W9 W5
+R8	comp:N-N(of) W11 W17
+R9	mod_att:N-N W17 W16
+R10	comp:N-N(of) W23 W27

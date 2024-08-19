@@ -1,0 +1,11 @@
+T13	Entity 0 35	Epstein-Barr virus replicative gene
+T14	Entity 369 386	linear EBV genome
+T15	Entity 436 446	EBV genome
+T16	Entity 767 772	locus
+T17	Entity 797 802	locus
+T18	Entity 1007 1018	Fp promoter
+T19	Entity 1041 1055	Cp/Wp promoter
+T20	Entity 1256 1260	loci
+T21	Entity 1551 1568	replicative genes
+R1	Protein-Component Arg1:T9 Arg2:T18
+R2	Protein-Component Arg1:T9 Arg2:T19

@@ -1,0 +1,41 @@
+T1	GeneComplex 25 30	bmrUR
+T2	Protein 47 53	sigmaB
+T3	Action 81 92	elimination
+W1	Word 1 2	i
+W2	Word 4 7	The
+W3	Word 8 15	finding
+W4	Word 16 20	that
+W5	Word 21 24	the
+W6	Word 25 30	bmrUR
+W7	Word 31 37	operon
+W8	Word 38 40	is
+W9	Word 41 46	under
+W10	Word 47 53	sigmaB
+W11	Word 54 61	control
+W12	Word 62 71	indicates
+W13	Word 72 76	that
+W14	Word 77 80	the
+W15	Word 81 92	elimination
+W16	Word 93 95	of
+W17	Word 96 105	multidrug
+W18	Word 106 115	compounds
+W19	Word 116 121	might
+W20	Word 122 124	be
+W21	Word 125 126	a
+W22	Word 127 130	new
+W23	Word 131 139	function
+W24	Word 140 142	in
+W25	Word 143 151	multiple
+W26	Word 152 158	stress
+W27	Word 159 169	resistance
+R1	mod_att:N-ADJ W26 W25
+R2	subj:V-N W12 W3
+R3	mod_att:N-N W27 W26
+R4	mod_pred:N-N W15 W23
+R5	comp:N-N(in) W23 W27
+R6	mod_att:N-ADJ W23 W22
+R7	mod_att:N-N W7 W6
+R8	mod_pred:N-N W7 W11
+R9	mod_att:N-ADJ W18 W17
+R10	mod_att:N-N W11 W10
+R11	comp:N-N(of) W15 W18

@@ -1,0 +1,25 @@
+T1	Protein 4 16	sigma factor
+T2	Protein 76 83	sigma E
+T3	Protein 94 102	sigma 29
+W1	Word 0 3	One
+W2	Word 4 9	sigma
+W3	Word 10 16	factor
+W4	Word 18 23	which
+W5	Word 24 31	appears
+W6	Word 32 33	2
+W7	Word 34 35	h
+W8	Word 36 41	after
+W9	Word 42 45	the
+W10	Word 46 56	initiation
+W11	Word 57 59	of
+W12	Word 60 71	sporulation
+W13	Word 73 75	is
+W14	Word 76 83	sigma E
+W15	Word 85 93	formerly
+W16	Word 94 102	sigma 29
+R1	mod_pred:N-N W3 W14
+R2	comp:V-N(after) W5 W10
+R3	comp:N-N(of) W10 W12
+R4	appos W14 W16
+R5	mod_att:N-N W3 W2
+R6	subj:V-N W5 W3

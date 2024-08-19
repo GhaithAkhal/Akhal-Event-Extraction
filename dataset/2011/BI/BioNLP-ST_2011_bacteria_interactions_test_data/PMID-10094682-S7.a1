@@ -1,0 +1,56 @@
+T1	Expression 4 14	expression
+T2	GeneComplex 22 25	bkd
+T3	Action 128 136	presence
+T4	Protein 157 161	SigL
+T5	ProteinFamily 179 187	sigma 54
+W1	Word 0 3	The
+W2	Word 4 14	expression
+W3	Word 15 17	of
+W4	Word 18 21	the
+W5	Word 22 25	bkd
+W6	Word 26 32	operon
+W7	Word 33 36	was
+W8	Word 37 44	induced
+W9	Word 45 47	by
+W10	Word 48 51	the
+W11	Word 52 60	presence
+W12	Word 61 63	of
+W13	Word 64 74	isoleucine
+W14	Word 75 77	or
+W15	Word 78 84	valine
+W16	Word 85 87	in
+W17	Word 88 91	the
+W18	Word 92 98	growth
+W19	Word 99 105	medium
+W20	Word 106 109	and
+W21	Word 110 118	depended
+W22	Word 119 123	upon
+W23	Word 124 127	the
+W24	Word 128 136	presence
+W25	Word 137 139	of
+W26	Word 140 143	the
+W27	Word 144 149	sigma
+W28	Word 150 156	factor
+W29	Word 157 161	SigL
+W30	Word 163 164	a
+W31	Word 165 171	member
+W32	Word 172 174	of
+W33	Word 175 178	the
+W34	Word 179 187	sigma 54
+W35	Word 188 194	family
+R1	subj:V_PASS-N W8 W2
+R2	comp:V_PASS-N(upon) W21 W24
+R3	comp:N-N(of) W11 W13
+R4	comp:N-N(of) W11 W15
+R5	comp:N-N(of) W2 W6
+R6	comp:N-N(in) W11 W19
+R7	mod_att:N-N W6 W5
+R8	mod_att:N-N W35 W34
+R9	mod_att:N-N W19 W18
+R10	subj:V_PASS-N W21 W2
+R11	appos W29 W31
+R12	mod_att:N-N W29 W28
+R13	comp:N-N(of) W31 W35
+R14	mod_att:N-N W28 W27
+R15	comp:N-N(of) W24 W29
+R16	comp:V_PASS-N(by) W8 W11

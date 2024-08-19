@@ -1,0 +1,9 @@
+T11	Exp 429 474	NF-kappa B and/or activating protein-1 (AP-1)
+T12	Exp 585 612	these transcription factors
+T13	Exp 726 743	the growth factor	737 743	factor
+T14	Exp 915 936	primary human T cells	931 936	cells
+T15	Exp 937 941	that
+T16	Exp 1175 1192	the growth factor	1186 1192	factor
+R1	Coref Anaphora:T12 Antecedent:T11
+R2	Coref Anaphora:T15 Antecedent:T14
+R3	Coref Anaphora:T16 Antecedent:T13

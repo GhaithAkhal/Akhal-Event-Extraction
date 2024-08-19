@@ -1,0 +1,2 @@
+Properties of the Bacillus subtilis chemotaxis protein CheF, a homolog of the Salmonella typhimurium flagellar protein FliJ.
+The nucleotide sequence of Bacillus subtilis cheF was corrected. It encodes an 18-kDa protein that is homologous to FliJ, a protein required for formation of basal bodies in Escherichia coli and Salmonella typhimurium. Methanol release is abnormal in cheF mutants, suggesting that the morphology and functioning of the motor affects methanol formation.

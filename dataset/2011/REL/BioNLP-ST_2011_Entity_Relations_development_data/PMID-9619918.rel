@@ -1,0 +1,13 @@
+*	Equiv T3 T4
+T19	Entity 23 26	CD8
+T20	Entity 77 86	NF-kappaB
+T21	Entity 234 255	nuclear factor kappaB
+T22	Entity 257 266	NF-kappaB
+T23	Entity 418 421	CD8
+T24	Entity 563 566	CD8
+T25	Entity 922 931	NF-kappaB
+T26	Entity 1082 1091	NF-kappaB
+T27	Entity 1390 1399	NF-kappaB
+T28	Entity 1411 1414	CD8
+R1	Subunit-Complex Arg1:T14 Arg2:T26
+R2	Subunit-Complex Arg1:T15 Arg2:T26

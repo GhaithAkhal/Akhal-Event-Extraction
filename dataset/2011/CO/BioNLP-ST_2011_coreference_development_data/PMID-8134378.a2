@@ -1,0 +1,8 @@
+T14	Exp 735 791	lipoarabinomannan (LAM) from the mycobacterial cell wall
+T15	Exp 793 798	which
+T16	Exp 1380 1432	one or more of these motifs within the IL-6 promoter	1401 1407	motifs
+T17	Exp 1451 1455	each
+T18	Exp 1498 1502	they
+R1	Coref Anaphora:T15 Antecedent:T14
+R2	Coref Anaphora:T17 Antecedent:T16	[T10]
+R3	Coref Anaphora:T18 Antecedent:T16	[T10]

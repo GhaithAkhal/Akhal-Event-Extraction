@@ -1,0 +1,42 @@
+T1	Action 5 28	stress-induced increase
+T2	Gene 32 36	ykzA
+T3	Expression 37 47	expression
+T4	Protein 104 110	sigmaB
+T5	Regulon 163 170	regulon
+W1	Word 0 4	This
+W2	Word 5 19	stress-induced
+W3	Word 20 28	increase
+W4	Word 29 31	in
+W5	Word 32 36	ykzA
+W6	Word 37 47	expression
+W7	Word 48 50	is
+W8	Word 51 61	absolutely
+W9	Word 62 71	dependent
+W10	Word 72 74	on
+W11	Word 75 78	the
+W12	Word 79 90	alternative
+W13	Word 91 96	sigma
+W14	Word 97 103	factor
+W15	Word 104 110	sigmaB
+W16	Word 112 117	which
+W17	Word 118 126	controls
+W18	Word 127 128	a
+W19	Word 129 134	large
+W20	Word 135 151	stationary-phase
+W21	Word 152 155	and
+W22	Word 156 162	stress
+W23	Word 163 170	regulon
+R1	mod_att:N-ADJ W20 W19
+R2	mod_att:N-N W15 W14
+R3	mod_att:N-ADJ W3 W2
+R4	obj:V-N W17 W23
+R5	mod:ADJ-ADV W9 W8
+R6	mod_att:N-N W23 W22
+R7	mod_pred:N-ADJ W3 W9
+R8	mod_att:N-N W6 W5
+R9	mod_att:N-N W14 W13
+R10	subj:V-N W17 W15
+R11	comp:ADJ-N(on) W9 W15
+R12	obj:V-N W17 W20
+R13	comp:N-N(in) W3 W6
+R14	mod_att:N-ADJ W14 W12

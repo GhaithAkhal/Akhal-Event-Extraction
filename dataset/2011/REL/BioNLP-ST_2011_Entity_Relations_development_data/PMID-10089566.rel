@@ -1,0 +1,18 @@
+*	Equiv T5 T6
+T19	Entity 236 256	extracellular domain
+T20	Entity 554 558	cAMP
+T21	Entity 563 572	NF-kappaB
+T22	Entity 596 600	cAMP
+T23	Entity 681 698	adenylate cyclase
+T24	Entity 811 820	NF-kappaB
+T25	Entity 855 864	NF-kappaB
+T26	Entity 878 907	main NF-kappaB-binding site 2
+T27	Entity 883 892	NF-kappaB
+T28	Entity 921 929	promoter
+T29	Entity 1093 1108	pertussis toxin
+T30	Entity 1399 1408	NF-kappaB
+T31	Entity 1488 1505	adenylate cyclase
+T32	Entity 1510 1525	pertussis-toxin
+R1	Protein-Component Arg1:T4 Arg2:T19
+R2	Protein-Component Arg1:T13 Arg2:T26
+R3	Protein-Component Arg1:T13 Arg2:T28

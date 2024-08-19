@@ -1,0 +1,55 @@
+T1	PolymeraseComplex 49 82	RNA polymerase containing sigma A
+T2	Transcription 132 145	transcription
+T3	GeneComplex 153 159	spoIIG
+W1	Word 0 5	These
+W2	Word 6 13	results
+W3	Word 14 21	support
+W4	Word 22 23	a
+W5	Word 24 29	model
+W6	Word 30 32	in
+W7	Word 33 38	which
+W8	Word 39 40	a
+W9	Word 41 45	form
+W10	Word 46 48	of
+W11	Word 49 52	RNA
+W12	Word 53 63	polymerase
+W13	Word 64 74	containing
+W14	Word 75 82	sigma A
+W15	Word 83 85	is
+W16	Word 86 94	utilized
+W17	Word 95 97	in
+W18	Word 98 100	an
+W19	Word 101 108	unusual
+W20	Word 109 115	manner
+W21	Word 116 118	to
+W22	Word 119 127	activate
+W23	Word 128 131	the
+W24	Word 132 145	transcription
+W25	Word 146 148	of
+W26	Word 149 152	the
+W27	Word 153 159	spoIIG
+W28	Word 160 166	operon
+W29	Word 167 171	well
+W30	Word 172 177	after
+W31	Word 178 181	the
+W32	Word 182 187	onset
+W33	Word 188 190	of
+W34	Word 191 200	endospore
+W35	Word 201 210	formation
+R1	obj:V-N W3 W5
+R2	mod_att:N-ADJ W35 W34
+R3	subj:V_PASS-N W16 W14
+R4	comp:V-N(after) W22 W32
+R5	mod_att:N-N W12 W11
+R6	comp:V_PASS-N(in) W16 W5
+R7	comp:N-N(of) W24 W28
+R8	obj:V-N W22 W24
+R9	comp:N-N(of) W32 W35
+R10	obj:V-N W13 W14
+R11	subj:V-N W3 W2
+R12	comp:N-N(of) W9 W12
+R13	subj:V-N W13 W12
+R14	mod_att:N-N W28 W27
+R15	comp:V_PASS-V(to) W16 W22
+R16	comp:V_PASS-N(in) W16 W20
+R17	mod_att:N-ADJ W20 W19

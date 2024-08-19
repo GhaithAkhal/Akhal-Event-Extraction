@@ -1,0 +1,38 @@
+T1	Action 78 88	activities
+T2	Protein 92 98	sigmaE
+T3	Protein 132 138	sigmaF
+W1	Word 0 3	The
+W2	Word 4 17	developmental
+W3	Word 18 27	programme
+W4	Word 28 30	of
+W5	Word 31 36	these
+W6	Word 37 40	two
+W7	Word 41 46	cells
+W8	Word 47 55	involves
+W9	Word 56 59	the
+W10	Word 60 77	compartmentalized
+W11	Word 78 88	activities
+W12	Word 89 91	of
+W13	Word 92 98	sigmaE
+W14	Word 99 101	in
+W15	Word 102 105	the
+W16	Word 106 112	larger
+W17	Word 113 119	mother
+W18	Word 120 124	cell
+W19	Word 125 128	and
+W20	Word 129 131	of
+W21	Word 132 138	sigmaF
+W22	Word 139 141	in
+W23	Word 142 145	the
+W24	Word 146 153	smaller
+W25	Word 154 162	prespore
+R1	mod_att:N-ADJ W3 W2
+R2	obj:V-N W8 W11
+R3	mod_att:N-N W18 W17
+R4	comp:N-N(in) W11 W25
+R5	comp:N-N(in) W11 W18
+R6	comp:N-N(of) W11 W13
+R7	comp:N-N(of) W3 W7
+R8	comp:N-N(of) W11 W21
+R9	subj:V-N W8 W3
+R10	mod_att:N-ADJ W11 W10

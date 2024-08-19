@@ -1,0 +1,8 @@
+T10	Exp 302 312	NF-kappa B
+T11	Exp 326 329	its
+T12	Exp 356 359	its
+T13	Exp 760 797	the newly synthesized I kappa B alpha	782 797	I kappa B alpha
+T14	Exp 905 926	this labile inhibitor	917 926	inhibitor
+R1	Coref Anaphora:T11 Antecedent:T10
+R2	Coref Anaphora:T12 Antecedent:T10
+R3	Coref Anaphora:T14 Antecedent:T13	[T7]

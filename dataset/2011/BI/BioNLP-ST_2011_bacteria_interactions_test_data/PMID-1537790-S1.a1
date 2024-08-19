@@ -1,0 +1,43 @@
+T1	Gene 4 10	spoIIG
+T2	Promoter 11 19	promoter
+T3	PolymeraseComplex 31 64	RNA polymerase containing sigma A
+T4	PolymeraseComplex 66 75	E sigma A
+T5	PolymeraseComplex 82 112	primary form of RNA polymerase
+W1	Word 0 3	The
+W2	Word 4 10	spoIIG
+W3	Word 11 19	promoter
+W4	Word 20 22	is
+W5	Word 23 27	used
+W6	Word 28 30	by
+W7	Word 31 34	RNA
+W8	Word 35 45	polymerase
+W9	Word 46 56	containing
+W10	Word 57 64	sigma A
+W11	Word 66 75	E sigma A
+W12	Word 78 81	the
+W13	Word 82 89	primary
+W14	Word 90 94	form
+W15	Word 95 97	of
+W16	Word 98 101	RNA
+W17	Word 102 112	polymerase
+W18	Word 113 118	found
+W19	Word 119 121	in
+W20	Word 122 132	vegetative
+W21	Word 133 138	cells
+W22	Word 139 141	in
+W23	Word 142 159	Bacillus subtilis
+R1	mod_att:N-N W17 W16
+R2	subj:V_PASS-N W18 W17
+R3	comp:N-N(of) W14 W17
+R4	obj:V-N W9 W10
+R5	mod_att:N-N W8 W7
+R6	comp:V_PASS-N(in) W18 W21
+R7	mod_att:N-N W3 W2
+R8	appos W8 W11
+R9	mod_att:N-N W21 W23
+R10	mod_att:N-N W14 W13
+R11	comp:V_PASS-N(by) W5 W8
+R12	appos W8 W14
+R13	subj:V_PASS-N W5 W3
+R14	mod_att:N-ADJ W21 W20
+R15	subj:V-N W9 W8

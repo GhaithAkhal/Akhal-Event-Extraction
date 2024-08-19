@@ -1,0 +1,3 @@
+T4	Exp 39 51	CD2 antigen-
+T5	Exp 275 290	the CD2 antigen
+R1	Coref Anaphora:T5 Antecedent:T4

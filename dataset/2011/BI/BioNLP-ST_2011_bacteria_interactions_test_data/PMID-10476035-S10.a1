@@ -1,0 +1,53 @@
+T1	Action 50 63	sequestration
+T2	Protein 67 73	SpoIIE
+T3	Protein 142 148	sigmaF
+T4	Action 149 159	activation
+T5	Action 181 191	activation
+W1	Word 0 5	Taken
+W2	Word 6 14	together
+W3	Word 16 19	the
+W4	Word 20 27	results
+W5	Word 28 35	support
+W6	Word 36 39	the
+W7	Word 40 44	idea
+W8	Word 45 49	that
+W9	Word 50 63	sequestration
+W10	Word 64 66	of
+W11	Word 67 73	SpoIIE
+W12	Word 74 81	protein
+W13	Word 82 86	into
+W14	Word 87 90	the
+W15	Word 91 99	prespore
+W16	Word 100 105	plays
+W17	Word 106 108	an
+W18	Word 109 118	important
+W19	Word 119 123	role
+W20	Word 124 126	in
+W21	Word 127 130	the
+W22	Word 131 138	control
+W23	Word 139 141	of
+W24	Word 142 148	sigmaF
+W25	Word 149 159	activation
+W26	Word 160 163	and
+W27	Word 164 166	in
+W28	Word 167 175	coupling
+W29	Word 176 180	this
+W30	Word 181 191	activation
+W31	Word 192 194	to
+W32	Word 195 204	septation
+R1	mod_att:N-ADJ W4 W1
+R2	comp:N-N(into) W9 W15
+R3	obj:V-N W16 W19
+R4	comp:N-V(in) W19 W28
+R5	obj:V-N W28 W30
+R6	mod:ADJ-ADV W1 W2
+R7	comp:N-N(in) W19 W22
+R8	obj:V-N W5 W7
+R9	mod_att:N-N W12 W11
+R10	subj:V-N W5 W4
+R11	comp:N-N(of) W9 W12
+R12	comp:N-N(of) W22 W25
+R13	comp:V-N(to) W28 W32
+R14	mod_att:N-ADJ W19 W18
+R15	subj:V-N W16 W9
+R16	mod_att:N-N W25 W24

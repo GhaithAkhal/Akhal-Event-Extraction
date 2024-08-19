@@ -1,0 +1,21 @@
+T25	Exp 387 420	the IL-4-binding IL-4Ralpha chain	415 420	chain
+T26	Exp 422 427	which
+T27	Exp 459 488	the IL-2Rgamma (gammac) chain	483 488	chain
+T28	Exp 490 495	which
+T29	Exp 715 722	B cells	717 722	cells
+T30	Exp 723 727	that
+T31	Exp 803 823	the IL-4Ralpha chain	818 823	chain
+T32	Exp 838 859	intracellular signals	852 859	signals
+T33	Exp 860 864	that
+T34	Exp 918 921	its
+T35	Exp 1439 1478	a chimeric CD8alpha/IL-4Ralpha receptor	1470 1478	receptor
+T36	Exp 1480 1485	which
+T37	Exp 1686 1722	Jak1-dependent intracellular signals	1715 1722	signals
+T38	Exp 1723 1727	that
+R1	Coref Anaphora:T26 Antecedent:T25	[T6, T5]
+R2	Coref Anaphora:T28 Antecedent:T27	[T7]
+R3	Coref Anaphora:T30 Antecedent:T29
+R4	Coref Anaphora:T33 Antecedent:T32
+R5	Coref Anaphora:T34 Antecedent:T31	[T14]
+R6	Coref Anaphora:T36 Antecedent:T35	[T22]
+R7	Coref Anaphora:T38 Antecedent:T37	[T24]

@@ -1,0 +1,3 @@
+T7	Exp 91 98	Eotaxin
+T8	Exp 280 283	Its
+R1	Coref Anaphora:T8 Antecedent:T7	[T2]

@@ -1,0 +1,2 @@
+A new relaxed mutant of Bacillus subtilis.
+A new relaxed mutant of Bacillus subtilis was isolated by screening Rifr clones for alterations in stringent control. The Rifr relaxed mutant which is described was found to contain a second-site mutation conferring a relaxed response to an energy source downshift and was partially relaxed after amino acid starvation. The new rel locus, called relG, was distinct from the two other known rel loci in B. subtilis, relA, and relC.

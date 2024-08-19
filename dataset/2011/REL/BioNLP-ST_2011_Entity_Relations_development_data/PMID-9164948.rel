@@ -1,0 +1,4 @@
+T12	Entity 136 142	chains
+T13	Entity 152 166	peptide ligand
+T14	Entity 246 249	TCR
+R1	Subunit-Complex Arg1:T4 Arg2:T14

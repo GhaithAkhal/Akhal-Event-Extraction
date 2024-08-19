@@ -1,0 +1,43 @@
+T1	Bacterium 0 22	Wolinella succinogenes
+T2	Bacterium 23 45	Wolinella succinogenes
+T3	HostPart 59 65	rumens
+T4	Host 69 73	cows
+T5	Host 149 155	humans
+T6	Bacterium 157 166	H. pylori
+T7	Bacterium 171 180	C. jejuni
+T8	Bacterium 181 196	W. succinogenes
+T9	Bacterium 529 544	W. succinogenes
+T10	Host 572 578	bovine
+T11	HostPart 579 584	rumen
+T12	Host 590 595	human
+T13	HostPart 596 611	gingival sulcus
+T14	HostPart 617 634	dental root canal
+T15	Bacterium 894 913	Helicobacter pylori
+T16	Bacterium 918 938	Campylobacter jejuni
+T17	Host 1006 1012	bovine
+T18	Bacterium 1019 1034	W. succinogenes
+T19	Soil 1511 1515	soil
+T20	Host 1520 1525	plant
+T21	Bacterium 1537 1545	bacteria
+*	Equiv T19 T20
+*	Equiv T6 T15
+*	Equiv T10 T17
+*	Equiv T1 T2
+*	Equiv T1 T8
+*	Equiv T1 T9
+*	Equiv T1 T18
+*	Equiv T7 T16
+E1	PartOf Host:T12 Part:T14
+E2	PartOf Host:T4 Part:T3
+E3	Localization Bacterium:T1 Localization:T10
+E4	Localization Bacterium:T6 Localization:T5
+E5	Localization Bacterium:T1 Localization:T12
+E6	Localization Bacterium:T21 Localization:T19
+E7	Localization Bacterium:T7 Localization:T5
+E8	Localization Bacterium:T1 Localization:T4
+E9	PartOf Host:T10 Part:T11
+E10	Localization Bacterium:T1 Localization:T3
+E11	Localization Bacterium:T1 Localization:T14
+E12	Localization Bacterium:T1 Localization:T11
+E13	Localization Bacterium:T1 Localization:T13
+E14	PartOf Host:T12 Part:T13

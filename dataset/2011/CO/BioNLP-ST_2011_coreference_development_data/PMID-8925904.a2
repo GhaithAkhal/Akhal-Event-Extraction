@@ -1,0 +1,3 @@
+T9	Exp 216 247	the androgen receptor (AR) gene
+T10	Exp 296 299	its
+R1	Coref Anaphora:T10 Antecedent:T9	[T1, T2]

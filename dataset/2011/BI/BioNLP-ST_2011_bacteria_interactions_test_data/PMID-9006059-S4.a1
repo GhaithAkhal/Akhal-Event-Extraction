@@ -1,0 +1,54 @@
+T1	Protein 11 18	SpoIIID
+T2	Site 19 32	binding sites
+T3	Gene 52 57	spoVD
+T4	Promoter 58 73	promoter region
+T5	Site 75 78	one
+T6	Site 95 105	-35 region
+T7	Site 114 119	other
+T8	Site 137 147	-10 region
+T9	Site 156 182	transcriptional start site
+W1	Word 0 3	Two
+W2	Word 4 10	strong
+W3	Word 11 18	SpoIIID
+W4	Word 19 26	binding
+W5	Word 27 32	sites
+W6	Word 33 37	were
+W7	Word 38 44	mapped
+W8	Word 45 47	in
+W9	Word 48 51	the
+W10	Word 52 57	spoVD
+W11	Word 58 66	promoter
+W12	Word 67 73	region
+W13	Word 75 78	one
+W14	Word 79 90	overlapping
+W15	Word 91 94	the
+W16	Word 95 98	-35
+W17	Word 99 105	region
+W18	Word 106 109	and
+W19	Word 110 113	the
+W20	Word 114 119	other
+W21	Word 120 132	encompassing
+W22	Word 133 136	the
+W23	Word 137 140	-10
+W24	Word 141 147	region
+W25	Word 148 151	and
+W26	Word 152 155	the
+W27	Word 156 171	transcriptional
+W28	Word 172 177	start
+W29	Word 178 182	site
+R1	obj:V-N W21 W29
+R2	subj:V-N W14 W13
+R3	mod_att:N-N W4 W3
+R4	obj:V-N W14 W17
+R5	mod_att:N-N W17 W16
+R6	subj:V-N W21 W20
+R7	mod_att:N-N W29 W28
+R8	mod_att:N-N W12 W11
+R9	subj:V_PASS-N W7 W5
+R10	mod_att:N-N W24 W23
+R11	mod_att:N-ADJ W29 W27
+R12	comp:V_PASS-N(in) W7 W12
+R13	mod_att:N-ADJ W4 W2
+R14	mod_att:N-N W11 W10
+R15	obj:V-N W21 W24
+R16	mod_att:N-N W5 W4

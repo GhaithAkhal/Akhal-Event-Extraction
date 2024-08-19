@@ -1,0 +1,3 @@
+T28	Exp 1431 1472	c-jun, jun-B, or jun-D expression vectors	1465 1472	vectors
+T29	Exp 1474 1479	which
+R1	Coref Anaphora:T29 Antecedent:T28	[T13, T15, T14]

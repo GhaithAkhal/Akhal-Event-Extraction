@@ -1,0 +1,24 @@
+*	Equiv T2 T3
+T12	Entity 578 581	DNA
+T13	Entity 892 921	VDR/RXR DNA-binding complexes
+T14	Entity 900 903	DNA
+T15	Entity 930 953	VitD3 response elements
+T16	Entity 958 978	RA response elements
+T17	Entity 980 985	RAREs
+T18	Entity 1049 1071	VitD3 response element
+T19	Entity 1079 1097	reporter construct
+T20	Entity 1107 1128	DNA-binding complexes
+T21	Entity 1107 1110	DNA
+T22	Entity 1146 1151	RAREs
+T23	Entity 1228 1231	RXR
+T24	Entity 1232 1235	DNA
+T25	Entity 1255 1259	RARE
+T26	Entity 1405 1422	/RXR heterodimers
+T27	Entity 1437 1440	RXR
+T28	Entity 1456 1460	RARE
+T29	Entity 1629 1633	RARE
+T30	Entity 1819 1823	RARE
+R1	Subunit-Complex Arg1:T4 Arg2:T13
+R2	Subunit-Complex Arg1:T5 Arg2:T23
+R3	Subunit-Complex Arg1:T7 Arg2:T26
+R4	Subunit-Complex Arg1:T8 Arg2:T27

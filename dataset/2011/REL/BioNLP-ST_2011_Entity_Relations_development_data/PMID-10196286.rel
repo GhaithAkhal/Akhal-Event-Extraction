@@ -1,0 +1,6 @@
+T12	Entity 70 79	NF-kappaB
+T13	Entity 405 412	PXQXT/S
+T14	Entity 482 498	divergent region
+T15	Entity 601 610	NF-kappaB
+R1	Protein-Component Arg1:T4 Arg2:T13
+R2	Protein-Component Arg1:T5 Arg2:T14

@@ -1,0 +1,29 @@
+*	Equiv T3 T4
+*	Equiv T6 T7
+T18	Entity 4 31	Epstein-Barr virus oncogene
+T19	Entity 200 209	NF-kappaB
+T20	Entity 499 533	carboxyl-terminal cytoplasmic tail
+T21	Entity 539 567	transformation effector site
+T22	Entity 569 573	TES1
+T23	Entity 595 624	membrane proximal 45 residues
+T24	Entity 737 741	TES1
+T25	Entity 901 925	155 residues beyond TES1
+T26	Entity 901 913	155 residues
+T27	Entity 921 925	TES1
+T28	Entity 994 1003	tyrosines
+T29	Entity 1010 1020	isoleucine
+T30	Entity 1028 1064	carboxyl end of the cytoplasmic tail
+T31	Entity 1028 1040	carboxyl end
+T32	Entity 1048 1064	cytoplasmic tail
+T33	Entity 1158 1186	transformation effector site
+T34	Entity 1188 1192	TES2
+T35	Entity 1231 1235	TES2
+T36	Entity 1402 1406	TES2
+T37	Entity 1420 1443	isoleucine-mutated TES2
+T38	Entity 1420 1430	isoleucine
+T39	Entity 1439 1443	TES2
+T40	Entity 1495 1505	isoleucine
+T41	Entity 1686 1695	NF-kappaB
+T42	Entity 1832 1841	NF-kappaB
+R1	Protein-Component Arg1:T5 Arg2:T20
+R2	Protein-Component Arg1:T11 Arg2:T40

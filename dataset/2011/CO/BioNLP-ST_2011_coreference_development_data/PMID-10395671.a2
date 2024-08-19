@@ -1,0 +1,6 @@
+T22	Exp 736 759	the NF-kappaB complexes	750 759	complexes
+T23	Exp 824 845	the NF-kappaB complex	838 845	complex
+T24	Exp 1449 1494	patients with CD40 ligand+ hyper IgM syndrome	1449 1457	patients
+T25	Exp 1498 1502	whom
+R1	Coref Anaphora:T23 Antecedent:T22
+R2	Coref Anaphora:T25 Antecedent:T24	[T20]

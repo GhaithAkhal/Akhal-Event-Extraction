@@ -1,0 +1,3 @@
+T11	Exp 555 577	the NF-kappa B complex
+T12	Exp 622 647	this transcription factor
+R1	Coref Anaphora:T12 Antecedent:T11

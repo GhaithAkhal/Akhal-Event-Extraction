@@ -1,0 +1,54 @@
+T1	Bacterium 101 117	Escherichia coli
+T2	Bacterium 118 126	Shigella
+T3	Bacterium 157 164	E. coli
+T4	Bacterium 165 173	Shigella
+T5	Bacterium 304 311	E. coli
+T6	HostPart 336 339	gut
+T7	Host 354 365	vertebrates
+T8	Host 377 383	humans
+T9	Host 494 500	humans
+T10	Bacterium 502 509	E. coli
+T11	Bacterium 514 522	Shigella
+T12	Geographical 539 548	worldwide
+T13	HostPart 630 643	urinary tract
+T14	Host 667 675	neonatal
+T15	Bacterium 719 726	E. coli
+T16	Medical 776 786	nosocomial
+T17	Host 2249 2254	human
+T18	Bacterium 2255 2262	E. coli
+T19	Bacterium 2681 2699	Strain ATCC 35469T
+T20	Bacterium 2724 2737	E. fergusonii
+T21	HostPart 2782 2798	extra-intestinal
+T22	Host 2799 2804	mouse
+T23	Bacterium 2812 2825	E. fergusonii
+T24	Host 2858 2863	human
+T25	Host 2868 2874	animal
+*	Equiv T2 T4
+*	Equiv T2 T11
+*	Equiv T1 T3
+*	Equiv T1 T5
+*	Equiv T1 T10
+*	Equiv T1 T15
+*	Equiv T1 T18
+*	Equiv T20 T23
+E1	Localization Bacterium:T1 Localization:T7
+E2	Localization Bacterium:T2 Localization:T12
+E3	Localization Bacterium:T2 Localization:T9
+E4	Localization Bacterium:T19 Localization:T22
+E5	Localization Bacterium:T1 Localization:T12
+E6	Localization Bacterium:T1 Localization:T17
+E7	Localization Bacterium:T19 Localization:T21
+E8	PartOf Host:T7 Part:T6
+E9	PartOf Host:T9 Part:T13
+E10	PartOf Host:T8 Part:T6
+E11	Localization Bacterium:T20 Localization:T24
+E12	Localization Bacterium:T1 Localization:T16
+E13	Localization Bacterium:T1 Localization:T9
+E14	Localization Bacterium:T1 Localization:T14
+E15	Localization Bacterium:T1 Localization:T6
+E16	Localization Bacterium:T2 Localization:T14
+E17	Localization Bacterium:T1 Localization:T8
+E18	Localization Bacterium:T2 Localization:T13
+E19	Localization Bacterium:T20 Localization:T25
+E20	PartOf Host:T22 Part:T21
+E21	Localization Bacterium:T1 Localization:T13

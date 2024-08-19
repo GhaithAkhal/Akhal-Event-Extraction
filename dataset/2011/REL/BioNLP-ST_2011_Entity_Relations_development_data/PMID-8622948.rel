@@ -1,0 +1,9 @@
+*	Equiv T8 T9
+*	Equiv T11 T12
+*	Equiv T17 T18
+*	Equiv T19 T20
+*	Equiv T21 T22
+T38	Entity 173 183	NF-kappa B
+T39	Entity 1155 1158	CD3
+T40	Entity 1339 1342	CD3
+R1	Subunit-Complex Arg1:T4 Arg2:T38

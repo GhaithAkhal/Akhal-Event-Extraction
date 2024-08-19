@@ -1,0 +1,56 @@
+T1	Protein 4 10	sigmaB
+T2	Promoter 21 29	promoter
+T3	Expression 37 47	expression
+T4	Gene 51 55	yvyD
+T5	Protein 120 126	sigmaH
+T6	Promoter 137 145	promoter
+T7	Gene 165 169	yvyD
+T8	Transcription 170 183	transcription
+T9	Action 205 215	limitation
+W1	Word 0 3	The
+W2	Word 4 10	sigmaB
+W3	Word 11 20	dependent
+W4	Word 21 29	promoter
+W5	Word 30 36	drives
+W6	Word 37 47	expression
+W7	Word 48 50	of
+W8	Word 51 55	yvyD
+W9	Word 56 61	under
+W10	Word 62 68	stress
+W11	Word 69 79	conditions
+W12	Word 80 83	and
+W13	Word 84 89	after
+W14	Word 90 97	glucose
+W15	Word 98 108	starvation
+W16	Word 110 117	whereas
+W17	Word 118 119	a
+W18	Word 120 126	sigmaH
+W19	Word 127 136	dependent
+W20	Word 137 145	promoter
+W21	Word 146 148	is
+W22	Word 149 160	responsible
+W23	Word 161 164	for
+W24	Word 165 169	yvyD
+W25	Word 170 183	transcription
+W26	Word 184 193	following
+W27	Word 194 199	amino
+W28	Word 200 204	acid
+W29	Word 205 215	limitation
+R1	mod_att:N-N W15 W14
+R2	mod_att:N-ADJ W4 W3
+R3	comp:ADJ-N(for) W22 W25
+R4	obj:V-N W5 W6
+R5	mod:ADJ-N W3 W2
+R6	mod:ADJ-N W19 W18
+R7	mod_att:N-N W25 W24
+R8	mod_att:N-N W29 W28
+R9	comp:V-N(under) W5 W11
+R10	mod_att:N-ADJ W28 W27
+R11	mod_att:N-N W11 W10
+R12	mod_att:N-ADJ W20 W19
+R13	subj:V-N W26 W25
+R14	subj:V-N W5 W4
+R15	comp:V-N(after) W5 W15
+R16	comp:N-N(of) W6 W8
+R17	mod_pred:N-ADJ W20 W22
+R18	obj:V-N W26 W29

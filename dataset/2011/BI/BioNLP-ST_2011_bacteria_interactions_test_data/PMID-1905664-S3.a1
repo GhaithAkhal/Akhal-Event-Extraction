@@ -1,0 +1,39 @@
+T1	PolymeraseComplex 14 36	sigma H-RNA polymerase
+T2	Transcription 37 48	transcribes
+T3	Gene 49 55	spoIIA
+T4	Protein 93 100	sigma H
+T5	Transcription 109 122	transcription
+T6	Gene 126 132	spoIIA
+W1	Word 0 2	We
+W2	Word 3 8	found
+W3	Word 9 13	that
+W4	Word 14 21	sigma H
+W5	Word 22 25	RNA
+W6	Word 26 36	polymerase
+W7	Word 37 48	transcribes
+W8	Word 49 55	spoIIA
+W9	Word 56 66	accurately
+W10	Word 67 69	in
+W11	Word 70 75	vitro
+W12	Word 76 79	and
+W13	Word 80 87	propose
+W14	Word 88 92	that
+W15	Word 93 100	sigma H
+W16	Word 101 108	directs
+W17	Word 109 122	transcription
+W18	Word 123 125	of
+W19	Word 126 132	spoIIA
+W20	Word 133 139	during
+W21	Word 140 151	sporulation
+R1	comp:N-N(of) W17 W19
+R2	comp:V-N(in) W7 W11
+R3	mod:V-ADV W7 W9
+R4	obj:V-N W16 W17
+R5	comp:N-N(during) W17 W21
+R6	subj:V-N W16 W15
+R7	subj:V-N W13 W1
+R8	subj:V-N W2 W1
+R9	subj:V-N W7 W6
+R10	obj:V-N W7 W8
+R11	mod_att:N-N W6 W5
+R12	mod_att:N-N W6 W4

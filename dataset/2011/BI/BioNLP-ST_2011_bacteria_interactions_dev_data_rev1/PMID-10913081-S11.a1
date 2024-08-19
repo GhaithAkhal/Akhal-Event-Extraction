@@ -1,0 +1,47 @@
+T1	Protein 13 17	YtxH
+T2	Protein 22 26	YvyD
+T3	Protein 97 105	sigma(B)
+T4	Gene 134 138	sigB
+T5	Protein 159 167	sigma(H)
+W1	Word 0 11	Furthermore
+W2	Word 13 17	YtxH
+W3	Word 18 21	and
+W4	Word 22 26	YvyD
+W5	Word 27 33	seemed
+W6	Word 34 36	to
+W7	Word 37 39	be
+W8	Word 40 47	induced
+W9	Word 48 53	after
+W10	Word 54 63	phosphate
+W11	Word 64 74	starvation
+W12	Word 75 77	in
+W13	Word 78 81	the
+W14	Word 82 86	wild
+W15	Word 87 91	type
+W16	Word 92 94	in
+W17	Word 95 96	a
+W18	Word 97 105	sigma(B)
+W19	Word 106 115	dependent
+W20	Word 116 122	manner
+W21	Word 123 126	and
+W22	Word 127 129	in
+W23	Word 130 133	the
+W24	Word 134 138	sigB
+W25	Word 139 145	mutant
+W26	Word 146 154	probably
+W27	Word 155 158	via
+W28	Word 159 167	sigma(H)
+R1	mod_att:N-N W11 W10
+R2	mod_att:N-N W25 W24
+R3	comp:V_PASS-N(in) W8 W20
+R4	mod:V-ADV W5 W1
+R5	mod:ADJ-N W19 W18
+R6	subj:V_PASS-N W8 W4
+R7	comp:V_PASS-N(in) W8 W25
+R8	mod_att:N-ADJ W15 W14
+R9	mod:V_PASS-ADV W8 W26
+R10	comp:V_PASS-N(after) W8 W11
+R11	mod_att:N-ADJ W20 W19
+R12	subj:V_PASS-N W8 W2
+R13	comp:V_PASS-N(in) W8 W15
+R14	comp:V_PASS-N(via) W8 W28

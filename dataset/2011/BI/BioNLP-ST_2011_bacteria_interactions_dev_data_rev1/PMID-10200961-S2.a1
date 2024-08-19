@@ -1,0 +1,59 @@
+T1	Protein 80 87	sigma F
+T2	Protein 105 111	itself
+T3	Action 134 140	action
+T4	Protein 148 154	SpoIIE
+T5	Protein 178 184	enzyme
+W1	Word 0 4	Cell
+W2	Word 5 16	specificity
+W3	Word 17 19	is
+W4	Word 20 25	first
+W5	Word 26 37	established
+W6	Word 38 40	in
+W7	Word 41 44	the
+W8	Word 45 54	forespore
+W9	Word 55 60	under
+W10	Word 61 64	the
+W11	Word 65 72	control
+W12	Word 73 75	of
+W13	Word 76 79	the
+W14	Word 80 87	sigma F
+W15	Word 88 94	factor
+W16	Word 96 101	which
+W17	Word 102 104	is
+W18	Word 105 111	itself
+W19	Word 112 121	activated
+W20	Word 122 129	through
+W21	Word 130 133	the
+W22	Word 134 140	action
+W23	Word 141 143	of
+W24	Word 144 147	the
+W25	Word 148 154	SpoIIE
+W26	Word 155 161	serine
+W27	Word 162 173	phosphatase
+W28	Word 175 177	an
+W29	Word 178 184	enzyme
+W30	Word 185 193	targeted
+W31	Word 194 196	to
+W32	Word 197 200	the
+W33	Word 201 207	septum
+W34	Word 208 215	between
+W35	Word 216 219	the
+W36	Word 220 223	two
+W37	Word 224 229	cells
+R1	subj:V_PASS-N W30 W29
+R2	mod:V_PASS-ADV W19 W18
+R3	mod_att:N-N W27 W25
+R4	comp:N-N(between) W33 W37
+R5	comp:V_PASS-N(in) W5 W8
+R6	mod:V_PASS-ADV W5 W4
+R7	appos W27 W29
+R8	subj:V_PASS-N W19 W15
+R9	comp:N-N(of) W11 W15
+R10	comp:V_PASS-N(under) W5 W11
+R11	subj:V_PASS-N W5 W2
+R12	comp:N-N(of) W22 W27
+R13	mod_att:N-N W2 W1
+R14	comp:V_PASS-N(through) W19 W22
+R15	mod_att:N-N W15 W14
+R16	comp:V_PASS-N(to) W30 W33
+R17	mod_att:N-ADJ W27 W26

@@ -1,0 +1,47 @@
+*	Equiv T4 T5
+T21	Entity 64 72	promoter
+T22	Entity 313 343	cis-acting regulatory elements
+T23	Entity 409 417	promoter
+T24	Entity 511 519	plasmids
+T25	Entity 560 568	promoter
+T26	Entity 579 596	enhancer elements
+T27	Entity 610 632	-182 to -37 base pairs
+T28	Entity 755 763	region I
+T29	Entity 765 780	-182 to -162 bp
+T30	Entity 817 821	site
+T31	Entity 827 836	region II
+T32	Entity 838 849	-119 to -88
+T33	Entity 861 864	CRE
+T34	Entity 869 905	NF-kappaB (designated kappaB3) sites
+T35	Entity 869 878	NF-kappaB
+T36	Entity 930 933	CRE
+T37	Entity 981 990	complexes
+T38	Entity 1017 1025	CRE site
+T39	Entity 1073 1094	-containing complexes
+T40	Entity 1197 1202	sites
+T41	Entity 1239 1246	p50/p65
+T42	Entity 1282 1287	sites
+T43	Entity 1291 1300	region II
+T44	Entity 1351 1372	heterologous promoter
+T45	Entity 1514 1519	sites
+T46	Entity 1607 1616	complexes
+T47	Entity 1621 1628	p50/p65
+T48	Entity 1697 1705	promoter
+T49	Entity 1770 1800	cis-acting regulatory elements
+R1	Protein-Component Arg1:T1 Arg2:T21
+R2	Protein-Component Arg1:T6 Arg2:T22
+R3	Protein-Component Arg1:T6 Arg2:T23
+R4	Protein-Component Arg1:T8 Arg2:T26
+R5	Protein-Component Arg1:T7 Arg2:T26
+R6	Protein-Component Arg1:T8 Arg2:T27
+R7	Protein-Component Arg1:T7 Arg2:T27
+R8	Protein-Component Arg1:T7 Arg2:T25
+R9	Subunit-Complex Arg1:T11 Arg2:T37
+R10	Subunit-Complex Arg1:T12 Arg2:T39
+R11	Subunit-Complex Arg1:T15 Arg2:T41
+R12	Subunit-Complex Arg1:T16 Arg2:T41
+R13	Subunit-Complex Arg1:T17 Arg2:T46
+R14	Subunit-Complex Arg1:T18 Arg2:T47
+R15	Subunit-Complex Arg1:T19 Arg2:T47
+R16	Protein-Component Arg1:T20 Arg2:T49
+R17	Protein-Component Arg1:T20 Arg2:T48

@@ -1,0 +1,9 @@
+T17	Exp 1166 1170	mice
+T18	Exp 1171 1175	that
+T19	Exp 1374 1377	TNF
+T20	Exp 1379 1385	itself
+T21	Exp 1549 1568	compelling evidence	1560 1568	evidence
+T22	Exp 1569 1573	that
+R1	Coref Anaphora:T18 Antecedent:T17
+R2	Coref Anaphora:T20 Antecedent:T19
+R3	Coref Anaphora:T22 Antecedent:T21

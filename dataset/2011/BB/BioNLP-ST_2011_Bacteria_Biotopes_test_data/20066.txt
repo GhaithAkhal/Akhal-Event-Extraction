@@ -1,0 +1,7 @@
+Desulfococcus oleovorans Hxd3
+Desulfococcus oleovorans Hxd3
+Courtesy of Fritz Widdel and Ralf Rabus, Max Planck Institute for Marine Microbiology
+Strain Hxd3 was isolated from the saline water phase of an oil-water separator from a northern German oil field (1,2). Hxd3 is a delta-proteobacterium capable of utilizing C12-C20 alkanes as growth substrates. Alkane degradation in Hxd3 involves the activation of alkanes via carboxylation at C3, with subsequent elimination of the terminal and subterminal carbons. This yields a fatty acid that is one carbon shorter than the parent alkane (3). Hxd3 is the ONLY pure culture that is known to carboxylate aliphatic hydrocarbons.
+1. Aeckersberg, F., F. Bak, and F. Widdel. 1991. Anaerobic oxidation of saturated hydrocarbons to CO2 by a new type of sulfate-reducing bacterium. Arch. Microbiol. 156:5-14.
+2. Aeckersberg, F., F. A. Rainey, and F. Widdel. 1998. Growth, natural relationships, cellular fatty acids and metabolic adaptation of sulfate-reducing bacteria that utilize long-chain alkanes under anoxic conditions. Arch. Microbiol. 170:361-369.
+3. So, C. M., C. D. Phelps, and L. Y. Young. 2003. Anaerobic transformation of alkanes to fatty acids by a sulfate-reducing bacterium, strain Hxd3. Appl Environ Microbiol 69:3892-900.

@@ -1,0 +1,44 @@
+T1	GeneFamily 76 79	cot
+T2	Expression 85 95	expression
+T3	Protein 132 136	GerE
+T4	Protein 149 169	transcription factor
+T5	Protein 171 178	SpoIIID
+W1	Word 0 2	In
+W2	Word 3 8	vitro
+W3	Word 9 22	transcription
+W4	Word 23 34	experiments
+W5	Word 35 42	suggest
+W6	Word 43 47	that
+W7	Word 48 51	the
+W8	Word 52 64	differential
+W9	Word 65 72	pattern
+W10	Word 73 75	of
+W11	Word 76 79	cot
+W12	Word 80 84	gene
+W13	Word 85 95	expression
+W14	Word 96 103	results
+W15	Word 104 108	from
+W16	Word 109 112	the
+W17	Word 113 121	combined
+W18	Word 122 128	action
+W19	Word 129 131	of
+W20	Word 132 136	GerE
+W21	Word 137 140	and
+W22	Word 141 148	another
+W23	Word 149 162	transcription
+W24	Word 163 169	factor
+W25	Word 171 178	SpoIIID
+R1	mod_att:N-N W13 W12
+R2	comp:N-N(of) W18 W20
+R3	mod_att:N-ADJ W18 W17
+R4	comp:N-N(of) W9 W13
+R5	comp:V-N(from) W14 W18
+R6	subj:V-N W14 W9
+R7	mod_att:N-ADJ W9 W8
+R8	subj:V-N W5 W4
+R9	mod_att:N-N W24 W23
+R10	mod_att:N-N W4 W3
+R11	mod_att:N-N W12 W11
+R12	comp:N-N(of) W18 W24
+R13	comp:N-N(in) W4 W2
+R14	appos W24 W25

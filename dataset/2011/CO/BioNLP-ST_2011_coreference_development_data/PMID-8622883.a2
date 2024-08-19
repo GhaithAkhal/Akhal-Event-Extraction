@@ -1,0 +1,18 @@
+T21	Exp 128 143	chromosome 9p21
+T22	Exp 145 150	which
+T23	Exp 268 294	the retinoblastoma protein
+T24	Exp 340 343	its
+T25	Exp 361 389	the transcription factor E2F
+T26	Exp 391 396	which
+T27	Exp 561 566	proof
+T28	Exp 574 578	that
+T29	Exp 1188 1208	MOLT-4 and CEM cells	1203 1208	cells
+T30	Exp 1226 1230	them
+T31	Exp 1469 1491	retinoblastoma protein
+T32	Exp 1526 1529	its
+R1	Coref Anaphora:T22 Antecedent:T21
+R2	Coref Anaphora:T24 Antecedent:T23	[T5]
+R3	Coref Anaphora:T26 Antecedent:T25
+R4	Coref Anaphora:T28 Antecedent:T27
+R5	Coref Anaphora:T30 Antecedent:T29
+R6	Coref Anaphora:T32 Antecedent:T31	[T17]

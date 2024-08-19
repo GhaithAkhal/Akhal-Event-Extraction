@@ -1,0 +1,13 @@
+T11	Entity 18 28	NF kappa B
+T12	Entity 117 137	transcription factor
+T13	Entity 138 148	NF kappa B
+T14	Entity 188 231	cellular genes involved in immune responses
+T15	Entity 188 202	cellular genes
+T16	Entity 236 247	viral genes
+T17	Entity 451 461	NF kappa B
+T18	Entity 507 517	NF kappa B
+T19	Entity 699 709	NF kappa B
+T20	Entity 793 803	NF kappa B
+T21	Entity 814 821	complex
+T22	Entity 1004 1014	NF kappa B
+R1	Subunit-Complex Arg1:T7 Arg2:T21

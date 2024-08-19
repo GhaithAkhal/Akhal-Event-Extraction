@@ -1,0 +1,15 @@
+T29	Exp 235 390	the molecular basis of the synergistic induction by interferon-gamma (IFN-gamma)/tumor necrosis factor-alpha (TNF-alpha) of human interleukin-6 (IL-6) gene	249 254	basis
+T30	Exp 430 432	it
+T31	Exp 736 764	a region between -73 and -36	738 744	region
+T32	Exp 766 771	which
+T33	Exp 829 868	an element located between -181 and -73	832 839	element
+T34	Exp 870 875	which
+T35	Exp 956 989	a distal element upstream of -224	965 972	element
+T36	Exp 991 996	which
+T37	Exp 1428 1455	the constitutive Sp1 factor	1449 1455	factor
+T38	Exp 1457 1462	whose
+R1	Coref Anaphora:T30 Antecedent:T29	[T7, T6, T11, T8, T9, T10]
+R2	Coref Anaphora:T32 Antecedent:T31
+R3	Coref Anaphora:T34 Antecedent:T33
+R4	Coref Anaphora:T36 Antecedent:T35
+R5	Coref Anaphora:T38 Antecedent:T37	[T27]

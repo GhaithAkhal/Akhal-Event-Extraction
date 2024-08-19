@@ -1,0 +1,18 @@
+T13	Exp 22 30	a factor
+T14	Exp 31 35	that
+T15	Exp 408 463	a functional motif named CD28 response element (CD28RE)
+T16	Exp 464 468	that
+T17	Exp 678 783	a molecular mass of approximately 35 kDa called nuclear factor of mitogenic-activated T cells (NF-MATp35)	690 694	mass
+T18	Exp 784 788	that
+T19	Exp 950 957	T cells
+T20	Exp 958 962	that
+T21	Exp 1275 1278	its
+T22	Exp 1306 1319	cyclosporin A
+T23	Exp 1444 1486	excellent correlation with IL-2 production	1454 1465	correlation
+T24	Exp 1488 1493	which
+R1	Coref Anaphora:T14 Antecedent:T13
+R2	Coref Anaphora:T16 Antecedent:T15	[T8]
+R3	Coref Anaphora:T18 Antecedent:T17
+R4	Coref Anaphora:T20 Antecedent:T19
+R5	Coref Anaphora:T21 Antecedent:T22
+R6	Coref Anaphora:T24 Antecedent:T23	[T11]

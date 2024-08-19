@@ -1,0 +1,3 @@
+T11	Exp 1159 1249	a transcription complex involving general transcription factors, HIV Tat, and Sp1 proteins	1175 1182	complex
+T12	Exp 1268 1280	this complex
+R1	Coref Anaphora:T12 Antecedent:T11	[T9, T10]

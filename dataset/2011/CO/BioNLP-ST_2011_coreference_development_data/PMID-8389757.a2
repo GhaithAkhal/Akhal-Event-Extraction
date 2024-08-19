@@ -1,0 +1,3 @@
+T11	Exp 1006 1049	an HL-60/vinc revertant (HL-60/vinc/R) line
+T12	Exp 1050 1054	that
+R1	Coref Anaphora:T12 Antecedent:T11

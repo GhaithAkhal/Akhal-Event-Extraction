@@ -1,0 +1,6 @@
+T11	Exp 278 288	Two clones	282 288	clones
+T12	Exp 306 311	which
+T13	Exp 1416 1424	TNFalpha
+T14	Exp 1471 1484	this cytokine	1476 1484	cytokine
+R1	Coref Anaphora:T12 Antecedent:T11
+R2	Coref Anaphora:T14 Antecedent:T13	[T10]

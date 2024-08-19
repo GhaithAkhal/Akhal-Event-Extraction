@@ -1,0 +1,9 @@
+T1	Bacterium 0 29	Saccharophagus degradans 2-40
+T2	Bacterium 42 78	Saccharophagus degradans strain 2-40
+T3	Environment 149 179	decaying Spartina alterniflora
+T4	Geographical 213 227	Chesapeake Bay
+T5	Geographical 229 232	USA
+*	Equiv T1 T2
+E1	Localization Bacterium:T1 Localization:T4
+E2	Localization Bacterium:T1 Localization:T3
+E3	Localization Bacterium:T1 Localization:T5

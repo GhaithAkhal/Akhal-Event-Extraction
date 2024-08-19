@@ -1,0 +1,38 @@
+T1	Gene 13 17	sspJ
+T2	Transcription 21 32	transcribed
+T3	PolymeraseComplex 65 114	RNA polymerase with the forespore-specific sigmaG
+T4	GeneProduct 137 161	monocistronic transcript
+W1	Word 0 2	In
+W2	Word 3 11	contrast
+W3	Word 13 17	sspJ
+W4	Word 18 20	is
+W5	Word 21 32	transcribed
+W6	Word 33 35	in
+W7	Word 36 39	the
+W8	Word 40 49	forespore
+W9	Word 50 61	compartment
+W10	Word 62 64	by
+W11	Word 65 68	RNA
+W12	Word 69 79	polymerase
+W13	Word 80 84	with
+W14	Word 85 88	the
+W15	Word 89 107	forespore-specific
+W16	Word 108 114	sigmaG
+W17	Word 115 118	and
+W18	Word 119 126	appears
+W19	Word 127 129	to
+W20	Word 130 134	give
+W21	Word 135 136	a
+W22	Word 137 150	monocistronic
+W23	Word 151 161	transcript
+R1	subj:V-N W20 W3
+R2	mod_att:N-ADJ W16 W15
+R3	comp:V_PASS-N(by) W5 W12
+R4	comp:V_PASS-N(in) W5 W2
+R5	comp:N-N(with) W12 W16
+R6	mod_att:N-N W12 W11
+R7	comp:V_PASS-N(in) W5 W9
+R8	obj:V-N W20 W23
+R9	subj:V_PASS-N W5 W3
+R10	mod_att:N-ADJ W23 W22
+R11	mod_att:N-N W9 W8

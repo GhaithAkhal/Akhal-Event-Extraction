@@ -1,0 +1,31 @@
+T1	Protein 32 39	sigma B
+T2	Transcription 74 87	transcription
+T3	Gene 91 95	gspA
+T4	Protein 99 106	sigma B
+W1	Word 0 8	Analysis
+W2	Word 9 11	of
+W3	Word 12 15	RNA
+W4	Word 16 24	isolated
+W5	Word 25 29	from
+W6	Word 30 31	a
+W7	Word 32 39	sigma B
+W8	Word 40 48	deletion
+W9	Word 49 55	mutant
+W10	Word 56 64	revealed
+W11	Word 65 69	that
+W12	Word 70 73	the
+W13	Word 74 87	transcription
+W14	Word 88 90	of
+W15	Word 91 95	gspA
+W16	Word 96 98	is
+W17	Word 99 106	sigma B
+W18	Word 107 116	dependent
+R1	mod_pred:N-ADJ W13 W18
+R2	subj:V_PASS-N W4 W3
+R3	mod:ADJ-N W18 W17
+R4	mod_att:N-N W9 W8
+R5	mod_att:N-N W8 W7
+R6	subj:V-N W10 W1
+R7	comp:N-N(of) W1 W3
+R8	comp:N-N(of) W13 W15
+R9	comp:V_PASS-N(from) W4 W9

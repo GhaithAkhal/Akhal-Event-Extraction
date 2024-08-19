@@ -1,0 +1,15 @@
+T29	Entity 196 229	CD3/T-cell antigen receptor (TCR)
+T30	Entity 410 413	TCR
+T31	Entity 455 508	containing nuclear factor kappaB (NFkappaB) complexes
+T32	Entity 890 898	NFkappaB
+T33	Entity 1513 1521	NFkappaB
+T34	Entity 1666 1669	CD3
+T35	Entity 2529 2537	NFkappaB
+T36	Entity 2620 2623	CD3
+T37	Entity 2765 2773	NFkappaB
+T38	Entity 2890 2898	NFkappaB
+T39	Entity 2959 2967	NFkappaB
+T40	Entity 3099 3105	kappaB
+T41	Entity 3386 3394	NFkappaB
+T42	Entity 3519 3527	NFkappaB
+R1	Subunit-Complex Arg1:T3 Arg2:T31

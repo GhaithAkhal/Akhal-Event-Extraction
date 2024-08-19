@@ -1,0 +1,26 @@
+Test Data for BioNLP Shared Task 2011 Supporting Task - Coreference Resolution (CO)
+
+- For format details, please refer to the shared task homepage.
+  http://sites.google.com/site/bionlpst/
+
+- That this package does *NOT* include the *.a2 files.
+  They will be kept hidden for the purpose of fair evaluation.
+
+
+File Descriptions:
+
+*.txt	files containing the target text.
+
+*.a1	files contain standoff annotations for given entities.
+
+
+History:
+
+15 Nov 2010: initial version released.
+
+
+Authors:
+
+BioNLP Shared Task 2011 organizers,
+bionlp-st@googlegroups.com
+http://sites.google.com/site/bionlpst/

@@ -1,0 +1,24 @@
+T1	GeneFamily 6 9	cot
+T2	Gene 25 29	gerE
+T3	Transcription 40 51	transcribed
+T4	PolymeraseComplex 55 76	sigmaK RNA polymerase
+W1	Word 1 5	Most
+W2	Word 6 9	cot
+W3	Word 10 15	genes
+W4	Word 17 20	and
+W5	Word 21 24	the
+W6	Word 25 29	gerE
+W7	Word 30 34	gene
+W8	Word 36 39	are
+W9	Word 40 51	transcribed
+W10	Word 52 54	by
+W11	Word 55 61	sigmaK
+W12	Word 62 65	RNA
+W13	Word 66 76	polymerase
+R1	mod_att:N-N W13 W12
+R2	mod_att:N-N W7 W6
+R3	mod_att:N-N W3 W2
+R4	subj:V_PASS-N W9 W3
+R5	subj:V_PASS-N W9 W7
+R6	comp:V_PASS-N(by) W9 W13
+R7	mod_att:N-N W13 W11

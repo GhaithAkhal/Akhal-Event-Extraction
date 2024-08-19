@@ -1,0 +1,15 @@
+*	Equiv T3 T4
+*	Equiv T9 T10
+T18	Entity 0 31	Membrane-associated lymphotoxin
+T19	Entity 91 100	NF-kappaB
+T20	Entity 686 701	luciferase gene
+T21	Entity 752 761	promoters
+T22	Entity 777 805	NF-kappaB-dependent promoter
+T23	Entity 777 786	NF-kappaB
+T24	Entity 1191 1200	NF-kappaB
+T25	Entity 1330 1339	NF-kappaB
+T26	Entity 1862 1871	NF-kappaB
+R1	Protein-Component Arg1:T1 Arg2:T21
+R2	Protein-Component Arg1:T2 Arg2:T21
+R3	Subunit-Complex Arg1:T8 Arg2:T25
+R4	Subunit-Complex Arg1:T7 Arg2:T25

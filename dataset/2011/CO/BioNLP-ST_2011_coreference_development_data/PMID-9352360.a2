@@ -1,0 +1,3 @@
+T5	Exp 156 196	a bi- or multi-functional domain protein	189 196	protein
+T6	Exp 197 202	which
+R1	Coref Anaphora:T6 Antecedent:T5

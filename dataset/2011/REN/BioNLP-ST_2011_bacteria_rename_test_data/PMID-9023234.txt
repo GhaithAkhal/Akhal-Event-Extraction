@@ -1,0 +1,2 @@
+bmr3, a third multidrug transporter gene of Bacillus subtilis.
+A third multidrug transporter gene named bmr3 was cloned from Bacillus subtilis. Although Bmr3 shows relatively low homology to Bmr and Blt, the substrate specificities of these three transporters overlap. Northern hybridization analysis showed that expression of the bmr3 gene was dependent on the growth phase.

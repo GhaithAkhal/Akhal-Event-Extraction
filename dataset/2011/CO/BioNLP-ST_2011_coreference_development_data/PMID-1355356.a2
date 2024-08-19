@@ -1,0 +1,17 @@
+T12	Exp 211 237	a thyroid hormone receptor	229 237	receptor
+T13	Exp 348 376	the thyroid hormone receptor	368 376	receptor
+T14	Exp 425 444	The v-erb A protein	437 444	protein
+T15	Exp 459 485	two amino acid alterations	474 485	alterations
+T16	Exp 493 496	its
+T17	Exp 497 515	DNA-binding domain	509 515	domain
+T18	Exp 528 532	that
+T19	Exp 552 557	which
+T20	Exp 772 800	the sequence at threonine 78	776 784	sequence
+T21	Exp 811 813	it
+T22	Exp 824 828	that
+R1	Coref Anaphora:T13 Antecedent:T12
+R2	Coref Anaphora:T16 Antecedent:T14	[T5]
+R3	Coref Anaphora:T18 Antecedent:T17
+R4	Coref Anaphora:T19 Antecedent:T15
+R5	Coref Anaphora:T21 Antecedent:T20
+R6	Coref Anaphora:T22 Antecedent:T20

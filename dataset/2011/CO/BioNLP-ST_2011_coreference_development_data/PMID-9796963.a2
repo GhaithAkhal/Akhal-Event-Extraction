@@ -1,0 +1,9 @@
+T29	Exp 360 380	TCRzeta and p56(lck)
+T30	Exp 381 385	that
+T31	Exp 933 953	65 patients with RCC	936 944	patients
+T32	Exp 971 975	whom
+T33	Exp 2843 2866	four of six individuals	2843 2847	four
+T34	Exp 2867 2870	who
+R1	Coref Anaphora:T30 Antecedent:T29	[T1, T2]
+R2	Coref Anaphora:T32 Antecedent:T31
+R3	Coref Anaphora:T34 Antecedent:T33

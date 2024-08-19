@@ -1,0 +1,22 @@
+*	Equiv T1 T2
+*	Equiv T3 T4
+*	Equiv T15 T16
+*	Equiv T17 T18
+T36	Entity 105 119	ankyrin motifs
+T37	Entity 214 232	NF-kappa B complex
+T38	Entity 248 274	high-affinity binding site
+T39	Entity 439 449	NF-kappa B
+T40	Entity 1010 1030	RelA-I kappa B alpha
+T41	Entity 1042 1063	cytoplasmic complexes
+T42	Entity 1268 1297	conserved Rel homology domain
+T43	Entity 1327 1354	nuclear localization signal
+T44	Entity 1461 1492	C-terminal ankyrin motif domain
+T45	Entity 1796 1806	NF-kappa B
+R1	Protein-Component Arg1:T3 Arg2:T38
+R2	Subunit-Complex Arg1:T5 Arg2:T37
+R3	Subunit-Complex Arg1:T6 Arg2:T37
+R4	Protein-Component Arg1:T28 Arg2:T43
+R5	Subunit-Complex Arg1:T19 Arg2:T40
+R6	Subunit-Complex Arg1:T20 Arg2:T40
+R7	Subunit-Complex Arg1:T21 Arg2:T41
+R8	Subunit-Complex Arg1:T22 Arg2:T41

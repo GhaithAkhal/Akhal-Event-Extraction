@@ -1,0 +1,10 @@
+*	Equiv T8 T9
+T22	Entity 336 365	erythroid cell-specific genes
+T23	Entity 790 819	erythroid cell-specific genes
+T24	Entity 1187 1204	GATA-binding site
+T25	Entity 1238 1253	intact promoter
+T26	Entity 1353 1356	DNA
+T27	Entity 1576 1589	finger region
+T28	Entity 1598 1626	N-terminal activation domain
+R1	Protein-Component Arg1:T19 Arg2:T28
+R2	Protein-Component Arg1:T19 Arg2:T27

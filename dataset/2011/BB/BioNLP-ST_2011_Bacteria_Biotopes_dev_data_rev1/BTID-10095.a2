@@ -1,0 +1,33 @@
+T1	Bacterium 0 33	Bradyrhizobium japonicum USDA 110
+T2	Bacterium 46 70	Bradyrhizobium japonicum
+T3	Host 146 153	soybean
+T4	Host 160 171	Glycine max
+T5	HostPart 287 298	root nodule
+T6	HostPart 908 921	cortical cell
+T7	HostPart 949 973	membrane bound organelle
+T8	HostPart 985 995	symbiosome
+T9	Bacterium 1131 1170	Bradyrhizobium japonicum strain USDA110
+T10	Host 1202 1217	Glycine hispida
+T11	Geographical 1229 1236	Florida
+T12	Geographical 1238 1241	USA
+T13	Host 1328 1336	soybeans
+T14	Bacterium 1884 1915	Bradyrhizobium japonicum USDA 6
+T15	Host 1940 1947	soybean
+T16	Geographical 1951 1956	Japan
+*	Equiv T1 T9
+*	Equiv T3 T4
+E1	PartOf Host:T3 Part:T8
+E2	Localization Bacterium:T2 Localization:T6
+E3	Localization Bacterium:T2 Localization:T3
+E4	Localization Bacterium:T2 Localization:T8
+E5	PartOf Host:T3 Part:T5
+E6	Localization Bacterium:T1 Localization:T12
+E7	Localization Bacterium:T14 Localization:T15
+E8	PartOf Host:T3 Part:T7
+E9	Localization Bacterium:T2 Localization:T7
+E10	Localization Bacterium:T1 Localization:T11
+E11	Localization Bacterium:T2 Localization:T5
+E12	Localization Bacterium:T1 Localization:T13
+E13	Localization Bacterium:T14 Localization:T16
+E14	PartOf Host:T3 Part:T6
+E15	Localization Bacterium:T1 Localization:T10

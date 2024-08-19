@@ -1,0 +1,6 @@
+T11	Entity 331 350	early response gene
+T12	Entity 856 862	serine
+T13	Entity 862 872	/threonine
+T14	Entity 1860 1869	Y-peptide
+T15	Entity 2158 2185	jun/fos early response gene
+R1	Protein-Component Arg1:T10 Arg2:T14

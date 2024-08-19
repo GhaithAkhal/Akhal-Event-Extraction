@@ -1,0 +1,20 @@
+*	Equiv T1 T2
+*	Equiv T5 T6 T7
+T11	Entity 14 24	NF-kappa B
+T12	Entity 145 155	NF-kappa B
+T13	Entity 202 268	various genes that act as extrinsic and intrinsic survival factors
+T14	Entity 202 215	various genes
+T15	Entity 320 330	NF-kappa B
+T16	Entity 345 372	cell-permeable SN50 peptide
+T17	Entity 360 364	SN50
+T18	Entity 390 419	nuclear localization sequence
+T19	Entity 423 441	NF-kappa B1 dimers
+T20	Entity 544 554	NF-kappa B
+T21	Entity 590 608	phosphatidylserine
+T22	Entity 688 691	DNA
+T23	Entity 819 823	SN50
+T24	Entity 901 911	NF-kappa B
+T25	Entity 1255 1258	ADP
+T26	Entity 1456 1466	NF-kappa B
+T27	Entity 1510 1514	SN50
+T28	Entity 1580 1590	NF-kappa B

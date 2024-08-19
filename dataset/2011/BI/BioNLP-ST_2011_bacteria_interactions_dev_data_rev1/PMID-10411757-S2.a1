@@ -1,0 +1,61 @@
+T1	Gene 9 14	spo0H
+T2	PolymeraseComplex 53 74	key regulatory device
+T3	PolymeraseComplex 117 121	Spo0
+T4	Action 238 246	activity
+T5	Action 251 264	concentration
+T6	Protein 268 274	sigmaH
+W1	Word 0 8	Although
+W2	Word 9 14	spo0H
+W3	Word 15 17	is
+W4	Word 18 35	transcriptionally
+W5	Word 36 45	regulated
+W6	Word 46 48	by
+W7	Word 49 52	the
+W8	Word 53 56	key
+W9	Word 57 67	regulatory
+W10	Word 68 74	device
+W11	Word 75 79	that
+W12	Word 80 88	controls
+W13	Word 89 100	sporulation
+W14	Word 101 111	initiation
+W15	Word 113 116	the
+W16	Word 117 121	Spo0
+W17	Word 122 134	phosphorelay
+W18	Word 136 141	there
+W19	Word 142 144	is
+W20	Word 145 157	considerable
+W21	Word 158 166	evidence
+W22	Word 167 178	implicating
+W23	Word 179 180	a
+W24	Word 181 190	mechanism
+W25	Word 191 193	of
+W26	Word 194 212	post-translational
+W27	Word 213 220	control
+W28	Word 221 225	that
+W29	Word 226 233	governs
+W30	Word 234 237	the
+W31	Word 238 246	activity
+W32	Word 247 250	and
+W33	Word 251 264	concentration
+W34	Word 265 267	of
+W35	Word 268 274	sigmaH
+R1	mod_att:N-ADJ W27 W26
+R2	mod_att:N-N W10 W8
+R3	appos W10 W17
+R4	obj:V-N W12 W14
+R5	subj:V-N W22 W21
+R6	subj:V-N W12 W10
+R7	obj:V-N W29 W31
+R8	mod_att:N-ADJ W21 W20
+R9	comp:N-N(of) W31 W35
+R10	mod_att:N-N W17 W16
+R11	subj:V-N W29 W27
+R12	comp:V_PASS-N(by) W5 W10
+R13	comp:N-N(of) W33 W35
+R14	mod:V_PASS-ADV W5 W4
+R15	mod_att:N-N W14 W13
+R16	comp:N-N(of) W24 W27
+R17	obj:V-N W29 W33
+R18	subj:V_PASS-N W5 W2
+R19	obj:V-N W22 W24
+R20	mod_att:N-ADJ W10 W9

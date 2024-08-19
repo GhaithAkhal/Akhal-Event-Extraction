@@ -1,0 +1,66 @@
+T1	Bacterium 72 83	Mycoplasmas
+T2	Bacterium 84 103	Mycoplasma pulmonis
+T3	Host 157 161	mice
+T4	Host 166 170	rats
+T5	Bacterium 2039 2049	Mycoplasma
+T6	HostPart 2447 2460	intracellular
+T7	Host 2495 2502	animals
+T8	Host 2514 2520	humans
+T9	Host 2525 2532	insects
+T10	Host 2538 2544	plants
+T11	Bacterium 2546 2558	Spiroplasmas
+T12	Bacterium 2563 2575	Phytoplasmas
+T13	HostPart 2668 2672	cell
+T14	HostPart 3155 3168	intracellular
+T15	Host 3283 3289	humans
+T16	Host 3294 3301	animals
+T17	Host 3303 3308	Human
+T18	Host 3422 3434	farm animals
+T19	Bacterium 4278 4297	Mycoplasma pulmonis
+T20	Bacterium 4347 4366	Mycoplasma pulmonis
+T21	Host 4409 4433	laboratory rats and mice
+T22	Bacterium 4808 4819	M. pulmonis
+T23	HostPart 4827 4834	genital
+T24	HostPart 4947 4960	intra-uterine
+T25	Bacterium 5029 5042	M. pneumoniae
+T26	Host 5057 5063	humans
+T27	Host 5077 5083	animal
+T28	Bacterium 5111 5124	M. pneumoniae
+T29	Host 5141 5146	human
+T30	Host 5180 5192	farm animals
+T31	Host 5498 5516	ruminant livestock
+T32	Bacterium 5527 5535	M. bovis
+T33	Bacterium 5540 5553	M. agalactiae
+T34	Host 6033 6039	murine
+T35	Bacterium 6061 6080	Mycoplasma pulmonis
+*	Equiv T6 T13
+*	Equiv T6 T14
+*	Equiv T8 T15
+*	Equiv T8 T17
+*	Equiv T26 T29
+*	Equiv T2 T19
+*	Equiv T2 T20
+*	Equiv T2 T22
+*	Equiv T2 T35
+*	Equiv T1 T5
+*	Equiv T25 T28
+E1	Localization Bacterium:T25 Localization:T27
+E2	Localization Bacterium:T25 Localization:T30
+E3	Localization Bacterium:T2 Localization:T3
+E4	Localization Bacterium:T2 Localization:T24
+E5	Localization Bacterium:T12 Localization:T10
+E6	Localization Bacterium:T11 Localization:T10
+E7	Localization Bacterium:T2 Localization:T4
+E8	Localization Bacterium:T1 Localization:T16
+E9	Localization Bacterium:T2 Localization:T23
+E10	Localization Bacterium:T1 Localization:T6
+E11	Localization Bacterium:T1 Localization:T7
+E12	Localization Bacterium:T25 Localization:T26
+E13	Localization Bacterium:T1 Localization:T8
+E14	PartOf Host:T21 Part:T23
+E15	Localization Bacterium:T2 Localization:T21
+E16	Localization Bacterium:T2 Localization:T34
+E17	Localization Bacterium:T32 Localization:T31
+E18	Localization Bacterium:T1 Localization:T18
+E19	Localization Bacterium:T1 Localization:T9
+E20	Localization Bacterium:T33 Localization:T31
