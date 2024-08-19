@@ -23,7 +23,6 @@ from typing import List
 class TextProcessor:
     def __init__(self, text: str):
         self.text = text
-        self.doc = nlp(text)
 
-    def get_sentences(self) -> List[spacy.tokens.Span]:
+    def get_sentences(self) -> (List)[spacy.tokens.Span]:
         return list(self.doc.sents)
