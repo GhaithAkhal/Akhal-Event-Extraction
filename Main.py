@@ -4,7 +4,7 @@ from TextFileReader import TextFileReader
 from processor.ExpandTriggerWords import ExpandTriggerWords
 from processor.MyDependencyParser import MyDependencyParser
 from processor.MyTriggerDetection import MyTriggerDetection
-from processor.MyPOSTagger import MyPOSTagger
+from processor.Entities import Entities
 from processor.Pattern import Pattern
 import re
 from dic.Binding import Binding
@@ -30,7 +30,7 @@ class Main:
         data_type = '/BioNLP-ST_2011_genia_devel_data_rev1/'
         current_file = 'PMID-1335418'
         entities_lines = getLines(path_of_task+data_type+current_file+".a1")
-        entities = Pattern.extract_entities(entities_lines)
+        entities = Entities.parse_a1_file(entities_lines)
         print(entities)
 
         text = getText(path_of_task+data_type+current_file+".txt")
@@ -39,10 +39,13 @@ class Main:
         print("End of txt")
 
         triggers= MyTriggerDetection.get_trigger_words(text, entities)
-        for entity_info in triggers:
-            print(f"Entity: {entity_info['entity']} (Start: {entity_info['start_char']}, End: {entity_info['end_char']})")
-            print(f"  Contextual Triggers: {entity_info['contextual_triggers']}")
-            print(f"  Syntactic Triggers: {entity_info['syntactic_triggers']}\n")
+        for detail in triggers:
+            print(f"Sentence: {detail['sentence']}")
+            print(
+                f"Entity: {detail['entity']['text']} (Start: {detail['entity']['start_char']}, End: {detail['entity']['end_char']})")
+            for verb in detail["verbs"]:
+                print(f"Verb: {verb['text']} (Start: {verb['start_char']}, End: {verb['end_char']})")
+            print("-" * 50)
 
         verb_preposition_pairs = Pattern.extract_verbs_and_prepositions(Binding)
         #print(verb_preposition_pairs)

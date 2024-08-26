@@ -2,11 +2,11 @@ from enum import Enum
 
 
 class Regulation(Enum):
-    REGULATE = ("regulate", ["by", "through", "in", "with"])
-    CONTROL = ("control", ["by", "through", "over"])
-    MODULATE = ("modulate", ["by", "through", "in"])
-    ADJUST = ("adjust", ["to", "for"])
-    MAINTAIN = ("maintain", ["in", "with"])
-    BALANCE = ("balance", ["between", "with", "against"])
-    FEEDBACK = ("feedback", ["in", "by", "through"])
-    INDUCE = ("induce", ["by", "in", "through"])
+    regulate = 1
+    control = 2
+    modulate = 3
+    adjust = 4
+    maintain = 5
+    balance = 6
+    feedback = 7
+    induce = 8

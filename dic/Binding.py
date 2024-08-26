@@ -2,11 +2,11 @@ from enum import Enum
 
 
 class Binding(Enum):
-    BIND = ("bind", ["to", "with", "on"])
-    ATTACH = ("attach", ["to", "with", "on"])
-    INTERACT = ("interact", ["with", "between", "among"])
-    ASSOCIATE = ("associate", ["with", "between"])
-    FORM = ("form", ["with", "of"])
-    ADHERE = ("adhere", ["to", "with", "on"])
-    DOCK = ("dock", ["to", "at", "with"])
-    AFFINATE = ("affinate", ["for", "with"])
+    bind = 1
+    attach = 2
+    interact = 3
+    associate = 4
+    form = 5
+    adhere = 6
+    dock = 7
+    affiliate = 8

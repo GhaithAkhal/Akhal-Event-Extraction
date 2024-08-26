@@ -2,10 +2,10 @@ from enum import Enum
 
 
 class Phosphorylation(Enum):
-    PHOSPHORYLATE = ("phosphorylate", ["in", "on", "by"])
-    ACTIVATE = ("activate", ["by", "through"])
-    CATALYZE = ("catalyze", ["by", "with"])
-    MODIFY = ("modify", ["by", "in"])
-    TRANSFER = ("transfer", ["to", "from", "through"])
-    DEPHOSPHORYLATE = ("dephosphorylate", ["in", "by"])
-    SIGNAL = ("signal", ["in", "through"])
+    phosphorylate = 1
+    activate = 2
+    catalyze = 3
+    modify = 4
+    transfer = 5
+    dephosphorylate = 6
+    signal = 7
