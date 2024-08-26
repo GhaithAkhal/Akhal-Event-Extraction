@@ -1,7 +1,7 @@
 from enum import Enum
 
 
-class NegativeRegulation(Enum):
+class Negative_regulation(Enum):
     INHIBIT = ("inhibit", ["by", "through", "in"])
     SUPPRESS = ("suppress", ["by", "through", "in"])
     DECREASE = ("decrease", ["by", "in", "with"])

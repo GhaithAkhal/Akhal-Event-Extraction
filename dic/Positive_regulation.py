@@ -1,7 +1,7 @@
 from enum import Enum
 
 
-class PositiveRegulation(Enum):
+class Positive_regulation(Enum):
     ACTIVATE = ("activate", ["by", "through", "in"])
     ENHANCE = ("enhance", ["by", "through", "in"])
     INCREASE = ("increase", ["by", "in", "with"])

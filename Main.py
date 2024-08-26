@@ -10,12 +10,16 @@ import re
 from dic.Binding import Binding
 
 
-from nltk.corpus import wordnet as wn
 
 
-from nltk.corpus import wordnet as wn
-
-
+def getLines(file_path):
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
+    return lines
+def getText(file_path):
+    with open(file_path, 'r') as file:
+        text = file.read().replace('\n', ' ')
+    return text
 class Main:
     def __init__(self, file_path: str):
         self.file_path = file_path
@@ -24,14 +28,26 @@ class Main:
 
         path_of_task = 'dataset/2011/GE'
         data_type = '/BioNLP-ST_2011_genia_devel_data_rev1/'
-        current_file = 'PMC-1134658-00-TIAB'
-
-        entities = Pattern.extract_entities("dataset/2011/GE/BioNLP-ST_2011_genia_devel_data_rev1/PMC-1134658-00-TIAB.a1")
+        current_file = 'PMID-1335418'
+        entities_lines = getLines(path_of_task+data_type+current_file+".a1")
+        entities = Pattern.extract_entities(entities_lines)
         print(entities)
+
+        text = getText(path_of_task+data_type+current_file+".txt")
+        print("Text is: ")
+        print(text)
+        print("End of txt")
+
+        triggers= MyTriggerDetection.get_trigger_words(text, entities)
+        for entity_info in triggers:
+            print(f"Entity: {entity_info['entity']} (Start: {entity_info['start_char']}, End: {entity_info['end_char']})")
+            print(f"  Contextual Triggers: {entity_info['contextual_triggers']}")
+            print(f"  Syntactic Triggers: {entity_info['syntactic_triggers']}\n")
+
         verb_preposition_pairs = Pattern.extract_verbs_and_prepositions(Binding)
-        print(verb_preposition_pairs)
+        #print(verb_preposition_pairs)
         pattern = Pattern.generate_regex_patterns(entities, verb_preposition_pairs)
-        print(pattern)
+        #print(pattern)
         # # Step 1: Read the text from the file and extract the sentences
         # file_reader = TextFileReader(path_of_task + data_type + current_file + '.txt')
         # tmp_sentences = file_reader.read_text()

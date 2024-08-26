@@ -2,7 +2,7 @@ from enum import Enum
 
 
 
-class ProteinCatabolism(Enum):
+class Protein_catabolism(Enum):
     CATABOLIZE = ("catabolize", ["in", "by", "through"])
     DEGRADE = ("degrade", ["by", "through", "into"])
     BREAK = ("break", ["into", "by"])

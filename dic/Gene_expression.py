@@ -1,7 +1,7 @@
 from enum import Enum
 
 
-class GeneExpression(Enum):
+class Gene_expression(Enum):
     EXPRESS = ("express", ["in", "on", "by", "through"])
     TRANSCRIBE = ("transcribe", ["from", "into"])
     TRANSLATE = ("translate", ["into", "from"])

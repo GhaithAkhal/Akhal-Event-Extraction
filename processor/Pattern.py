@@ -23,10 +23,8 @@ class Pattern:
                 verb_preposition_pairs.append((verb, prep))
         return verb_preposition_pairs
 
-    def extract_entities(file_path):
+    def extract_entities(lines):
         entities = []
-        with open(file_path, 'r') as file:
-            lines = file.readlines()
         for i in range(len(lines)):
             line = lines[i].strip()
             words = line.split()

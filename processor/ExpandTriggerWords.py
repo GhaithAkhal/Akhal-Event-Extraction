@@ -3,21 +3,17 @@ from nltk.corpus import verbnet as vn
 import nltk
 
 # Assuming that the enums are correctly defined and imported
-from dic.GeneExpression import GeneExpression
+from dic.Gene_expression import Gene_expression
 from dic.Transcription import Transcription
 from dic.Phosphorylation import Phosphorylation
 from dic.Localization import Localization
 from dic.Regulation import Regulation
-from dic.PositiveRegulation import PositiveRegulation
-from dic.NegativeRegulation import NegativeRegulation
-from dic.ProteinCatabolism import ProteinCatabolism
+from dic.Positive_regulation import Positive_regulation
+from dic.Negative_regulation import Negative_regulation
+from dic.Protein_catabolism import Protein_catabolism
 from dic.Binding import Binding
 
-
-
-
 class ExpandTriggerWords:
-
     @staticmethod
     def get_verbnet_frames(verb):
         frames = []
@@ -41,7 +37,6 @@ class ExpandTriggerWords:
         new_enum_members = {}
         for member in enum_class:
             verb, existing_prepositions = member.value
-            print(f"Expanding verb: {verb}")  # Debugging: Indicate the verb being expanded
             vn_frames = ExpandTriggerWords.get_verbnet_frames(verb)
             for _, prepositions in vn_frames:
                 existing_prepositions.extend(prepositions)
@@ -55,16 +50,16 @@ class ExpandTriggerWords:
 
 
 # Example of expanding the GeneExpression enum with VerbNet data
-NewGeneExpression = ExpandTriggerWords.expand_enum_with_verbnet(GeneExpression)
-ExpandTriggerWords.expand_enum_with_verbnet(GeneExpression)
+NewGeneExpression = ExpandTriggerWords.expand_enum_with_verbnet(Gene_expression)
+ExpandTriggerWords.expand_enum_with_verbnet(Gene_expression)
 ExpandTriggerWords.expand_enum_with_verbnet(Transcription)
-ExpandTriggerWords.expand_enum_with_verbnet(ProteinCatabolism)
+ExpandTriggerWords.expand_enum_with_verbnet(Protein_catabolism)
 ExpandTriggerWords.expand_enum_with_verbnet(Phosphorylation)
 ExpandTriggerWords.expand_enum_with_verbnet(Localization)
 ExpandTriggerWords.expand_enum_with_verbnet(Binding)
 ExpandTriggerWords.expand_enum_with_verbnet(Regulation)
-ExpandTriggerWords.expand_enum_with_verbnet(PositiveRegulation)
-ExpandTriggerWords.expand_enum_with_verbnet(NegativeRegulation)
+ExpandTriggerWords.expand_enum_with_verbnet(Positive_regulation)
+ExpandTriggerWords.expand_enum_with_verbnet(Negative_regulation)
 
 for member in NewGeneExpression:
     print(f"{member.name}: Verbs = {member.value[0]}, Prepositions = {member.value[1]}")
