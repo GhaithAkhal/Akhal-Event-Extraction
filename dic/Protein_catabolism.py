@@ -3,11 +3,11 @@ from enum import Enum
 
 
 class Protein_catabolism(Enum):
-    CATABOLIZE = ("", ["in", "by", "through"])
-    DEGRADE = ("degrade", ["by", "through", "into"])
-    BREAK = ("break", ["into", "by"])
-    DIGEST = ("digest", ["in", "by", "through"])
-    HYDROLYZE = ("hydrolyze", ["in", "by", "with"])
-    CLEAVE = ("cleave", ["into", "by", "with"])
-    AUTOPHAGIZE = ("autophagize", ["in", "by"])
-    UBIQUITINATE = ("ubiquitinate", ["of", "in", "by"])
+    catabolite = 1
+    degrade = 2
+    BREAK = 3
+    digest = 4
+    hydrolyze = 5
+    cleave = 6
+    autophagize = 7
+    ubiquitinate = 8

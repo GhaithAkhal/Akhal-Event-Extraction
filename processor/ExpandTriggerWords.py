@@ -20,33 +20,19 @@ class ExpandTriggerWords:
         for vn_class in vn.classids(lemma=verb):
             for frame in vn.frames(vn_class):
                 syntax = frame['syntax']
-                frame_prepositions = []
                 for element in syntax:
-                    # Check if the element contains the 'value' key and if it's a preposition
-                    if 'value' in element and 'Prep' in element['value']:
-
-                        frame_prepositions.append(element['value'])
-                if frame_prepositions:
-                    frames.append((verb, frame_prepositions))
-
+                    if 'value' in element :
+                        frames.append(element['value'])
         print(f"Verb: {verb}, Frames: {frames}")
         return frames
 
     @staticmethod
     def expand_enum_with_verbnet(enum_class):
-        new_enum_members = {}
+        vn_frames = []
         for member in enum_class:
-            verb, existing_prepositions = member.value
-            vn_frames = ExpandTriggerWords.get_verbnet_frames(verb)
-            for _, prepositions in vn_frames:
-                existing_prepositions.extend(prepositions)
-            # Ensure uniqueness
-            existing_prepositions = list(set(existing_prepositions))
-            new_enum_members[member.name] = (verb, existing_prepositions)
-
-        # Create a new Enum with the updated values
-        NewEnum = Enum(enum_class.__name__, new_enum_members)
-        return NewEnum
+            verb = member.name
+            vn_frames.append(ExpandTriggerWords.get_verbnet_frames(verb))
+        return vn_frames
 
 
 # Example of expanding the GeneExpression enum with VerbNet data
@@ -62,4 +48,4 @@ ExpandTriggerWords.expand_enum_with_verbnet(Positive_regulation)
 ExpandTriggerWords.expand_enum_with_verbnet(Negative_regulation)
 
 for member in NewGeneExpression:
-    print(f"{member.name}: Verbs = {member.value[0]}, Prepositions = {member.value[1]}")
+    print(f":{member} ")

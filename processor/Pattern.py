@@ -15,13 +15,8 @@ class Pattern:
 
 # Function to extract all verbs and prepositions from an Enum class
     def extract_verbs_and_prepositions(enum_class):
-        verb_preposition_pairs = []
-        for member in enum_class:
-            verb = member.value[0]
-            prepositions = member.value[1]
-            for prep in prepositions:
-                verb_preposition_pairs.append((verb, prep))
-        return verb_preposition_pairs
+        verbs = []
+        return verbs
 
     def extract_entities(lines):
         entities = []

@@ -31,18 +31,12 @@ class Main:
         current_file = 'PMID-1335418'
         entities_lines = getLines(path_of_task+data_type+current_file+".a1")
         entities = Entities.parse_a1_file(entities_lines)
-        print(entities)
 
         text = getText(path_of_task+data_type+current_file+".txt")
-        print("Text is: ")
-        print(text)
-        print("End of txt")
-
         triggers= MyTriggerDetection.get_trigger_words(text, entities)
         for detail in triggers:
             print(f"Sentence: {detail['sentence']}")
-            print(
-                f"Entity: {detail['entity']['text']} (Start: {detail['entity']['start_char']}, End: {detail['entity']['end_char']})")
+            print(f"Entity: {detail['entity']['text']} (Start: {detail['entity']['start_char']}, End: {detail['entity']['end_char']})")
             for verb in detail["verbs"]:
                 print(f"Verb: {verb['text']} (Start: {verb['start_char']}, End: {verb['end_char']})")
             print("-" * 50)
