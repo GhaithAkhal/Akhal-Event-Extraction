@@ -2,13 +2,12 @@ from enum import Enum
 
 
 class Transcription(Enum):
-    TRANSCRIBE = ("transcribe", ["from", "into", "on"])
-    COPY = ("copy", ["from", "into", "to"])
-    REPLICATE = ("replicate", ["from", "into"])
-    TRANSLATE = ("translate", ["into", "from"])
-    REVERSE = ("reverse", ["from", "to"])
-    READ = ("read", ["from", "into"])
-    SYNTHESIZE = ("synthesize", ["in", "from"])
-    INITIATE = ("initiate", ["at", "from"])
-    TERMINATE = ("terminate", ["at", "from", "in"])
-
+    transcribe = 1
+    copy = 2
+    replicate = 3
+    translate = 4
+    reverse = 5
+    read = 6
+    synthesize = 7
+    initiate = 8
+    terminate = 9
