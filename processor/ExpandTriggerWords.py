@@ -1,51 +1,38 @@
-from enum import Enum
-from nltk.corpus import verbnet as vn
 import nltk
+from nltk.corpus import verbnet as vn
 
-# Assuming that the enums are correctly defined and imported
-from dic.Gene_expression import Gene_expression
-from dic.Transcription import Transcription
-from dic.Phosphorylation import Phosphorylation
-from dic.Localization import Localization
-from dic.Regulation import Regulation
-from dic.Positive_regulation import Positive_regulation
-from dic.Negative_regulation import Negative_regulation
-from dic.Protein_catabolism import Protein_catabolism
-from dic.Binding import Binding
+# Ensure that the required VerbNet data is downloaded
+nltk.download('verbnet')
+
+# Print all available VerbNet class IDs
+all_vn_classes = vn.classids()
+print(all_vn_classes)
 
 class ExpandTriggerWords:
-    @staticmethod
-    def get_verbnet_frames(verb):
-        frames = []
-        for vn_class in vn.classids(lemma=verb):
-            for frame in vn.frames(vn_class):
-                syntax = frame['syntax']
-                for element in syntax:
-                    if 'value' in element :
-                        frames.append(element['value'])
-        print(f"Verb: {verb}, Frames: {frames}")
-        return frames
 
-    @staticmethod
-    def expand_enum_with_verbnet(enum_class):
-        vn_frames = []
-        for member in enum_class:
-            verb = member.name
-            vn_frames.append(ExpandTriggerWords.get_verbnet_frames(verb))
-        return vn_frames
+    def add_verbs_from_verbnet(enum_dict, vn_classes, category_name):
+        """
+        Adds verbs from specified VerbNet classes to a given category in the enum_dict.
 
+        :param enum_dict: Dictionary to update.
+        :param vn_classes: List of VerbNet classes to extract verbs from.
+        :param category_name: The key in enum_dict to add the verbs under.
+        """
+        verbs = set()
+        for vn_class in vn_classes:
+            # Get the VerbNet class
+            try:
+                class_obj = vn.vnclass(vn_class)
+            except ValueError:
+                print(f"VerbNet class {vn_class} not found.")
+                continue
 
-# Example of expanding the GeneExpression enum with VerbNet data
-NewGeneExpression = ExpandTriggerWords.expand_enum_with_verbnet(Gene_expression)
-ExpandTriggerWords.expand_enum_with_verbnet(Gene_expression)
-ExpandTriggerWords.expand_enum_with_verbnet(Transcription)
-ExpandTriggerWords.expand_enum_with_verbnet(Protein_catabolism)
-ExpandTriggerWords.expand_enum_with_verbnet(Phosphorylation)
-ExpandTriggerWords.expand_enum_with_verbnet(Localization)
-ExpandTriggerWords.expand_enum_with_verbnet(Binding)
-ExpandTriggerWords.expand_enum_with_verbnet(Regulation)
-ExpandTriggerWords.expand_enum_with_verbnet(Positive_regulation)
-ExpandTriggerWords.expand_enum_with_verbnet(Negative_regulation)
-
-for member in NewGeneExpression:
-    print(f":{member} ")
+            # Get the verbs associated with the VerbNet class
+            if class_obj:
+                members = class_obj.findall('MEMBERS/MEMBER')
+                for member in members:
+                    verbs.add(member.attrib['name'])
+        if category_name in enum_dict:
+            enum_dict[category_name].extend(list(verbs))
+        else:
+            enum_dict[category_name] = list(verbs)

@@ -4,7 +4,7 @@ from nltk import pos_tag
 
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
-class MyTriggerDetection:
+class TriggerDetection:
     @staticmethod
     def get_trigger_words(text, entities):
 
@@ -13,8 +13,10 @@ class MyTriggerDetection:
         sentences = sent_tokenize(text)
 
         for entity in entities:
+            mylen = 0
             for sentence in sentences:
-                if entity["text"] in sentence:
+                mylen = mylen + 1 + len(sentence)
+                if entity["text"] in sentence and entity["start_char"] < mylen:
                     words = word_tokenize(sentence)
                     pos_tags = pos_tag(words)
 
@@ -25,6 +27,7 @@ class MyTriggerDetection:
                             start_idx = sentence.index(word) + char_offset
                             end_idx = start_idx + len(word)
                             verbs.append({
+
                                 "text": word,
                                 "start_char": start_idx,
                                 "end_char": end_idx

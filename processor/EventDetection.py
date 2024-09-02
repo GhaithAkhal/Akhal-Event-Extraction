@@ -3,8 +3,12 @@ import Types as event_type
 from typing import List, Tuple
 
 
-class MyEventTypeDetection:
-    def _event_classificaion(self, possible_trigger_words: List[str]) -> List[Tuple[str, str]]:
+class EventDetection:
+
+    def extractSimpleEvent():
+        select_d
+
+    def _event_classificaion(self, possible_trigger_words: List[str]):
         # Simple NER using a dictionary-based approach
         entities = []
         # for word in possible_trigger_words:
