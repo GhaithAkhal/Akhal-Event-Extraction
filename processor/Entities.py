@@ -1,7 +1,17 @@
 import re
 from typing import List, Tuple
 
+from processor.dic import last_entity_id as last_entity
+
 class Entities:
+
+    def extract_number(id_string):
+        # Use regular expression to find all numeric parts
+        numbers = re.findall(r'\d+', id_string)
+        # Join all found numbers into a single string and convert to integer
+        return int(''.join(numbers))
+
+
     def parse_a1_file(lines):
         entities = []
         for line in lines:

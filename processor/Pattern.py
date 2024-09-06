@@ -7,6 +7,8 @@ class Pattern:
         print(verbs)
         print(entities)
         patterns = []
+        if len(entities) == 1:
+            return None
         for entity1 in entities:
             for entity2 in entities:
                 if entity1 != entity2:
