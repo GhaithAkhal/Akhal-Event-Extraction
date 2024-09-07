@@ -3,18 +3,17 @@ from typing import List
 
 class Pattern:
     # Function to generate regular expressions with every two entities
-    def generate_regex_patterns_binding(entities, verbs):
-        print(verbs)
+    def generate_regex_patterns_binding(entities, verb):
+        print(verb)
         print(entities)
+        entity_text = []
+        for entity in entities:
+            entity_text.append(entity['text'])
+        entity_pattern = "\w+\s\w+"
         patterns = []
-        if len(entities) == 1:
-            return None
-        for entity1 in entities:
-            for entity2 in entities:
+        for entity1 in entity_text:
+            for entity2 in entity_text:
                 if entity1 != entity2:
-                    for verb in verbs:
-                        pattern = rf"{entity1} *{verb} *{entity2}*."
-                        patterns.append(pattern)
-        print(patterns)
-        print("\n")
+                    pattern = rf"\b{entity1}\b.*?\b{verb}\b.*?\b{entity2}\b"
+                    patterns.append(pattern)
         return patterns

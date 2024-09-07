@@ -1,3 +1,6 @@
+import glob
+import os
+
 from EventExtractor import EventExtractor
 from processor.EventDetection import EventDetection
 from processor.ExpandTriggerWords import ExpandTriggerWords
@@ -34,8 +37,6 @@ def getText(file_path):
     return text
 
 
-new_entities = []
-new_events = []
 outPut = []
 entities_text = []
 
@@ -46,25 +47,32 @@ class Main:
 
     if __name__ == "__main__":
 
-        # Print the updated dictionary
-        for category, verbs in enum_dict.items():
-            print(f"{category}: {verbs}")
+        source_directory = r'dataset\2009\bionlp09_shared_task_training_data_rev2'  # Source directory
+        destination_directory = r'dataset\result'
+        source_files = glob.glob(os.path.join(source_directory, '*.a1'))
+        for file_path in source_files:
 
-        path_of_task = 'dataset/2009/'
-        data_type = 'bionlp09_shared_task_training_data_rev2/'
-        current_file = '1429562'
-        entities_lines = getLines(path_of_task+data_type+current_file+".a1")
-        last_entity_id = len(entities_lines)
-        entities = Entities.parse_a1_file(entities_lines)
-        text = getText(path_of_task+data_type+current_file+".txt")
+            filename_without_extension = os.path.splitext(os.path.basename(file_path))[0]
+            if filename_without_extension.startswith('R' or 'L'):
+                pass
+            else:
+                destination_file_path = os.path.join(destination_directory, filename_without_extension + '.a2')
+                try:
+                    text_path = os.path.join(source_directory, filename_without_extension +'.txt')
+                    text = getText(text_path)
+                    entities_lines = getLines(file_path)
+                    last_entity_id = len(entities_lines)
+                    entities = Entities.parse_a1_file(entities_lines)
+                    for entity in entities:
+                        entities_text.append(entity['text'])
 
-
-        for entity in entities:
-            entities_text.append(entity['text'])
-        print("entities_text)")
-        print(entities_text)
-
-        #pattern = Pattern.generate_regex_patterns_binding(entities_text, enum_dict['Binding'])
-
-        triggers = TriggerDetection.get_trigger_words(text, entities)
-        EventDetection._event_classificaion(triggers,last_entity_id, last_event_id)
+                    triggers = TriggerDetection.get_trigger_words(text, entities)
+                    newEntities,newEvents = EventDetection._event_classificaion(triggers,last_entity_id, last_event_id)
+                    with open(destination_file_path, 'w') as destination_file:
+                        for line in newEntities:
+                            destination_file.write(line + "\n")
+                        for line in newEvents:
+                            destination_file.write(line + "\n")
+                except Exception as e:
+                    print(f"Error processing file {file_path}: {e}")
+        print("Completed processing all files.")
