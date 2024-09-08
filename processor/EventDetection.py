@@ -13,8 +13,7 @@ nltk.download('omw-1.4')
 
 new_entities = []
 new_events = []
-output = []
-output_directory = 'dataset/result'
+
 def extract_site(sentence, position):
     words = word_tokenize(sentence)
     pos_tags = pos_tag(words)
@@ -81,11 +80,26 @@ def check_if_entity_unique(newEntity, start_char, end_char):
             return False
     return True
 
+def check_if_event_unique(event_type_trigger, theme, theme2=None):
+    if len(new_events) == 0:
+        return True
+    for event in new_events:
+        parts = event.split(' ')
+        data = parts[0]
+        new_parts = data.split('\t')
+        new_event_type_trigger = new_parts[1]
+        new_theme = parts[1]
+        if theme2 is not None:
+            if len(parts) > 2:
+                if parts[2] == theme2:
+                    return False
+        elif new_event_type_trigger == event_type_trigger and theme == new_theme:
+            return False
+    return True
 
 lemmatizer = PorterStemmer()
 
-def extract_binding_event(sentence, entities, verb, last_event_id):
-    entity_data = []
+def extract_binding_event(sentence, entities, verb):
     protein1_data = {}
     protein2_data = {}
     i = 0;
@@ -109,18 +123,13 @@ def extract_binding_event(sentence, entities, verb, last_event_id):
         i += 1
     # Generate regex patterns
     patterns = Pattern.generate_regex_patterns_binding(entities, verb)
-    print(entity_data)
     # Find matches in text
-    events = []
     for pattern in patterns:
         matches = re.finditer(pattern, sentence)
         for match in matches:
             if match:
-                binding_event = f"E{last_event_id} Binding:{protein1_data['id']} Theme:{protein1_data['id']} Theme2:{protein2_data['id']}"
-                new_events.append(binding_event)
-
-    return events
-
+                return protein1_data['id'], protein2_data['id']
+    return 'T0', 'T0'
 
 
 def extract_localization_event(sentence, position):
@@ -162,9 +171,7 @@ def  extract_regulation_event(trigger_word, sentence,entities, position):
                             if cause_candidate in entity['text']:
                                 cause = entity
                                 break
-                        if cause is None:
-                            cause = cause_candidate
-                        break
+
 
             # Check for site near the trigger
             for j in range(i + 1, len(words)):
@@ -172,8 +179,7 @@ def  extract_regulation_event(trigger_word, sentence,entities, position):
                     if j + 1 < len(words) and pos_tags[j + 1][1].startswith('NN'):
                         site_candidate = words[j + 1]
                         # Check if the site is a known entity
-                        for entity_wrapper in entities:
-                            entity = entity_wrapper['entity']
+                        for entity in entities:
                             if site_candidate in entity['text']:
                                 site = entity['text']
                                 index_site = sentence.index(site) + position
@@ -197,86 +203,132 @@ class EventDetection:
     # Simple Events are Gene_expression  Phosphorylation, Transcription, Protein_catabolism
     def _event_classificaion(triggers, last_entity_id, last_event_id):
         current_position = 0
-        local_entities = []
+        visited_entities = []
+        last_site_id = 0
         for detail in triggers:
             current_position += len(detail['sentence'])
-            print(f"Sentence: {detail['sentence']}")
-            for entity_wrapper in detail["entities"]:
-                entity = entity_wrapper['entity']
-                local_entities.append(entity)
-                print(f"Entity: {entity['text']}\t{entity['start_char']}  {entity['end_char']}")
-                for verb in detail["verbs"]:
-                    print(f"{verb['tag']}:\t{verb['text']} {verb['start_char']} {verb['end_char']}")
-                    extracted_entity_type = get_word_type(verb['text'])
-                    if extracted_entity_type is not None:
-                        last_event_id += 1
-                        if extracted_entity_type in ['Negative_regulation', 'Positive_regulation', 'Regulation']:
-                            if create_new_entity(last_entity_id, extracted_entity_type, verb['start_char'], verb['end_char'], verb['text']):
+            for entity_wrapper in detail['entities']:
+                new_entity = entity_wrapper['entity']
+                if new_entity not in visited_entities:
+                    visited_entities.append(new_entity)
+                    for verb in detail["verbs"]:
+                        extracted_trigger_type = get_word_type(verb['text'])
+                        if extracted_trigger_type is not None:
+
+                            if create_new_entity(last_entity_id, extracted_trigger_type, verb['start_char'], verb['end_char'],
+                                                 verb['text']):
                                 last_entity_id += 1
-                            # Example: theme and site extraction logic for regulation
-                            site, index_site, cause = extract_regulation_event(
-                                verb['text'], detail['sentence'], local_entities, current_position)
-                            if cause is not None:
-                                if site is not None:
-                                    if create_new_entity(last_entity_id, 'Entity', current_position+index_site,
-                                                      current_position + index_site + len(site), site):
-                                        last_entity_id += 1
-                                    new_events.append(f"E{last_event_id}\t{extracted_entity_type}:T{last_entity_id}\tTheme:{last_entity_id - 1}\tCause:{cause['id']}\tCSide:{last_entity_id}")
+                            if extracted_trigger_type in ['Negative_regulation', 'Positive_regulation', 'Regulation']:
+                                # Example: theme and site extraction logic for regulation
+                                site, index_site, cause = extract_regulation_event(
+                                    verb['text'], detail['sentence'], visited_entities, current_position)
+                                if cause is not None:
+                                    if site is not None:
+                                        if create_new_entity(last_entity_id, 'Entity', current_position+index_site,
+                                                          current_position + index_site + len(site), site):
+                                            last_site_id = last_entity_id
+                                            last_entity_id += 1
+                                            if check_if_event_unique(f'{extracted_trigger_type}:T{last_entity_id - 2}',
+                                                                     f'Theme:{new_entity['id']}'):
+                                                last_event_id += 1
+                                                new_events.append(f"E{last_event_id}\t{extracted_trigger_type}:T{last_entity_id-2} Theme:{new_entity['id']} Cause:{cause['id']} CSite:T{last_site_id}")
+                                        else:
+                                            if check_if_event_unique(f'{extracted_trigger_type}:T{last_entity_id - 1}',
+                                                                     f'Theme:{new_entity['id']}'):
+                                                last_event_id += 1
+                                                new_events.append(
+                                                    f"E{last_event_id}\t{extracted_trigger_type}:T{last_entity_id - 1} Theme:{new_entity['id']} Cause:{cause['id']} CSite:T{last_site_id}")
+
+                                    else:
+                                        if check_if_event_unique(f'{extracted_trigger_type}:T{last_entity_id-1}', f'Theme:{new_entity['id']}'):
+                                            last_event_id +=1
+                                            new_events.append(
+                                                f"E{last_event_id}\t{extracted_trigger_type}:T{last_entity_id-1} Theme:{new_entity['id']} Cause:{cause['id']}")
                                 else:
+                                    if site is not None:
+                                        if create_new_entity(last_entity_id, 'Entity', current_position+index_site,
+                                                          current_position + index_site + len(site), site):
+                                            last_site_id = last_entity_id
+                                            last_entity_id += 1
+                                        if check_if_event_unique(f'{extracted_trigger_type}:T{last_entity_id-2}', f'Theme:{new_entity['id']}'):
+                                            last_event_id +=1
+                                            new_events.append(f"E{last_event_id}\t{extracted_trigger_type}:T{last_entity_id-2} Theme:{new_entity['id']} Site:T{last_site_id}")
+
+                                        else:
+                                            if check_if_event_unique(f'{extracted_trigger_type}:T{last_entity_id-1}', f'Theme:{new_entity['id']}'):
+                                                last_event_id += 1
+                                                new_events.append(
+                                                    f"E{last_event_id}\t{extracted_trigger_type}:T{last_entity_id - 1} Theme:{new_entity['id']} Site:T{last_site_id}")
+                                    else:
+                                        if check_if_event_unique(f'{extracted_trigger_type}:T{last_entity_id-1}', f'Theme:{new_entity['id']}'):
+                                            last_event_id +=1
+                                            new_events.append(f"E{last_event_id}\t{extracted_trigger_type}:T{last_entity_id-1} Theme:{new_entity['id']}")
+
+                            elif extracted_trigger_type == 'Localization':
+
+                                # Localization extraction logic
+                                location, start_loc = extract_localization_event(detail['sentence'], current_position)
+                                if location is not None:
+                                    if create_new_entity(last_entity_id, 'Entity', current_position+start_loc,
+                                                      current_position + start_loc + len(location), location):
+                                        last_site_id = last_entity_id
+                                        last_entity_id += 1
+                                    if check_if_event_unique(f'{extracted_trigger_type}:T{last_entity_id - 1}',
+                                                             f'Theme:{new_entity['id']}'):
+                                        last_event_id += 1
+                                        new_events.append(
+                                         f"E{last_event_id}\t{extracted_trigger_type}:T{last_entity_id-1} Theme:{new_entity['id']} AtLoc:T{last_site_id}")
+                                else:
+                                    if check_if_event_unique(f'{extracted_trigger_type}:T{last_entity_id - 1}',
+                                                             f'Theme:{new_entity['id']}'):
+                                        last_event_id +=1
+                                        new_events.append(
+                                            f"E{last_event_id}\t{extracted_trigger_type}:T{last_entity_id-1} Theme:{new_entity['id']}")
+                            elif extracted_trigger_type == 'Phosphorylation':
+                                # Phosphorylation site extraction logic
+                                site, index_site = extract_site(detail['sentence'], current_position)
+                                if site is not None:
+                                    if create_new_entity(last_entity_id, 'Entity', current_position + index_site,
+                                                      current_position + index_site + len(site), site):
+                                        last_site_id = last_entity_id
+                                        last_entity_id += 1
+                                        if check_if_event_unique(f'{extracted_trigger_type}:T{last_entity_id-1}', f'Theme:{new_entity['id']}'):
+                                            last_event_id +=1
+                                            new_events.append(
+                                                f"E{last_event_id}\t{extracted_trigger_type}:T{last_entity_id-2} Theme:{new_entity['id']} Site:T{last_site_id}")
+                                    else:
+                                        if check_if_event_unique(f'{extracted_trigger_type}:T{last_entity_id-1}', f'Theme:{new_entity['id']}'):
+                                            last_event_id +=1
+                                            new_events.append(
+                                                f"E{last_event_id}\t{extracted_trigger_type}:T{last_entity_id-1} Theme:{new_entity['id']} Site:T{last_site_id}")
+                                else:
+                                    if check_if_event_unique(f'{extracted_trigger_type}:T{last_entity_id - 1}',
+                                                             f'Theme:{new_entity['id']}'):
+                                        last_event_id += 1
+                                        new_events.append(
+                                            f"E{last_event_id}\t{extracted_trigger_type}:T{last_entity_id-1} Theme:{new_entity['id']}")
+
+                            elif extracted_trigger_type == 'Binding':
+                                # Binding extraction logic
+                                if len(visited_entities) == 2:
+                                    protein1_data_id, protein2_data_id = extract_binding_event(detail['sentence'], visited_entities, verb['text'])
+                                    if protein1_data_id != 'T0' and protein2_data_id != 'T0':
+                                        if check_if_event_unique(f'{extracted_trigger_type}:T{last_entity_id - 1}',
+                                                                 f'Theme:{protein1_data_id}', f'Theme2:{protein2_data_id}'):
+                                            last_event_id += 1
+                                            new_events.append(f"E{last_event_id}\t{extracted_trigger_type}:T{last_entity_id-1} Theme:{protein1_data_id} Theme2:{protein2_data_id}")
+
+                                else:
+                                    if check_if_event_unique(f'{extracted_trigger_type}:T{last_entity_id - 1}',f'Theme:{new_entity['id']}'):
+                                        last_event_id +=1
+                                        new_events.append(f"E{last_event_id}\t{extracted_trigger_type}:T{last_entity_id- 1} Theme:{new_entity['id']}")
+                            else:
+                                # Create an event linking the verb and the entity
+                                if check_if_event_unique(f'{extracted_trigger_type}:T{last_entity_id - 1}',
+                                                         f'Theme:{new_entity['id']}'):
+                                    last_event_id +=1
                                     new_events.append(
-                                        f"E{last_event_id}\t{extracted_entity_type}:T{last_entity_id}\tTheme:{last_entity_id - 1}\tCause:{cause['id']}")
-                            else:
-                                if site is not None:
-                                    if create_new_entity(last_entity_id, 'Entity', current_position+index_site,
-                                                      current_position + index_site + len(site), site):
-                                        last_entity_id += 1
-                                    new_events.append(f"E{last_event_id}\t{extracted_entity_type}:T{last_entity_id}\tTheme:{entity['id']} Side:T{last_entity_id-1}")
-                                else:
-                                    new_events.append(f"E{last_event_id}\t{extracted_entity_type}:T{last_entity_id}\tTheme:{entity['id']}")
+                                        f"E{last_event_id}\t{extracted_trigger_type}:T{last_entity_id-1} Theme:{new_entity['id']}")
+            visited_entities.clear()
 
-                        elif extracted_entity_type == 'Localization':
-                            if create_new_entity(last_entity_id, extracted_entity_type, verb['start_char'], verb['end_char'], verb['text']):
-                                last_entity_id += 1
-                            # Localization extraction logic
-                            location, start_loc = extract_localization_event(detail['sentence'], current_position)
-                            if location is not None:
-                                if create_new_entity(last_entity_id, 'Entity', current_position+start_loc,
-                                                  current_position + start_loc + len(location), location):
-                                    last_entity_id += 1
-                                f"E{last_event_id}\t{entity['type']}:T{last_entity_id}\tTheme:{entity['id']} AtLoc:{last_entity_id}"
-
-                            new_events.append(
-                                f"E{last_event_id}\t{extracted_entity_type}:T{last_entity_id}\tTheme:{entity['id']}")
-                        elif extracted_entity_type == 'Phosphorylation':
-                            if create_new_entity(last_entity_id, extracted_entity_type, verb['start_char'], verb['end_char'], verb['text']):
-                                last_entity_id += 1
-                            # Phosphorylation site extraction logic
-                            site, index_site = extract_site(detail['sentence'], current_position)
-                            if site is not None:
-                                if create_new_entity(last_entity_id, 'Entity', current_position + index_site,
-                                                  current_position + index_site + len(site), site):
-                                    last_entity_id += 1
-                                new_events.append(
-                                    f"E{last_event_id}\t{extracted_entity_type}:T{last_entity_id}\tTheme:{entity['id']} Side:T{last_entity_id - 1}")
-                            else:
-                                new_events.append(
-                                    f"E{last_event_id}\t{extracted_entity_type}:T{last_entity_id}\tTheme:{entity['id']}")
-
-                        elif extracted_entity_type == 'Binding':
-                            # Binding extraction logic
-                            if create_new_entity(last_entity_id, extracted_entity_type, verb['start_char'], verb['end_char'],verb['text']):
-                                last_entity_id += 1
-                            if len(local_entities) ==1:
-                                new_events.append(f"E{last_event_id}\t{extracted_entity_type}:T{last_entity_id}\tTheme:{entity['id']}")
-                            else:
-                                extract_binding_event(detail['sentence'], local_entities, verb['text'], last_entity_id)
-                        else:
-                            # Default case for handling unique entities
-                            if create_new_entity(last_entity_id, extracted_entity_type, verb['start_char'], verb['end_char'], verb['text']):
-                                last_entity_id += 1
-                            # Create an event linking the verb and the entity
-                            new_events.append(
-                                f"E{last_event_id}\t{extracted_entity_type}:T{last_entity_id}\tTheme:{entity['id']}")
-            local_entities = []
-
-        return new_entities,new_entities
+        return new_entities, new_events

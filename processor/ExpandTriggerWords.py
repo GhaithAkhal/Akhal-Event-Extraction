@@ -7,7 +7,6 @@ nltk.download('wordnet')
 
 # Print all available VerbNet class IDs
 all_vn_classes = vn.classids()
-print(all_vn_classes)
 
 class ExpandTriggerWords:
 

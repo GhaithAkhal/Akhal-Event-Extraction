@@ -4,8 +4,6 @@ from typing import List
 class Pattern:
     # Function to generate regular expressions with every two entities
     def generate_regex_patterns_binding(entities, verb):
-        print(verb)
-        print(entities)
         entity_text = []
         for entity in entities:
             entity_text.append(entity['text'])

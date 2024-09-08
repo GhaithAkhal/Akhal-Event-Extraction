@@ -5,9 +5,6 @@ nltk.download('punkt_tab')
 nltk.download('averaged_perceptron_tagger')
 
 
-def split_compound_words(word):
-    # Split the word by hyphen and remove empty strings
-    return [w for w in word.split('-') if w]
 class TriggerDetection:
     @staticmethod
     def get_trigger_words(text, entities):
@@ -38,32 +35,39 @@ class TriggerDetection:
                     break  # Move to the next entity once a match is found
 
         for i, sentence in enumerate(sentences):
-            print(sentence_entity_map[i])
             if sentence_entity_map[i]:  # If sentence has entities
-                print(sentence_entity_map[i])
                 words = word_tokenize(sentence)
-                for word_ in words:
-                    if '-' in word_:
-                        split_words = split_compound_words(word_)
-                        for split in split_words:
-                            words.append(split)
-
                 pos_tags = pos_tag(words)
-                verbs = []
+                triggers = []
                 char_offset = sentence_starts[i]
-                for word, tag in pos_tags:
-                    if tag.startswith('VB') or tag.startswith('N') or tag.startswith('RB'):  # VB* tags are for verbs
-                        start_idx = sentence.index(word) + char_offset
-                        end_idx = start_idx + len(word)
-                        verbs.append({
-                            "tag": tag,
-                            "text": word,
-                            "start_char": start_idx,
-                            "end_char": end_idx
-                        })
+
+                entity_positions = []
+                for entity_wrapper in sentence_entity_map[i]:
+                    entity= entity_wrapper['entity']
+                    start_idx = entity["start_char"] - char_offset
+                    end_idx = entity["end_char"] - char_offset
+                    entity_positions.append((start_idx, end_idx))
+
+                for pos in range(len(pos_tags)):
+                    word, tag = pos_tags[pos]
+                    if tag.startswith('VB') or tag.startswith('NN'):  # VB* tags are for verbs, NN* for nouns
+                        # Check if the word is next to or within 2 words from an entity
+                        for (start_idx, end_idx) in entity_positions:
+                            if abs(pos - start_idx) <= 3 or abs(pos - end_idx) <= 3:
+                                # Calculate character offsets for the trigger word
+                                start_char = text.index(word, char_offset)
+                                end_char = start_char + len(word)
+                                triggers.append({
+                                    "tag": tag,
+                                    "text": word,
+                                    "start_char": start_char,
+                                    "end_char": end_char
+                                })
+                                break
+
                 result.append({
                     "sentence": sentence,
                     "entities": sentence_entity_map[i],
-                    "verbs": verbs
+                    "verbs": triggers
                 })
         return result
