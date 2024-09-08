@@ -49,9 +49,9 @@ def read_a2_files(directory_path):
 
 def initialize():
     # Apply the function for all categories
-    #for category, vn_classes in vn_class_mapping.items():
-    #    ExpandTriggerWords.add_verbs_from_verbnet(enum_dict, vn_classes, category)
-    #    ExpandTriggerWords.add_words_from_wordnet(enum_dict, category)
+    # for category, vn_classes in vn_class_mapping.items():
+    #     ExpandTriggerWords.add_verbs_from_verbnet(enum_dict, vn_classes, category)
+    #     ExpandTriggerWords.add_words_from_wordnet(enum_dict, category)
 
 
     # Optionally remove duplicates and sort the lists
@@ -104,8 +104,8 @@ class Main:
 
 
         start_time = time.time()
-        source_directory = r'dataset\2009\bionlp09_shared_task_training_data_rev2'  # Source directory
-        destination_directory = r'dataset\result'
+        source_directory = r'dataset\2009\bionlp09_shared_task_development_data_rev1'  # Source directory
+        destination_directory = r'dataset\test10'
         source_files = glob.glob(os.path.join(source_directory, '*.a1'))
         for file_path in source_files:
 

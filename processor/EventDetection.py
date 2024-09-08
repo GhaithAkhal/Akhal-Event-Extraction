@@ -284,7 +284,7 @@ class EventDetection:
                                         last_event_id +=1
                                         new_events.append(
                                             f"E{last_event_id}\t{extracted_trigger_type}:T{last_entity_id-1} Theme:{new_entity['id']}")
-                            elif extracted_trigger_type == 'Phosphorylation':
+                            elif extracted_trigger_type == 'Phosphorylation' or extracted_trigger_type == 'Binding':
                                 # Phosphorylation site extraction logic
                                 site, index_site = extract_site(detail['sentence'], current_position)
                                 if site is not None:
@@ -308,20 +308,20 @@ class EventDetection:
                                         new_events.append(
                                             f"E{last_event_id}\t{extracted_trigger_type}:T{last_entity_id-1} Theme:{new_entity['id']}")
 
-                            elif extracted_trigger_type == 'Binding':
-                                # Binding extraction logic
-                                if len(visited_entities) == 2:
-                                    protein1_data_id, protein2_data_id = extract_binding_event(detail['sentence'], visited_entities, verb['text'])
-                                    if protein1_data_id != 'T0' and protein2_data_id != 'T0':
-                                        if check_if_event_unique(f'{extracted_trigger_type}:T{last_entity_id - 1}',
-                                                                 f'Theme:{protein1_data_id}', f'Theme2:{protein2_data_id}'):
-                                            last_event_id += 1
-                                            new_events.append(f"E{last_event_id}\t{extracted_trigger_type}:T{last_entity_id-1} Theme:{protein1_data_id} Theme2:{protein2_data_id}")
-
-                                else:
-                                    if check_if_event_unique(f'{extracted_trigger_type}:T{last_entity_id - 1}',f'Theme:{new_entity['id']}'):
-                                        last_event_id +=1
-                                        new_events.append(f"E{last_event_id}\t{extracted_trigger_type}:T{last_entity_id- 1} Theme:{new_entity['id']}")
+                            # elif extracted_trigger_type == 'Binding':
+                            #     # Binding extraction logic
+                            #     if len(visited_entities) == 2:
+                            #         protein1_data_id, protein2_data_id = extract_binding_event(detail['sentence'], visited_entities, verb['text'])
+                            #         if protein1_data_id != 'T0' and protein2_data_id != 'T0':
+                            #             if check_if_event_unique(f'{extracted_trigger_type}:T{last_entity_id - 1}',
+                            #                                      f'Theme:{protein1_data_id}', f'Theme2:{protein2_data_id}'):
+                            #                 last_event_id += 1
+                            #                 new_events.append(f"E{last_event_id}\t{extracted_trigger_type}:T{last_entity_id-1} Theme:{protein1_data_id} Theme2:{protein2_data_id}")
+                            #
+                            #     else:
+                            #         if check_if_event_unique(f'{extracted_trigger_type}:T{last_entity_id - 1}',f'Theme:{new_entity['id']}'):
+                            #             last_event_id +=1
+                            #             new_events.append(f"E{last_event_id}\t{extracted_trigger_type}:T{last_entity_id- 1} Theme:{new_entity['id']}")
                             else:
                                 # Create an event linking the verb and the entity
                                 if check_if_event_unique(f'{extracted_trigger_type}:T{last_entity_id - 1}',
