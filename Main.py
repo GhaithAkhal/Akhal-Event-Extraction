@@ -7,7 +7,6 @@ from processor.EventDetection import EventDetection
 from processor.ExpandTriggerWords import ExpandTriggerWords
 from processor.TriggerDetection import TriggerDetection
 from processor.Entities import Entities
-from processor.Pattern import Pattern
 from processor.dic import enum_dict
 from processor.dic import vn_class_mapping
 from processor.dic import last_entity_id
@@ -105,7 +104,7 @@ class Main:
 
         start_time = time.time()
         source_directory = r'dataset\2009\bionlp09_shared_task_development_data_rev1'  # Source directory
-        destination_directory = r'dataset\test10'
+        destination_directory = r'dataset\new5'
         source_files = glob.glob(os.path.join(source_directory, '*.a1'))
         for file_path in source_files:
 
@@ -114,34 +113,34 @@ class Main:
                 pass
             else:
                 #try:
-                    destination_file_path = os.path.join(destination_directory, filename_without_extension + '.a2')
-                    text_path = os.path.join(source_directory, filename_without_extension + '.txt')
-                    text = getText(text_path)
-                    entities_lines = getLines(file_path)
+                destination_file_path = os.path.join(destination_directory, filename_without_extension + '.a2')
+                text_path = os.path.join(source_directory, filename_without_extension + '.txt')
+                text = getText(text_path)
+                entities_lines = getLines(file_path)
 
-                    last_entity_id = len(entities_lines)
+                last_entity_id = len(entities_lines)
+                last_event_id = 1
+                entities = Entities.parse_a1_file(entities_lines)
+                for entity in entities:
+                    entities_text.append(entity['text'])
 
-                    entities = Entities.parse_a1_file(entities_lines)
-                    for entity in entities:
-                        entities_text.append(entity['text'])
+                if last_entity_id > 0:
+                    triggers = TriggerDetection.get_trigger_words(text, entities)
+                    newEntities, newEvents = EventDetection._event_classification(triggers, last_entity_id+1,
+                                                                                 last_event_id)
+                    with open(destination_file_path, 'w') as destination_file:
+                        for newEntity in newEntities:
+                            destination_file.write(newEntity + "\n")
 
-                    if last_entity_id > 0:
-                        triggers = TriggerDetection.get_trigger_words(text, entities)
-                        newEntities, newEvents = EventDetection._event_classificaion(triggers, last_entity_id+1,
-                                                                                     last_event_id)
-                        with open(destination_file_path, 'w') as destination_file:
-                            for newEntity in newEntities:
-                                destination_file.write(newEntity + "\n")
+                        for event in newEvents:
+                            destination_file.write(event + "\n")
 
-                            for event in newEvents:
-                                destination_file.write(event + "\n")
-
-                            newEvents.clear()
-                            newEntities.clear()
-                            entities.clear()
-                            entities_lines.clear()
-                            text = ''
-                        print(f"End processing file {filename_without_extension}")
+                        newEvents.clear()
+                        newEntities.clear()
+                        entities.clear()
+                        entities_lines.clear()
+                        text = ''
+                    print(f"End processing file {filename_without_extension}")
                 #except Exception as e:
                 #    print(f"Error processing file {file_path}: {e}")
         print("Completed processing all files.")

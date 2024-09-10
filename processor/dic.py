@@ -47,10 +47,6 @@ enum_dict = {
         'through', 'transcribe', 'transcript', 'undetectable'
     ]}
 
-enum_dict_sec = {
-    'Localization': [],
-    'Phosphorylation': []
-}
         # Define the mapping of categories to VerbNet classes
 vn_class_mapping = {
     'Binding': ['amalgamate-22.2', 'shake-22.3', 'tape-22.4', 'cooking-45.3', 'mix-22.1', 'funnel-9.3'],

@@ -43,14 +43,17 @@ class TriggerDetection:
 
                 entity_positions = []
                 for entity_wrapper in sentence_entity_map[i]:
-                    entity= entity_wrapper['entity']
+                    entity = entity_wrapper['entity']
                     start_idx = entity["start_char"] - char_offset
                     end_idx = entity["end_char"] - char_offset
                     entity_positions.append((start_idx, end_idx))
 
                 for pos in range(len(pos_tags)):
                     word, tag = pos_tags[pos]
-                    if tag.startswith('V') or tag.startswith('N'):  # VB* tags are for verbs, NN* for nouns
+                    if tag.startswith('VB') or tag.startswith('NN'):  # VB* tags are for verbs, NN* for nouns
+                         #Check if the word is next to or within 2 words from an entity
+                        #for (start_idx, end_idx) in entity_positions:
+                            #f abs(pos - start_idx) <= 7 or abs(pos - end_idx) <= 7:
                         start_char = text.index(word, char_offset)
                         end_char = start_char + len(word)
                         triggers.append({
@@ -59,7 +62,7 @@ class TriggerDetection:
                             "start_char": start_char,
                             "end_char": end_char
                         })
-
+                             #   break
                 result.append({
                     "sentence": sentence,
                     "entities": sentence_entity_map[i],
