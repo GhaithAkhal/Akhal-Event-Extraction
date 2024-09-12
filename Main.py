@@ -2,21 +2,17 @@ import glob
 import os
 import time
 
-from EventExtractor import EventExtractor
 from processor.EventDetection import EventDetection
 from processor.ExpandTriggerWords import ExpandTriggerWords
 from processor.TriggerDetection import TriggerDetection
 from processor.Entities import Entities
 from processor.dic import enum_dict
 from processor.dic import vn_class_mapping
-from processor.dic import last_entity_id
-from processor.dic import last_event_id
 
 
 import re
 
 def classify_lines(file_content):
-    # Initialize dictionary with empty lists for different classifications
     classified_lines = []
 
     for line in file_content.split("\n"):
@@ -100,11 +96,9 @@ class Main:
         #     # if parts[0] == 'Transcription':
 
 
-
-
         start_time = time.time()
         source_directory = r'dataset\2009\bionlp09_shared_task_development_data_rev1'  # Source directory
-        destination_directory = r'dataset\new5'
+        destination_directory = r'dataset\new7'
         source_files = glob.glob(os.path.join(source_directory, '*.a1'))
         for file_path in source_files:
 

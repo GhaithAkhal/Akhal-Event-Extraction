@@ -3,6 +3,7 @@ last_entity_id = 0
 last_event_id = 0
 
 
+
 # prepare step, expand the data set
 enum_dict = {
     'Binding': ['Blocking', 'Coligation', 'Cross-linking', 'Interaction', 'absence', 'activities', 'activity', 'affinity', 'aggregated', 'associate', 'bind',
@@ -64,20 +65,67 @@ side_dic = {
         'serine', 'threonine', 'tyrosine', 'alanine', 'arginine', 'asparagine', 'aspartic acid', 'cysteine',
         'glutamine', 'glutamic acid', 'glycine', 'histidine', 'isoleucine', 'leucine', 'lysine', 'methionine',
         'phenylalanine', 'proline', 'tryptophan', 'valine', 'phosphoserine', 'phosphothreonine', 'phosphotyrosine',
-        'selenocysteine', 'pyrrolysine', 'hydroxyproline', 'methyllysine', 'carboxylated', 'citrulline'
+        'selenocysteine', 'pyrrolysine', 'hydroxyproline', 'methyllysine', 'carboxylated', 'citrulline',
+        'ornithine', 'homocysteine', 'hypusine', 'gamma-carboxyglutamate'
     },
     'protein_domains': {
         'SH2 domain', 'SH3 domain', 'kinase domain', 'zinc finger', 'leucine zipper', 'homeobox', 'EF-hand',
-        'helix-loop-helix', 'beta-sheet', 'transmembrane domain'
+        'helix-loop-helix', 'beta-sheet', 'transmembrane domain', 'ankyrin repeat', 'WD40 repeat', 'TIR domain',
+        'PAS domain', 'PDZ domain', 'bHLH domain', 'Arm repeat', 'BROMO domain', 'CARD domain'
     },
     'chemical_modifications': {
-        'phosphate', 'methyl group', 'acetyl group', 'ubiquitin', 'SUMO', 'N-acetyl', 'glycosyl group'
+        'phosphate', 'methyl group', 'acetyl group', 'ubiquitin', 'SUMO', 'N-acetyl', 'glycosyl group',
+        'phosphorylation', 'methylation', 'acetylation', 'ubiquitination', 'glycosylation', 'sumoylation',
+        'hydroxylation', 'nitration', 'sulfation', 'ADP-ribosylation', 'lipidation', 'aminoethylation'
     },
     'cellular_locations': {
         'nucleus', 'cytoplasm', 'membrane', 'golgi', 'endoplasmic reticulum', 'mitochondria', 'lysosome',
-        'peroxisome', 'plasma membrane', 'extracellular matrix'
+        'peroxisome', 'plasma membrane', 'extracellular matrix', 'nucleolus', 'ribosome', 'centrosome',
+        'cilium', 'vesicle', 'chloroplast', 'vacuole', 'cytosol', 'cytoplasmic membrane'
     },
     'molecular_interactions': {
-        'binding site', 'active site', 'allosteric site', 'ligand-binding site', 'catalytic site'
+        'binding site', 'active site', 'allosteric site', 'ligand-binding site', 'catalytic site',
+        'docking site', 'interaction interface', 'receptor site', 'contact site', 'recognition site',
+        'substrate-binding site', 'effector-binding site', 'inhibitory site', 'activation site'
     }
 }
+
+biomedical_phrases = [
+    'caused by',
+    'as a result of',
+    'owing to',
+    'resulting from',
+    'arising from',
+    'stemming from',
+    'triggered by',
+    'influenced by',
+    'associated with',
+    'linked to',
+    'related to',
+    'derived from',
+    'contingent upon',
+    'mediated by',
+    'facilitated by',
+    'through',
+    'in response to',
+    'via',
+    'performed by',
+    'activated by',
+    'initiated by',
+    'conducted by',
+    'executed by',
+    'influenced by',
+    'carried out by',
+    'regulated by',
+    'extracted from',
+    'obtained from',
+    'sourced from',
+    'sampled from',
+    'harvested from',
+    'under conditions of',
+    'in the presence of',
+    'in light of',
+    'regarding',
+    'considering',
+    'in terms of'
+]

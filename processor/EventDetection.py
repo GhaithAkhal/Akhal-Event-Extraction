@@ -4,10 +4,8 @@ import nltk
 from typing import List, Tuple
 import re
 
-from nltk import word_tokenize, pos_tag
 from nltk.stem import PorterStemmer
-from processor.dic import enum_dict
-from nltk.corpus import wordnet as wn
+from processor.dic import enum_dict, biomedical_phrases
 from processor.dic import side_dic
 
 nltk.download('wordnet')
@@ -15,6 +13,9 @@ nltk.download('omw-1.4')
 
 new_entities = []
 new_events = []
+
+new_entities_set = set()
+new_events_set = set()
 
 lemmatizer = PorterStemmer()
 
@@ -81,6 +82,7 @@ def check_if_event_unique(event_type_trigger, theme, theme2=None):
             else:
                 return True
     return True
+
 def create_new_entity(last_entity_id, entity_type, entity_start, entity_end, entity):
     if check_if_entity_unique(entity, entity_start, entity_end):
         new_entities.append(
@@ -139,9 +141,10 @@ def extract_binding_event(sentence, entities, verb):
     if len(entities) < 2:
         entity_texts = [re.escape(entity['text']) for entity in entities]
         verb_pattern = re.escape(verb)
-        one_entity_patterns = [rf"{verb_pattern}\b.*?\b({entity_texts[0]})?",
-                               rf"?({entity_texts[0]})?\b.*?\b{verb_pattern}"]
+        one_entity_patterns = [rf"({verb_pattern})\b.*?\b({entity_texts[0]})?",
+                               rf"({entity_texts[0]})?\b.*?\b{verb_pattern}"]
         for pattern in one_entity_patterns:
+            re.compile(pattern)
             if re.search(pattern, sentence):
                 return protein1_data['id'], None
     else:
@@ -174,25 +177,13 @@ def get_word_type(word):
 
 
 def extract_regulation_event(trigger_word, sentence, entities, position):
-    """
-       Extract entities involved in regulation events, along with side mentions and causal influences
-       associated with a trigger word in a given sentence.
-
-       Parameters:
-       trigger_word (str): The word indicating regulation.
-       sentence (str): The sentence in which to search for regulations.
-       entities (list): List of entity data with 'id' and 'text'.
-       position (int): The position of the sentence in a larger text (if applicable).
-       new_events (list): List of events with 'trigger' and 'theme'.
-
-       Returns:
-       entity1_id, entity2_id, side_id, side_index if found, otherwise (None, None, None, None).
-       """
     entity_texts = [re.escape(entity['text']) for entity in entities]
 
     if not entity_texts:
         return None, None, None, None, None
 
+    trigger_word_type = get_word_type(trigger_word)
+    trigger_words = '|'.join([re.escape(cl) for cl in enum_dict[trigger_word_type]])
     entity_pattern = '|'.join(entity_texts)
     regulation_pattern1 = re.compile(
         rf"({entity_pattern})?.*?\b{re.escape(trigger_word)}\b.*?\b({entity_pattern})",
@@ -212,7 +203,7 @@ def extract_regulation_event(trigger_word, sentence, entities, position):
         entity2 = regulation_match.group(2) if regulation_match.group(2) else None
         type_entity2 = None
         # If no entities found in match, return None
-        if not entity1 and not entity2:
+        if entity1 is not None and entity2 is None:
             return None, None, None, None, None
 
         # Fetch entity IDs
@@ -225,10 +216,9 @@ def extract_regulation_event(trigger_word, sentence, entities, position):
         side, side_index = extract_site(sentence, position, side_trigger)
         side_id = next((entity['id'] for entity in entities if side and entity['text'] in side), None) if side else None
 
-        # Cause patterns using prepositions
-        cause_prepositions = ['by', 'due to', 'because of', 'from']
+        biomedical_phrases_pattern = re.escape('|'.join([re.escape(prep) for prep in biomedical_phrases]))
         cause_pattern_entity = re.compile(
-            rf"{re.escape(trigger_word)}\b.*?\b({'|'.join([re.escape(prep) for prep in cause_prepositions])})?.*?\b({entity_pattern})",
+            rf"{re.escape(trigger_word)}\b.*?\b({biomedical_phrases_pattern})?.*?\b({entity_pattern})",
             re.IGNORECASE
         )
         cause_match_entity = cause_pattern_entity.search(sentence)
@@ -244,11 +234,11 @@ def extract_regulation_event(trigger_word, sentence, entities, position):
         for event in new_events:
             event_trigger, event_theme = get_trigger_word_of_Event(event)
             cause_pattern_event_1 = re.compile(
-                rf"{re.escape(trigger_word)}\b.*?\b({'|'.join([re.escape(prep) for prep in cause_prepositions])})\b.*?({re.escape(event_theme)}) .*?\b({re.escape(event_trigger)})",
+                rf"{re.escape(event_trigger)}\b.*?\b({re.escape(event_theme)})\b.*?({biomedical_phrases_pattern}).*?\b({re.escape(trigger_word)})",
                 re.IGNORECASE
             )
             cause_pattern_event_2 = re.compile(
-                rf"{re.escape(trigger_word)}\b.*?\b({'|'.join([re.escape(prep) for prep in cause_prepositions])})\b.*?({re.escape(event_trigger)}).*?\b({re.escape(event_theme)})",
+                rf"{re.escape(trigger_word)}\b.*?\b({biomedical_phrases_pattern})\b.*?({re.escape(event_trigger)}).*?\b({re.escape(event_theme)})",
                 re.IGNORECASE
             )
             cause_match_event = cause_pattern_event_1.search(sentence) or cause_pattern_event_2.search(sentence)
@@ -278,11 +268,12 @@ class EventDetection:
                 new_entity = entity_wrapper['entity']
                 if new_entity not in visited_entities:
                     visited_entities.append(new_entity)
-
-                    for verb in detail['verbs']:
+                    visited_entities_binding.append(new_entity)
+                    for verb in detail['triggers']:
                         extracted_trigger_type = get_word_type(verb['text'])
 
-                        if extracted_trigger_type is not None:
+                        if extracted_trigger_type in ['Positive_regulation', 'Regulation', 'Negative_regulation']:
+
                             theme_1, theme_2, theme_2_type, site, index_site = extract_regulation_event(
                                 verb['text'], sentence, visited_entities, current_position)
                             if theme_1 is not None:
@@ -374,8 +365,7 @@ class EventDetection:
 
                         elif extracted_trigger_type == 'Binding':
 
-                            protein1_data_id, protein2_data_id = extract_binding_event(sentence,
-                                                                                       visited_entities, verb)
+                            protein1_data_id, protein2_data_id = extract_binding_event(sentence, visited_entities_binding, verb)
                             if protein1_data_id or protein2_data_id is not None:
                                 if create_new_entity(last_entity_id, extracted_trigger_type, verb['start_char'],
                                                      verb['end_char'], verb['text']):

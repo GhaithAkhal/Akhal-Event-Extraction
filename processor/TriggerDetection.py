@@ -7,7 +7,7 @@ nltk.download('averaged_perceptron_tagger')
 
 class TriggerDetection:
     @staticmethod
-    def get_trigger_words(text, entities):
+    def get_trigger_words(text, entities, range_of_search= 5):
 
         # Initialize result list
         result = []
@@ -66,6 +66,6 @@ class TriggerDetection:
                 result.append({
                     "sentence": sentence,
                     "entities": sentence_entity_map[i],
-                    "verbs": triggers
+                    "triggers": triggers
                 })
         return result
