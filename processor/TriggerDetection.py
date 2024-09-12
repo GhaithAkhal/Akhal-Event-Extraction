@@ -7,7 +7,7 @@ nltk.download('averaged_perceptron_tagger')
 
 class TriggerDetection:
     @staticmethod
-    def get_trigger_words(text, entities, range_of_search= 5):
+    def get_trigger_words(text, entities, range_of_search= 7):
 
         # Initialize result list
         result = []
@@ -52,17 +52,17 @@ class TriggerDetection:
                     word, tag = pos_tags[pos]
                     if tag.startswith('VB') or tag.startswith('NN'):  # VB* tags are for verbs, NN* for nouns
                          #Check if the word is next to or within 2 words from an entity
-                        #for (start_idx, end_idx) in entity_positions:
-                            #f abs(pos - start_idx) <= 7 or abs(pos - end_idx) <= 7:
-                        start_char = text.index(word, char_offset)
-                        end_char = start_char + len(word)
-                        triggers.append({
-                            "tag": tag,
-                            "text": word,
-                            "start_char": start_char,
-                            "end_char": end_char
-                        })
-                             #   break
+                        for (start_idx, end_idx) in entity_positions:
+                            if abs(pos - start_idx) <= range_of_search or abs(pos - end_idx) <= range_of_search:
+                                start_char = text.index(word, char_offset)
+                                end_char = start_char + len(word)
+                                triggers.append({
+                                    "tag": tag,
+                                    "text": word,
+                                    "start_char": start_char,
+                                    "end_char": end_char
+                                })
+                                break
                 result.append({
                     "sentence": sentence,
                     "entities": sentence_entity_map[i],
