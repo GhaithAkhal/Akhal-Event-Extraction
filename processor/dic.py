@@ -6,15 +6,14 @@ last_event_id = 0
 
 # prepare step, expand the data set
 enum_dict = {
-    'Binding': ['Blocking', 'Coligation', 'Cross-linking', 'Interaction', 'absence', 'activities', 'activity', 'affinity', 'aggregated', 'associate', 'bind',
+    'Binding': ['Blocking', 'Coligation', 'Cross-linking', 'Interaction', 'absence', 'activities', 'activity', 'aggregated', 'associate', 'bind',
                 'coengagement', 'coimmunoprecipitation', 'combination', 'comigrate', 'competition', 'complex', 'conjugation', 'contain', 'couple', 'cross-react',
                 'detect', 'dimerize', 'engage', 'formation', 'genotype', 'heterodimer', 'homodimer', 'interact', 'ligand', 'ligation', 'linkage', 'migrate', 'multimer',
                 'mutant', 'occupancy', 'oligomerization', 'pair', 'participation', 'partner', 'potent', 'presence', 'protein', 'react', 'reactivity', 'receptor',
                 'recognition', 'recruit', 'site', 'specificity', 'subunit', 'target'],
     'Gene_expression': ['Co-expression', 'Cotransfection', 'Expression', 'Generation', 'Level', 'Overexpression', 'Production', 'Transfection', 'absence', 'activation',
-                        'amount', 'analyze', 'antisense', 'appearance', 'biosynthesis', 'coexpress', 'cotransfect', 'deficient', 'detect', 'distribution', 'express',
-                        'foci', 'generate', 'high', 'identify', 'induce', 'induction', 'lack', 'low', 'negative', 'overexpress', 'pattern', 'positive',
-                        'post-transcription', 'presence', 'produce', 'protein', 'resynthesize', 'secreted', 'select', 'signal', 'source', 'study', 'subunit', 'synthesis'],
+                        'amount', 'analyze', 'antisense', 'appearance', 'biosynthesis', 'coexpress', 'cotransfect', 'deficient', 'detect', 'distribution', 'express', 'identify', 'induce', 'induction', 'lack', 'low', 'negative', 'overexpress', 'pattern', 'positive',
+                        'post-transcription', 'presence', 'produce', 'protein', 'resynthesize', 'secreted', 'select', 'subunit', 'synthesis'],
     'Protein_catabolism': ['breakdown', 'cleavage', 'cleaved', 'degrade', 'intact', 'loss', 'pathway', 'process', 'proteolysis', 'stability', 'stabilized'],
     'Localization': ['Secretion', 'Translocation', 'abundance', 'accumulate', 'appearance', 'co-localization', 'detect', 'direct', 'distribution', 'exclusion',
                      'export', 'expression', 'form', 'found', 'immobilization', 'import', 'liberate', 'localization', 'migrate', 'mobilization', 'precipitation',
@@ -45,8 +44,7 @@ enum_dict = {
     'Transcription': [
         'Level', 'Transcription', 'absence', 'abundant', 'activity', 'appearance', 'concentration','demonstrate', 'derive', 'detect', 'express', 'expression', 'find',
         'hybridize', 'inducible', 'induce', 'initiate', 'lack', 'mRNA', 'observe', 'perform', 'present', 'production', 'rate', 'regulation', 'synthesis',
-        'through', 'transcribe', 'transcript', 'undetectable'
-    ]}
+        'through', 'transcribe', 'transcript', 'undetectable']}
 
         # Define the mapping of categories to VerbNet classes
 vn_class_mapping = {
