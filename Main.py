@@ -97,8 +97,8 @@ class Main:
 
 
         start_time = time.time()
-        source_directory = r'dataset\2011\GE\BioNLP-ST_2011_genia_devel_data_rev1'  # Source directory
-        destination_directory = r'dataset\newtest'
+        source_directory = r'dataset\2009\bionlp09_shared_task_development_data_rev1'  # Source directory
+        destination_directory = r'dataset\result'
         source_files = glob.glob(os.path.join(source_directory, '*.a1'))
         for file_path in source_files:
 
